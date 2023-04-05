@@ -146,7 +146,7 @@
     {% render 'judgeme_core' %}
 
     {% render 'qikify-apps' %}
-    {% include 'store-credit-launcher' %}
+    
 
     {% render 'gift-card-pro' %}
 
@@ -170,7 +170,8 @@
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-  </head>
+  {% include 'store-credit-launcher' %}
+</head>
 
 
   <body
@@ -215,7 +216,7 @@
     <div id="ProductModals"></div>
     {%- render "ecom_footer" -%}{% include 'globo.filter.action' %}
 
-    {% include 'store-credit-launcher' %}
+    
     {% if content_for_header contains 'product_label' %}
       {% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}
     <!-- Start of HubSpot Embed Code -->
@@ -232,5 +233,6 @@
     <script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=28879"></script>
     <script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{ shop.permanent_domain }}",_.SHOPIFY_CUSTOMER_ID="{{ customer.id }}",_.SHOPIFY_CUSTOMER_EMAIL="{{ customer.email }}"}(window||{});</script>
     <!--Gorgias Chat Widget End-->
-  </body>
+  {% include 'store-credit-launcher' %}
+</body>
 </html>
