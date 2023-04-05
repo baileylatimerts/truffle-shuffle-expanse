@@ -1,0 +1,109 @@
+
+{%if customer.tags contains 'Active Subscriber'%}
+
+<!-- Bold: Memberships (page) -->
+{%comment%}
+{% include 'bold_mem_helper' with 'page' %}
+{%endcomment%}
+<!-- end Bold code -->
+
+
+
+
+{% comment %}
+{% section 'plus-landing-hero-section' %}
+{% section 'plus-landing-menu' %}
+{% endcomment %}
+
+<div class="flex-row-outer-page">
+
+    <div class="flex-col-outer-page-1">
+      {% section 'plus-landing-menu-vertical' %}
+    </div>
+  
+    <div class="flex-col-outer-page-2">
+  
+      <div class="calendar-wrapper-plus-landing">
+  
+        <div class="container-large">
+  
+          <div class="calendar-section-heading-wrapper-home">
+            <h3 class="section-heading-plus"><a href="/collections/live-experiences">CULINARY LIBRARY</a></h3>
+          </div>
+  
+
+            
+            <div class="culinary-library-wrapper">
+                <div class="culinary-library-inner">
+
+                    <div class="culinary-library-col">
+                        <a class="culinary-library-link" href="https://www.truffleshufflesf.com/blogs/truffle-shuffle-blog">
+                            <div class="library-img-wrapper _1">
+                                <img class="culinary-library-image" src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/DSC00625.jpg?v=1669666226">
+                            </div>
+                            <div class="flex-col-menu-link-page library">Explore Recipes</div>
+                        </a>
+                    </div>
+                    <div class="culinary-library-col">
+                        <a  class="culinary-library-link" href="https://www.truffleshufflesf.com/blogs/on-demand-classes-1">
+                            <div class="library-img-wrapper _2">
+                                <img class="culinary-library-image" src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/Screen_Shot_2022-11-28_at_12.40.32_PM.png?v=1669668062">
+                            </div>
+                            <div class="flex-col-menu-link-page library">Explore On-Demand Classes</div>
+                        </a>
+                    </div>
+                    <div class="culinary-library-col">
+                        <a class="culinary-library-link" href="https://www.truffleshufflesf.com/apps/my/courses/public">
+                            <div class="library-img-wrapper _3">
+                                <img class="culinary-library-image" src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/Untitled_design_-_2022-09-19T155832.899.jpg?v=1663628319">
+                            </div>
+                            <div class="flex-col-menu-link-page library">Explore Courses</div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+  
+        </div> <!-- container-large -->
+  
+      </div> <!-- alendar-wrapper-plus-landing -->
+   
+    </div> <!-- flex-col-outer-page-2 -->
+    
+  </div> <!-- flex-row-outer-page -->
+  
+  
+  
+  <style type="text/css">
+    #event-calendar-app button.subcribe-to-calendar__inverse[type="button"] {
+      color: #ffffff !important;
+    }
+  
+    #event-calendar-app .eca-calendar .fc-view-container span.fc-day-number {
+      color: #000000 !important;
+    }
+  
+  </style>
+
+
+  {%else%}
+
+<div class="container-large margin-top">
+
+  <div class="calendar-section-heading-wrapper-home">
+    <h3 class="section-heading-plus">Sorry, this page is for members only</h3>
+    <p class="extra-margin-b">This page can only be accessed if you have a current Truffle Shuffle VIP Membership.</p>
+  </div>
+
+  <div class="hero-col-btn-wrapper-account-plus">
+    <a href="https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions" class="btn-main-plus w-button">ABOUT THE MEMBERSHIP</a>
+  </div>
+
+
+</div> <!-- container-large -->
+
+{%endif%}

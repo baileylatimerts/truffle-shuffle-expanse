@@ -1,0 +1,967 @@
+
+
+
+
+<!-- Bold: Memberships (accounts) -->
+{%comment%}
+{% include 'bold-memberships-salt' %}
+{%endcomment%}
+<!-- end Bold code -->
+
+{% assign today_date = 'now' | date: '%s' %}
+
+
+{% assign profile_picture = customer.metafields.customer_fields.data["profile_picture"] %}
+
+{% assign has_plus_membership = false %}
+
+{% for tag in customer.tags %}
+  {% if tag == 'TS-Plus' %}
+    {% assign has_plus_membership = true %}
+  {% endif %}
+{% endfor %}
+{% comment %}
+{% assign show_calendar = false %}
+{% if customer.email == 'tyler@truffleshufflesf.com' %}
+  {% assign show_calendar = true %}
+{% endif %}
+{% endcomment %}
+<div class="hero-wrapper-account-plus">
+  <div class="container-large account">
+    <div class="hero-flex-row-outer-account-plus">
+      <div class="hero-flex-col-account-plus-1">
+        <div class="hero-flex-col-inner-account-plus">
+          <div class="hero-col-heading-account-plus">My Account</div>
+
+          {%comment%}
+          {% if profile_picture == blank %}
+          {% comment %}{% endcomment %}
+                <div class="profile-picture-form-wrapper profile-picture-form-wrapper-empty">
+                  <img src="//cdn.shopify.com/s/files/1/0259/6510/1090/files/headshot-placeholder-min.jpg" loading="lazy" alt="Headshot Placeholder" class="hero-flex-col-img-account-plus">
+                  {% render "customer-fields", form_id: "kntpzb" %}
+                </div>
+                {% else %}
+                  <div class="profile-picture-form-wrapper">
+                    {% render "customer-fields", form_id: "kntpzb" %}
+                  </div>
+              
+          {% endif %}
+          {%endcomment%}
+
+          
+          <div class="main-heading-account-plus">Welcome Back, {{customer.first_name}}!</div>
+          <div class="menu-wrapper-account-plus">
+
+            {%comment%}
+            <div class="menu-link-wrapper-account-plus">
+              <a href="/pages/orders" class="menu-link-account-plus w-inline-block">
+                <div>Your Orders</div>
+              </a>
+            </div>
+            {%endcomment%}
+            <div class="menu-link-wrapper-account-plus">
+              <a href="https://www.truffleshufflesf.com/account/login?reset-password" class="menu-link-account-plus w-inline-block">
+                <div>CHANGE PASSWORD</div>
+              </a>
+            </div>
+            <div class="menu-link-wrapper-account-plus">
+              <a href="/account/logout" class="menu-link-account-plus w-inline-block">
+                <div>LOG OUT</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-flex-col-account-plus-2">
+        <div class="hero-row-account-plus">
+          <div class="hero-col-account-plus">
+            <div class="hero-col-inner-account-plus">
+              <div class="hero-col-content-account-plus">
+                <div class="hero-col-heading-account-plus">MY ORDERS</div>
+
+                  {%comment%}
+                    <div class="hero-col-info-sub-heading-account-plus-margin">
+                      <a href="https://www.truffleshufflesf.com/pages/livestream-calendar" class="hero-col-info-link-account-plus">Upcoming Live Classes</a>
+                    </div>
+                    <div class="hero-col-info-sub-heading-account-plus-margin">
+                      <a href="https://truffleshuffle.uscreen.io/" class="hero-col-info-link-account-plus"> On-Demand Video Classes</a>
+                    </div>
+                  {%endcomment%}
+                  <div class="hero-col-btn-wrapper-account-plus flex">
+                    <a href="https://www.truffleshufflesf.com/pages/orders" class="btn-main-plus min-w w-button">VIEW ALL ORDERS</a>
+                  </div>
+                  <div class="hero-col-btn-wrapper-account-plus flex">
+                    <a href="https://truffleshufflesf.aftership.com/" class="btn-main-plus min-w w-button">TRACK MY PACKAGE</a>
+                  </div>
+
+
+
+                {% if customer.tags contains 'Active Subscriber' %}
+                {% endif %}
+
+
+                {%comment%}
+
+                {% assign is_download = false %}
+                {% assign jc_counter = 0 %}
+                {% for order in customer.orders %}
+                  {% if jc_counter > 2 %}
+                    {% break %} 
+                  {% endif %}
+                  {% for line_item in order.line_items %}
+                    {% if line_item.variant.metafields.dda.digital or order.metafields.dda.sendowl_order_id %}<a href="https://transactions.sendowl.com/orders/shopify_return/216147?order_id={{ order.id }}&email={{ order.email }}{% if order.metafields.dda.sendowl_order_id %}&sendowl_order_id={{ order.metafields.dda.sendowl_order_id }}{% endif %}" class="hero-col-download-link-plus" target="_blank"><span class="hero-col-download-link-inner-plus">{{line_item.product.title}}</span></a>{% assign is_download = true %}{% assign jc_counter = jc_counter | plus: 1 %}{% endif %}
+                  {% endfor %}
+                {% endfor %}
+                {% if is_download == true %}
+                  <div class="hero-col-btn-wrapper-account-plus">
+                    <a href="/pages/downloads" class="btn-main-plus w-button">View All</a>
+                  </div>
+                {% endif %}
+                {%endcomment%}
+
+              </div>
+            </div>
+          </div>
+          <div class="hero-col-account-plus">
+            <div class="hero-col-inner-account-plus">
+              <div class="hero-col-content-account-plus">
+                <div class="hero-col-heading-account-plus">MEMBERS ONLY</div>
+                {%comment%}
+                <div class="hero-col-logo-wrapper-account-plus">
+                  <img src="//cdn.shopify.com/s/files/1/0259/6510/1090/files/TruffleShuffle-logo-black-plus-min.png" class="hero-col-logo-img-account-plus" alt="Truffle Shuffle Plus">
+                </div>
+
+
+                {% if has_plus_membership == false %}
+
+                    <div class="hero-col-info-wrapper-account-plus">
+                      <div class="hero-col-info-sub-heading-account-plus">
+                        <a href="/pages/beta-sign-up" class="hero-col-info-link-account-plus">SIGN UP FOR EARLY ACCESS</a>
+                      </div>
+                    </div>
+
+                  {% else %}
+                  {% endif %}
+                {%endcomment%}
+
+
+                    <div class="hero-col-info-wrapper-account-plus">
+
+                      <div class="hero-col-info-sub-heading-account-plus-margin">
+                        <a href="/pages/your-upcoming-classes" class="hero-col-info-link-account-plus">VIP Membership Lounge 😎</a>
+                      </div>
+                      <div class="hero-col-info-sub-heading-account-plus-margin">
+                        <a href="/tools/recurring/login/" class="hero-col-info-link-account-plus">Manage Subscription Deliveries 📦</a>
+                      </div>
+                   
+
+                    </div>
+
+                
+                 
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="hero-col-account-plus">
+            <div class="hero-col-inner-account-plus">
+              <div class="hero-col-content-account-plus">
+                <div class="hero-col-heading-account-plus">INVITE A FRIEND</div>
+                <p>Invite a friend and get 100 points!</p>
+                
+                {% comment %}
+                <div class="hero-col-info-wrapper-account-plus">
+                  <div class="hero-col-info-heading-account-plus">2</div>
+                  <div class="hero-col-info-sub-heading-account-plus">This Month</div>
+                </div>
+                {% endcomment %}
+                <div class="hero-col-btn-wrapper-account-plus">
+                  <a href="#" class="btn-main-plus w-button" data-lion-refer>INVITE NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-col-account-plus">
+            <div class="hero-col-inner-account-plus">
+              <div class="hero-col-content-account-plus">
+                <div class="hero-col-heading-account-plus">REWARDS PROGRAM</div>
+
+
+                <div class="jc-account-rewards-content-wrapper">
+                  <div class="jc-account-rewards-heading-wrapper">
+             
+                  </div>
+                  <div class="jc-account-rewards-mid-wrapper">
+                    <div class="jc-account-rewards-text">You Have <span data-lion-points></span> {% if customer %}<span class="sweettooth-points-balance"></span>{% endif %} Rewards Points</div>
+
+                  </div>
+          
+                 
+          
+                </div>
+
+
+                {% comment %}
+                <div class="hero-col-info-wrapper-account-plus">
+                  <div class="hero-col-info-heading-account-plus"><span class="sweettooth-points-balance"></span></div>
+                  <div class="hero-col-info-sub-heading-account-plus">points</div>
+                </div>
+                {% endcomment %}
+                <div class="hero-col-btn-wrapper-account-plus">
+                  <a href="https://www.truffleshufflesf.com/pages/rewards-new" class="btn-main-plus w-button">ACCESS YOUR REWARDS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+  260391960599 - on demand
+  159801835543 - live cooking experiences
+  159801802775 - small batch
+{% endcomment %}
+
+
+{%comment%}
+<div class="mid-wrapper-account-plus">
+  <div class="container-large account">
+
+    <div class="content-block-account-plus">
+      <div class="content-heading-flex-row-home-plus">
+        <h4 class="content-block-heading-plus">UPCOMING LIVE CLASSES</h4>
+      </div>
+
+      {% if has_plus_membership == true %} 
+
+      <div class="account-calendar-key-wrapper">
+        <div class="account-calendar-key-flex-row">
+          <div class="account-calendar-key-icon"></div>
+          <div class="account-calendar-key-text">Ingredient Kit Option Available</div>
+        </div>
+      </div>
+
+        <div class="account-calendar-outer-wrapper">
+          <div class="eca-app-container" data-widgetuuid="c5d4c592-0894-44ec-9a0f-723348b440e3"></div>
+          <script>(function () {
+          window.eventCalId=9296;
+          var integrationScript = document.createElement("script");
+          integrationScript.async = 1;
+          integrationScript.setAttribute("src", "https://api.eventcalendarapp.com/integration-script.js");
+          document.head.appendChild(integrationScript);
+          if (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init("c5d4c592-0894-44ec-9a0f-723348b440e3");}})();
+          </script>
+        </div>
+        
+        {% else %}
+          <div class="product-flex-row-plus">
+
+            {% for order in customer.orders %}
+              {% for line_item in order.line_items %}
+                  {% if line_item.product.type == 'Cook Along Experience' %}
+
+                      {% assign date_tracker = line_item.variant.metafields.date_tracker.date.value | date:"%s" %}
+
+                      {% if date_tracker %}
+                        {% if date_tracker > today_date %}
+                          {% render 'jc-product-loop', product: line_item.product, hide_product_form: true %}
+                        {% endif %}
+                      {% endif %}
+                      
+                  {% endif %}
+              {% endfor %}
+            {% endfor %}
+
+          </div>
+      {% endif %}
+      
+      
+    </div>
+
+
+    <div class="content-block-account-plus">
+      <div class="content-heading-flex-row-home-plus">
+        <h4 class="content-block-heading-plus">My On-Demand Classes</h4>
+      </div>
+      <div class="product-flex-row-plus">
+
+        {% for order in customer.orders %}
+          {% for line_item in order.line_items %}
+              {% if line_item.product.type == 'Video Cook Along Kits' %}
+                {% assign page_url = line_item.product.metafields.on_demand.page_url %}
+                {% if page_url == blank %}
+                  {% assign page_url = '#' %}
+                {% endif %}
+                {% render 'jc-product-loop', product: line_item.product, hide_product_form: true, hide_price: true, custom_url: page_url, custom_review: true, on_demand_btn: true %}
+              {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+    <div class="content-block-account-plus">
+      <div class="content-heading-flex-row-home-plus">
+        <h4 class="content-block-heading-plus">My Saved Content</h4>
+        <a href="/pages/wishlist" class="content-heading-flex-link-home-plus w-inline-block">
+          <div>See All »</div>
+        </a>
+      </div>
+
+      <div id='ZoomyWishlistPage' class="product-flex-row-plus"></div><script src='{{"ListWishlist.js" | asset_url}}' data-shop-id='{{shop.permanent_domain}}' data-customer-id='{{customer.id}}' data-customer-email='{{customer.email}}'  ></script>
+
+    </div>
+    
+    { comment %}
+    <div class="content-block-account-plus">
+      <div class="content-heading-flex-row-home-plus">
+        <h4 class="content-block-heading-plus">COMPLETED CLASSES</h4>
+      </div>
+      <div class="product-flex-row-plus">
+
+        {% for order in customer.orders %}
+          {% for line_item in order.line_items %}
+              {% if line_item.product.type == 'Cook Along Experience' %}
+                  {% assign date_tracker = line_item.variant.metafields.date_tracker.date.value | date:"%s" %}
+                  {% assign page_url = line_item.product.metafields.on_demand.page_url %}
+
+                  {% if date_tracker %}
+                    {% if today_date > date_tracker %}
+
+                      {% if page_url == blank %}
+
+                          {% render 'jc-product-loop', product: line_item.product, hide_product_form: true, hide_price: true, custom_review: true %}
+
+                        {% else %}
+
+                          {% render 'jc-product-loop', product: line_item.product, hide_product_form: true, hide_price: true, custom_review: true, custom_url: page_url, on_demand_btn: true %}
+
+                      {% endif %}
+
+
+                    {% endif %}
+                  {% endif %}
+                  
+              {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+      </div>
+    </div>
+    {  endcomment %}
+     { comment %}
+    <div class="content-block-account-plus">
+      <div class="content-heading-flex-row-home-plus">
+        <h4 class="content-block-heading-plus">YOUR SAVED CULINARY ACADEMY VIDEOS</h4>
+        <a href="#" class="content-heading-flex-link-home-plus w-inline-block">
+          <div>See All »</div>
+        </a>
+      </div>
+
+      <div id='ZoomyWishlistPage' class="vid-section-row-plus"></div><script src='{{"ListWishlist.js" | asset_url}}' data-shop-id='{{shop.permanent_domain}}' data-customer-id='{{customer.id}}' data-customer-email='{{customer.email}}'  ></script>
+
+    </div>
+   { endcomment %}
+  </div>
+</div>
+{%endcomment%}
+
+<style type="text/css">
+  .profile-picture-form-wrapper .cf-file-preview-container {
+    position: relative;
+    display: block;
+  }
+
+  .profile-picture-form-wrapper .cf-file-preview-container .cf-file-preview button.cf-remove {
+    display: none;
+  }
+
+  .profile-picture-form-wrapper .cf-file-preview-container .cf-file-preview {
+    background: none;
+    margin: 0px;
+  }
+
+  .profile-picture-form-wrapper .cf-field.jc-account-profile-image-input label {
+    display: none;
+  }
+
+  .profile-picture-form-wrapper .cf-field.jc-account-profile-image-input input {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+
+  .profile-picture-form-wrapper .cf-file-preview-container .cf-file-preview.cf-file-image img {
+    border-radius: 1px;
+  }
+
+ .profile-picture-form-wrapper .cf-field.jc-account-profile-image-input {
+    margin: 0px;
+    padding: 0px;
+  }
+
+ .profile-picture-form-wrapper .cf-form-actions {
+    margin-top: 0px !important;
+  }
+
+ .profile-picture-form-wrapper button.cf-submit-form.cf-button {
+    padding: 0px !important;
+    margin: 0px !important;
+    background: none;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom: 1px solid #cdbd72;
+    -webkit-transition: color 250ms ease;
+    transition: color 250ms ease;
+    display: none;
+
+  }
+
+  .profile-picture-form-wrapper button.cf-submit-form.cf-button:hover {
+    color: #cdbd72;
+  }
+
+  .profile-picture-form-wrapper .cf-fields-container {
+    margin: 0px;
+  }
+
+    .profile-picture-form-wrapper.profile-picture-form-wrapper-empty .cf-field.jc-account-profile-image-input input {
+    position: static;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 12px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+</style>
+
+<style type="text/css">
+  #ZoomyWishlistPage.product-flex-row-plus > p.zmsg:first-child {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  #ZoomyWishlistPage.vid-section-row-plus > p.zmsg:first-child {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+
+  div#ZoomyWishlistPage {
+    margin-bottom: 60px;
+  }
+
+  #ZoomyWishlistPage .product-flex-col-plus:nth-of-type(1n+5) {
+    display: none;
+  }
+
+
+</style>
+
+<style type="text/css">
+  #event-calendar-app button.subcribe-to-calendar__inverse[type="button"] {
+    color: #ffffff !important;
+  }
+
+  #event-calendar-app .eca-calendar .fc-view-container span.fc-day-number {
+    color: #000000 !important;
+  }
+
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+
+    var picture_input = $('.jc-account-profile-image-input');
+    var picture_button = $('button.cf-submit-form.cf-button');
+
+    $('.profile-picture-form-wrapper').click(function(){
+      console.log('clicked');
+      $('button.cf-submit-form.cf-button').css('display','inline-block');
+    });
+    
+
+   });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%comment%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='frcp_app_wrapper' class='frcp-app-wrapper'></div>
+<!-- /templates/customers/account.liquid -->
+{% comment %}
+
+  For all available customer liquid tags:
+    - http://docs.shopify.com/themes/liquid-variables/customer
+
+{% endcomment %}
+{% comment %}
+
+
+<header class="section-header text-center">
+  <h1>{{ 'customer.account.title' | t }}</h1>
+{% include 'fresh-credit-button' %}
+
+  {{ 'layout.customer.log_out'| t | customer_logout_link }}
+  <hr class="hr--small">
+</header>
+
+<div class="grid">
+
+  <div class="grid__item two-thirds medium-down--one-whole">
+    <h2 class="h3">{{ 'customer.orders.title' | t }}</h2>
+    {% endcomment %}
+    {% comment %}
+      If we have past orders, loop through each one
+    {% endcomment %}
+    {% comment %}
+    {% if customer.orders.size != 0 %}
+
+      <div class="table-wrap">
+        <table class="full table--responsive">
+          <thead>
+            <tr>
+              <th>{{ 'customer.orders.order_number' | t }}</th>
+              <th>{{ 'customer.orders.date' | t }}</th>
+              <th>{{ 'customer.orders.payment_status' | t }}</th>
+              <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+              <th>{{ 'customer.orders.total' | t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for order in customer.orders %}
+              <tr class="table__section">
+                <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
+                <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: format: 'date' }}</td>
+                <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+                <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="hr--clear">
+
+    {% else %}
+
+      <p>{{ 'customer.orders.none' | t }}</p>
+
+    {% endif %}
+  </div>
+
+  <div class="grid__item one-third medium-down--one-whole">
+    <h3>{{ 'customer.account.details' | t }}</h3>
+<p><a href="/tools/checkout/front_end/login" class="text-link">Manage Subscription</a></p>
+
+    {{ customer.default_address | format_address }}
+
+    <p><a href="/account/addresses" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+  </div>
+
+</div>
+
+
+{% endcomment %}
+
+
+
+
+{% paginate customer.orders by 20 %}
+
+
+
+
+<div class="jc-account-page-wrapper">
+  <div class="jc-container-large">
+    <div class="col-wrapper account">
+
+
+      <div class="flex-col-outer-account-1">
+
+        <div class="flex-col-heading-wrapper-account">
+          <h2 class="section-heading-alt">Welcome {% unless customer.first_name == blank %}, {{customer.first_name}}!{% endunless %}</h2>
+        </div>
+
+          <div class="flex-col-menu-wrapper-account">
+
+            <div class="account-page-mid-btn-holder">
+                <a href="#order-history" class="logout-link">
+                  Order History
+                </a>
+            </div>
+         
+            <div class="flex-col-link-wrapper-account">
+              <!-- Begin Recharge code -->
+              <div class="jc-medium-btn-section left"><p><a class="logout-link" href="/tools/recurring/login/">Manage Subscriptions</a></p></div>
+              <!-- End Recharge code -->
+            </div>
+
+      
+
+            {% if customer.tags contains 'Active Subscriber' %}
+            <div class="account-page-mid-btn-holder">
+              <a href="https://www.truffleshufflesf.com/pages/livestream-calendar" class="logout-link">
+                Upcoming Live Classes
+              </a>
+            </div>
+            <div class="account-page-mid-btn-holder">
+              <a href="https://truffleshuffle.uscreen.io/" class="logout-link">
+                On-Demand Video Classes
+              </a>
+            </div>
+          {% endif %}
+          
+            
+            
+            <div class="flex-col-link-wrapper-account">
+            
+                <a href="#" class="logout-link flex-col-link-account-pw w-inline-block">
+                  <div>Reset Password</div>
+                </a>
+              
+            </div>
+
+            <div class="forgot-pw-section-account">
+            
+              {% form 'recover_customer_password' %}
+                <div class="order-section-heading-account">
+                  <h3 class="section-heading-sm">Reset Your Password</h3>
+                </div>
+                 <input type="email" class="form-input-login w-input" maxlength="256" name="email"  placeholder="Email" id="RecoverEmail" required="">
+                 <div class="form-btn-wrapper-login"><input type="submit" value="Submit" data-wait="Please wait..." class="jc-medium-btn less-padding no-p-l w-button"></div>
+               {% endform %}
+      
+          </div>
+
+            <div class="account-page-mid-btn-holder">
+                <a href="/account/logout" class="logout-link">
+                  Log Out
+                </a>
+            </div>
+
+          </div>
+
+      </div>
+
+      <div data-lion-account></div>
+
+      {%comment%}
+    <div class="wrapper-left">
+      <div class="jc-account-order-section-heading-wrapper">
+        <h1 class="jc-footer-col-heading small-black">Welcome {% unless customer.first_name == blank %}, {{customer.first_name}}!{% endunless %}</h1>
+
+        <div class="account-page-mid-btn-holder">
+          <a href="/account/logout" class="logout-link">Logout</a>
+        </div>
+
+      </div>
+      {%comment%}
+      <p class="paragraph-text">You don't have any active autoship subscriptions yet.</p>
+      {%endcomment%}
+
+
+      <!-- Begin Recharge code -->
+      <div class="jc-medium-btn-section left"><p><a class="logout-link" href="/tools/recurring/login/">Manage Subscriptions</a></p></div>
+      <!-- End Recharge code -->
+
+
+
+      {%comment%}
+      <div class="jc-medium-btn-section left"><p><a href="#" class="jc-medium-btn account w-button no-margin">Manage Subscription</a></p></div>
+
+      <div class="jc-medium-btn-section left"><a href="/tools/checkout/front_end/login" class="jc-medium-btn account w-button no-margin">Manage Auto Shipments</a>
+      {%endcomment%}
+
+      
+    </div>  <!-- wrapper-left-->
+    {%endcomment%}
+    <div class="wrapper-right">
+
+      <div class="jc-account-rewards-content-wrapper">
+        <div class="jc-account-rewards-heading-wrapper">
+          <h3 class="jc-footer-col-heading">Your Rewards</h3>
+          <span data-lion-points></span>
+        </div>
+        <div class="jc-account-rewards-mid-wrapper">
+          <div class="jc-account-rewards-text">You Have</div>
+          <div class="jc-account-rewards-main-text">{% if customer %}<span class="sweettooth-points-balance"></span>{% endif %}</div>
+          <div class="jc-account-rewards-text">Rewards Points</div>
+        </div>
+
+        <div class="jc-medium-btn-section"><a href="/account" class="jc-medium-btn account w-button hollow">Redeem Your Points</a></div>
+
+      </div>
+
+
+    </div>
+    </div>
+  </div> <!-- jc-container-large-->
+
+
+  <div class="order-history-scroll" id="order-history"></div>
+  <div class="jc-account-rewards-section">
+    <div class="jc-account-rewards-container">
+
+
+      <div class="jc-account-order-section">
+      
+        <h2 class="jc-account-order-section-heading">Order History</h2>
+    
+    
+        {% if customer.orders.size != 0 %}   
+        <div class="jc-account-order-flex-row">
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-heading-text">Order Number</div>
+          </div>
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-heading-text">Date</div>
+          </div>
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-heading-text">Total Cost</div>
+          </div>
+      </div>
+
+
+      {% for order in customer.orders %}
+
+      {% assign reorder_url = "" %}
+          {% for line_item in order.line_items %}
+            {% capture reorder_url %}{{ reorder_url | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' }}{% endcapture %}
+        {% endfor %}
+
+        <div class="jc-account-order-flex-row">
+            <div class="jc-account-order-flex-col">
+              <div class="jc-account-order-flex-col-text"><a href="{{order.customer_url}}" class="jc-account-order-flex-col-text-link">{{ order.name }}</a></div>
+              <div class="jc-account-order-reorder-wrapper"><a href="{{ '/cart/' | append: reorder_url }}" class="jc-account-order-reorder-btn">Reorder</a></div>
+            </div>
+            <div class="jc-account-order-flex-col">
+              <div class="jc-account-order-flex-col-text">{{ order.created_at | date: format: 'date' }}</div>
+            </div>
+            <div class="jc-account-order-flex-col">
+              <div class="jc-account-order-flex-col-text">{{ order.total_price | money }}</div>
+            </div>
+        </div>
+
+      {% endfor %}
+      {% comment %}
+      <div class="jc-account-order-flex-row">
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-text"><a href="#" class="jc-account-order-flex-col-text-link">1001</a></div>
+          </div>
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-text">04/12/2019</div>
+          </div>
+          <div class="jc-account-order-flex-col">
+            <div class="jc-account-order-flex-col-text">$42.99</div>
+          </div>
+      </div>
+      {% endcomment %}
+
+  
+  {% else %}
+    
+      <div class="jc-account-page-empty-wrapper">
+        <p class="jc-account-page-empty-text">You haven't placed any orders yet</p>
+      </div>
+
+  {% endif %}
+
+  {% if paginate.pages > 1 %}
+    {% include 'pagination' %}
+  {% endif %}
+  {% endpaginate %}
+
+    </div> <!-- jc-account-order-section -->
+      
+     
+
+    </div>
+  </div>
+
+{% comment %}
+  <div class="jc-account-bottom-row-section">
+    <div class="jc-account-bottom-row-container">
+      <div class="jc-account-bottom-row w-row">
+        <div class="jc-account-bottom-col w-col w-col-3">
+          <div class="jc-account-bottom-col-inner">
+            <div class="jc-account-bottom-col-heading-wrapper">
+              <h3 class="jc-account-bottom-col-heading">Your Account</h3>
+              <div class="jc-section-heading-hr"></div>
+              <div class="jc-section-heading-hr jc-section-heading-hr-bottom"></div>
+            </div>
+            <a href="/account/logout" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>Log Out</div>
+            </a>
+           
+          </div>
+        </div>
+        <div class="jc-account-bottom-col w-col w-col-3">
+          <div class="jc-account-bottom-col-inner">
+            <div class="jc-account-bottom-col-heading-wrapper">
+              <h3 class="jc-account-bottom-col-heading">Your Subscriptions</h3>
+              <div class="jc-section-heading-hr"></div>
+              <div class="jc-section-heading-hr jc-section-heading-hr-bottom"></div>
+            </div>
+            <a href="#" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>Manage Subscriptions</div>
+            </a>
+            <a href="#" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>Learn About Subscriptions</div>
+            </a>
+          </div>
+        </div>
+        <div class="jc-account-bottom-col w-col w-col-3">
+          <div class="jc-account-bottom-col-inner">
+            <div class="jc-account-bottom-col-heading-wrapper">
+              <h3 class="jc-account-bottom-col-heading">Your Rewards</h3>
+              <div class="jc-section-heading-hr"></div>
+              <div class="jc-section-heading-hr jc-section-heading-hr-bottom"></div>
+            </div>
+            <a href="#" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>View Rewards Balance</div>
+            </a>
+            <a href="#" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>Sign up for Rewards Program</div>
+            </a>
+          </div>
+        </div>
+        <div class="jc-account-bottom-col w-col w-col-3">
+          <div class="jc-account-bottom-col-inner">
+            <div class="jc-account-bottom-col-heading-wrapper">
+              <h3 class="jc-account-bottom-col-heading">Your Discounts</h3>
+              <div class="jc-section-heading-hr"></div>
+              <div class="jc-section-heading-hr jc-section-heading-hr-bottom"></div>
+            </div>
+            <a href="#" class="jc-account-bottom-col-link-block w-inline-block">
+              <div>Military</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- jc-account-bottom-row-section -->
+  {% endcomment %}
+  
+</div> <!-- jc-account-page-wrapper -->
+
+{%endcomment%}
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+
+    var url = window.location.href;
+    var height = 120;
+
+    if (url == 'https://www.rrmeds.com/account?rewards') {
+       $('html, body').animate({
+        scrollTop: $('.jc-account-rewards-section').offset().top-height
+      }, 1000);
+    }
+
+    });
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+
+    $('.flex-col-link-account-pw').click(function(){
+      
+      $('.forgot-pw-section-account').addClass("show");
+      
+    });
+    
+
+   });
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+
+    $('button#fresh-credit-open').removeAttr('style');
+
+    });
+</script>
+
+
+
+

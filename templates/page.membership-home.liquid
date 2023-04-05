@@ -1,0 +1,95 @@
+{%if customer.tags contains 'Active Subscriber'%}
+
+
+<!-- Bold: Memberships (page) -->
+{%comment%}
+{% include 'bold_mem_helper' with 'page' %}
+{%endcomment%}
+<!-- end Bold code -->
+
+
+
+
+{% comment %}
+{% section 'plus-landing-hero-section' %}
+{% section 'plus-landing-menu' %}
+{% endcomment %}
+
+<div class="flex-row-outer-page">
+
+  <div class="flex-col-outer-page-1">
+    {% section 'plus-landing-menu-vertical' %}
+  </div>
+
+  <div class="flex-col-outer-page-2">
+
+    <div class="calendar-wrapper-plus-landing">
+
+      <div class="container-large">
+
+        <div class="calendar-section-heading-wrapper-home">
+          <h3 class="section-heading-plus"><a href="https://www.truffleshufflesf.com/collections/all-cooking-classes">Membership Home</a></h3>
+        </div>
+
+        {%comment%}
+        <div class="account-calendar-key-wrapper">
+          <div class="account-calendar-key-flex-row">
+            <div class="account-calendar-key-icon"></div>
+            <div class="account-calendar-key-text">Ingredient Kit Option Available</div>
+          </div>
+        </div>
+        {%endcomment%}
+
+        <div class="calendar-inner-home flex-center">
+         
+
+          <!-- Alternative with data attributes -->
+          
+          <script src="https://embed.journey.io/journey-lightbox.umd.js" async></script>
+          <button data-journey-url="https://truffleshuffle.journey.io/p/6bca435d2f094eb69bc418ed504b14b4">Show Journey</button>
+
+
+        </div>
+
+      </div> <!-- container-large -->
+
+    </div> <!-- alendar-wrapper-plus-landing -->
+ 
+  </div> <!-- flex-col-outer-page-2 -->
+  
+</div> <!-- flex-row-outer-page -->
+
+
+
+<style type="text/css">
+  #event-calendar-app button.subcribe-to-calendar__inverse[type="button"] {
+    color: #ffffff !important;
+  }
+
+  #event-calendar-app .eca-calendar .fc-view-container span.fc-day-number {
+    color: #000000 !important;
+  }
+
+</style>
+
+{%else%}
+
+<div class="container-large margin-top">
+
+  <div class="calendar-section-heading-wrapper-home">
+    <h3 class="section-heading-plus">Sorry, this page is for members only</h3>
+    <p class="extra-margin-b">This page can only be accessed if you have a current Truffle Shuffle VIP Membership.</p>
+  </div>
+
+
+  <div class="two-btn-wrapper">
+    <div class="hero-col-btn-wrapper-account-plus">
+      <a href="https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions" class="btn-main-plus w-button">ABOUT THE MEMBERSHIP</a>
+      <a href="https://www.truffleshufflesf.com/account/login" class="btn-main-plus fixed-width w-button">Login</a>
+    </div>
+  </div>
+
+
+</div> <!-- container-large -->
+
+{%endif%}

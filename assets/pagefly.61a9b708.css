@@ -1,0 +1,177 @@
+/* PageFly Element Styles */
+					.jCTrmc__parallax { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.jCTrmc { padding: 15px 0px; position: relative; }
+.jCTrmc .sc-hzDEsm { position: relative; }
+.jCTrmc[data-container="true"] .sc-hzDEsm { padding: 0px 15px; width: 100%; margin: auto; }
+.jCTrmc .pf-parallax__img { text-indent: -10000px; position: absolute; object-fit: cover; top: 0px; left: 0px; width: 100%; height: 100%; }
+.bIROef { margin: 0 calc(-1 * var(--pf-s-lg)); }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .bIROef { margin: 0 calc(-1 * var(--pf-s-md)); }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .bIROef { margin: 0 calc(-1 * var(--pf-s-sm)); }
+}
+@media (max-width: 767px) {
+  .bIROef { margin: 0 calc(-1 * var(--pf-s-xs)); }
+}
+.hPSgdS { padding: var(--pf-s-lg); }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .hPSgdS { padding: var(--pf-s-md); }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .hPSgdS { padding: var(--pf-s-sm); }
+}
+@media (max-width: 767px) {
+  .hPSgdS { padding: var(--pf-s-xs); }
+}
+.hJSrYv { position: relative; }
+.lgliwA { position: relative; }
+.hUlMxv > a { color: inherit !important; }
+.hUlMxv > span { font-weight: inherit; text-decoration: inherit; }
+.hUlMxv { word-break: break-word; }
+.hUlMxv.pf-i--left i { margin-right: 0.3em; }
+.hUlMxv.pf-i--right i { margin-left: 0.3em; }
+.hUlMxv.pf-i--top i { margin-bottom: 0.5em; }
+.hUlMxv.pf-i--top > span, .hUlMxv.pf-i--top > a { display: block; }
+.hUlMxv.pf-i--top > span[data-empty][contenteditable] { display: block !important; }
+.hUlMxv [class*="--diamond"] { margin-right: 1em; }
+.ditGEd { display: inline-block; }
+.ditGEd[contenteditable="true"] { user-select: text; }
+.ditGEd { vertical-align: baseline; word-break: break-word; }
+.ditGEd:focus { outline: none; }
+.ditGEd::after { display: inline; }
+.kilsks { display: inline-flex; vertical-align: middle; }
+.kilsks picture { width: 100%; }
+.dSpQIS { position: relative; overflow: hidden; display: inline-flex; -webkit-box-pack: start; justify-content: flex-start; align-items: flex-start; vertical-align: middle; max-width: 100%; }
+.dSpQIS img { display: inline-block; object-fit: cover; max-width: 100%; max-height: 100%; height: auto; text-align: center; width: 100%; vertical-align: middle; position: unset; }
+.iyWsWK > span:last-child { line-height: inherit; display: block; }
+#editor-dnd-wrapper .iyWsWK[class*="dropcap--"]:not(.dropcap--none) > span:last-child[contenteditable] { display: block; }
+#editor-dnd-wrapper .iyWsWK[class*="dropcap--"]:not(.dropcap--none) > span:last-child[contenteditable]:empty::after { display: inline; }
+.iyWsWK[class*="dropcap--"] > span:first-child { display: block; margin-right: 10px; float: left; width: 50px; height: 50px; line-height: 50px; }
+.iyWsWK[class*="dropcap--"]:not(.dropcap--none) > span:first-child { margin-right: 20px; text-align: center; }
+.iyWsWK.dropcap--none > span:first-child { text-align: inherit; border-radius: 0px; line-height: 1 !important; width: auto !important; height: auto !important; background: none !important; }
+.iyWsWK.dropcap--circle > span:first-child { border-radius: 100%; }
+.iyWsWK:not([class*="dropcap--"]) > span { margin-right: 0px !important; }
+.iyWsWK ol, .iyWsWK ul { list-style-position: inside; }
+.iyWsWK blockquote { font-size: inherit; }
+.brvrPb[draggable="true"] .pb-video-wrap { pointer-events: none; overflow: hidden; position: relative; flex: 1 1 0%; }
+.brvrPb[draggable="true"] .pb-video-wrap:not(.video--popup) iframe { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none; }
+					/* PageFly Styles */
+					
+@media all {
+	.__pf .pf-f12c19af {
+		font-family: Oswald;
+		 font-size: 33px;
+		 background-position: 50% 0%;
+		 text-align: center;
+		 color: rgb(219, 205, 112);
+	}
+	.__pf .pf-f97e2d3f {
+		min-height: 1px;
+		 letter-spacing: 0px;
+		 padding-top: 0px;
+		 padding-bottom: 0px;
+		 margin-top: 0px;
+		 margin-bottom: 0px;
+	}
+	.__pf .pf-fe07b987 {
+		padding-top: 0px;
+		 padding-bottom: 0px;
+		 margin-top: 0px;
+		 margin-bottom: 0px;
+	}
+	.__pf .pf-ab44fc6d {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-50f56644 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 padding-bottom: 15px;
+		 background-color: rgb(255, 255, 255);
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-f7c96f7c {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-9b2c8474 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 padding-bottom: 15px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-736877d9 {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-f26aec15 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-09291275 {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-b8fa5562 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 padding-bottom: 15px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-e4cea552 {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-f21cd8e1 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 padding-bottom: 10px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-c414eb5f {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-b58d6192 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-b5f5f697 {
+		text-align: justify;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-38f391e5 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 padding-bottom: 15px;
+		 color: rgb(155, 155, 155);
+	}
+	.__pf .pf-9c98aa96 {
+		text-align: left;
+		 font-family: Oswald;
+		 font-size: 24px;
+	}
+	.__pf .pf-188af0a5 {
+		text-align: justify;
+		 font-family: Lato;
+		 font-size: 16px;
+		 color: rgb(155, 155, 155);
+	}
+}

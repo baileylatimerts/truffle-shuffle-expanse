@@ -1,0 +1,548 @@
+<div id="popup-container" class="popup-box-container">
+  <div id="pop-up-background" class="popup-box-background">
+    <div class="popup-box-inner">
+      <div id="close-pop-up" class="close-pop-up">X</div>
+      <div class="pop-box-title">
+        <h2 class="section-header__title smaller">LET'S GET STARTED! FIRST, DO YOU WANT TO PAY MONTHLY OR ANNUALLY?</h2>
+      </div>
+      <div class="button-container">
+        <div class="pop-box-half">
+          <div class="hero__link">
+              <a href="https://www.truffleshufflesf.com/products/all-access-membership-monthly-box-delivery" class="btn grey pop-up-btn">
+                <div>MONTHLY</div>
+                <p class="paragraph-centered">$129 per month</p>
+              </a>
+          </div>
+        </div>
+        <div class="pop-box-half">
+          <div class="hero__link">
+              <a href="https://www.truffleshufflesf.com/products/vip-box-annual-box-membership" class="btn grey pop-up-btn">
+                <div>ANNUAL (15% SAVINGS!)</div>
+                <p class="paragraph-centered">$1299 ($108 per month)</p>
+              </a>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="section wf-section">
+    <div class="hero-wrapper mobile-column">
+      <div class="inner-hero-left">
+        
+        <h2 class="section-header__title left">Bring your kitchen to life</h2>
+        <p>With our virtual cooking classes and ingredient delivery</p>
+        
+
+          <div id="pop-up-btn" class="hero__link">
+              <a href="#" class="btn grey">
+                GET STARTED
+              </a>
+          </div>
+
+          
+      </div>
+      <div class="inner-hero-right">
+        <div class="text-and-image"></div>
+      </div>
+    </div>
+  </div>
+  <div class="black-section wf-section">
+    <div class="heading-container">
+      <h2 class="white-heading">Why become a VIP Box Member?</h2>
+    </div>
+    <div class="icon-container">
+      <div class="icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/chef-hat-v2_1chef-hat-v2-plus.png?v=1630604519" loading="lazy" alt="" class="icon-img">
+        <div class="icon-heading"><strong>World Class<br>Chefs</strong></div>
+      </div>
+      <div class="icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/box-g-min-sk-theme-update.png?v=1618266394" loading="lazy" alt="" class="icon-img">
+        <div class="icon-heading"><strong>Curated Chef <br>Boxes Delivered Monthly</strong></div>
+      </div>
+      <div class="icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Icon-min-sk-theme-update.png?v=1618268562" loading="lazy" alt="" class="icon-img">
+        <div class="icon-heading"><strong>Interactive Live<br>Cooking Classes</strong></div>
+      </div>
+      <div class="icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/Dish-Icon-min-sk-theme-update.png?v=1618266723" loading="lazy" alt="" class="icon-img">
+        <div class="icon-heading"><strong>Access to <br>1000s of recipes</strong></div>
+      </div>
+      <div class="icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/List-Icon-min-sk-theme-update.png?v=1618266620" loading="lazy" alt="" class="icon-img">
+        <div class="icon-heading"><strong>Order ingredients<br>via instacart (Coming Soon)</strong></div>
+      </div>
+    </div>
+    <div class="button-container">
+
+      <div id="pop-up-btn-2" class="hero__link pop-up-btn">
+        <a href="#" class="btn brown">
+            GET STARTED
+        </a>
+    </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="hero-wrapper mobile-column alt">
+      <div class="inner-hero-left _2">
+        <div class="text-and-image _2"></div>
+      </div>
+      <div class="inner-hero-right">
+        <h2 class="section-header__title left">What is the <br>VIP Box Membership?</h2><br>
+
+        <p>The VIP Box Membership is for anyone who loves food and wants to be able to cook together with their loved ones each month. As a member you will get:</p>
+
+
+        <ul role="list">
+          <li>To choose from one of 6 VIP Classes with an ingredient each month</li>
+          <li>10% Discount on all products and classes</li>
+          <li>Exclusive access to our Culinary Library of all Live and On Demand Classes</li>
+
+        </ul>
+
+        <div class="flex-centered">
+          <p class="paragraph-centered bold">$129 a month <br>OR<br>$1299 ($108 per month)</p>
+          <p class="small-paragraph">Cancel or pause anytime | Featured on Shark Tank</p>
+          <a href="#" id="pop-up-btn-3" class="hollow-btn pop-up-btn">BECOME A MEMBER</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="hero-wrapper">
+      <div class="inner-section">
+        <h2 class="heading-center">Dozens of classes available each MONTH</h2>
+        <h4 class="heading-3-center">Awesome classes designed by our chefs for everything from date night to family time!</h4>
+        <div class="products-container">
+        
+        
+
+
+            {% assign collection_1 = collections['april-experiences'] %}
+		{% if collection_1.products_count > 0 %}
+			<div class="flex-row-collection wrap">
+
+				
+
+
+
+			  {% paginate collection_1.products by 4 %}
+			  
+			  
+			  {% for product in collection_1.products %}
+
+
+
+
+				{% comment %}{% endcomment %}
+				  {%- assign current_variant = product.selected_or_first_available_variant -%}
+				  {%- assign compare_at_price = current_variant.compare_at_price -%}
+				  {%- assign price = current_variant.price -%}
+				  
+				  <div class="flex-col-collection _25">
+					<a href="{{product.url}}" class="flex-col-link-collection w-inline-block">
+					  <div class="flex-col-img-wrapper-collection">
+
+						<img src="{{ product.featured_image | img_url: '800x' }}" class="flex-col-img-collection">
+					  </div>
+					  <div class="flex-col-bottom-wrapper-collection">
+						<div class="flex-col-title-collection">{{product.title}}</div>
+						{% if compare_at_price > price  %}
+						  <div class="flex-col-price-collection"><span style="text-decoration: line-through;">{{ compare_at_price | money }}</span> {{price | money }}</div>
+						{% else %}
+						  <div class="flex-col-price-collection">{{price | money }}</div>
+						{% endif %}
+
+					  </div>
+					  <div class="product-section-btn-wrapper">
+						<a href="{{product.url}}" class="blog-btn-landing w-button">
+						  <div>Shop Now</div>
+						</a>
+					  </div>
+					</a>
+				  </div>
+
+				{% endfor %}
+
+			</div>
+
+		  {% if paginate.pages > 1 %}
+			{% include 'pagination' %}
+		  {% endif %}
+		 
+		  {% endpaginate %} 
+		  
+
+		  {% else %}
+		  <div class="empty-wrapper-collection">
+			<p class="empty-text-collection">No Matching Products</p>
+		  </div>
+  {% endif %}
+        
+        
+        
+        
+        </div>
+        <div class="button-container">
+            <div class="hero__link">
+                <a href="https://www.truffleshufflesf.com/collections/all-cooking-classes" class="btn grey">
+                    VIEW OUR MENUS
+                </a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="photo-backgournd-container">
+      <div class="inner-section photo">
+        <h2 class="heading-center white">DELICIOUS MEALS YOU DESERVE</h2>
+        <h4 class="heading-3-center white">To bring your household together time and time again</h4>
+        <div class="button-container">
+          
+          <div id="pop-up-btn-4" class="hero__link pop-up-btn">
+            <a href="#" class="btn grey">
+              EXPLORE
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="photo-overlay" id="faq-section"></div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="vertical-section-inner">
+
+      <h2 class="heading-center">VIP BOX MEMBERSHIP FAQS</h2>
+      <div class="container-large">
+        <div class="tab-inner-plans-plus">
+          <div class="faq-content-holder-plans-plus">
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">How does Truffle Shuffle’s Membership plan work?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Truffle Shuffle releases a new menu every month of up to 12 cooking class options for you to choose from. The classes include a variety of class options such as</p>
+                    <ul>
+                      <li>Michelin Star Dishes such as Black Truffle Risotto</li>
+                      <li>Baking and Pastry Classes such as Cookies and Eggnog</li>
+                      <li>Classical dishes such as Coq Au Vin</li>
+                      <li>Keto Dishes such as Keto Steak Bearnaise</li>
+                      <li>International Cuisine such as Green Curry</li>
+                      <li>Winemaker Collaborations such as Surf and Turf with Plumpjack Winery</li>
+                      <li>Guest chef dishes such as Ukrainian Dumplings with Chef Anna Voloshyna</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">What is the menu of live classes that Truffle Shuffle offers?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Truffle Shuffle releases a new menu every month of up to 12 cooking class options for you to choose from. The classes include a variety of class options such as </p>
+
+                    <ul>
+                      <li>Michelin Star Dishes such as Black Truffle Risotto</li>
+                      <li>Baking and Pastry Classes such as Cookies and Eggnog</li>
+                      <li>Classical dishes such as Coq Au Vin</li>
+                      <li>Keto Dishes such as Keto Steak Bearnaise</li>
+                      <li>International Cuisine such as Green Curry</li>
+                      <li>Winemaker Collaborations such as Surf and Turf with Plumpjack Winery</li>
+                      <li>Guest chef dishes such as Ukrainian Dumplings with Chef Anna Voloshyna</li>
+                    </ul>
+                    
+                    <p> On the 15th of every month we will drop the classes for the next upcoming month and you will have 15 days to choose your next class!</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">What are the On Demand Classes that you offer?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    
+                 
+
+                    <p>Every single live class we have ever done will be offered as an on demand class. As of today we have 100s of On Demand classes that you will be able to access to level up your skills in the kitchen.</p>
+
+                    <ul>
+<li>How To Make Wagyu Sliders w/ Chef Tyler</li>
+<li>How To Make Sweet Pea Ravioli w/ Chef Tyler</li>
+<li>How To Make Potato and Truffle Dumplings w/ Chef Anna</li>
+<li>How To Make Pie Crust w/ Chef Jeremy</li>
+<li>How To Make Penicillin w/ Somm Kendra</li>
+<li>How To Make NY Strip Steak and Corn w/ Chef Tyler</li>
+<li>How To Make Mole w/ Chef Alejandro</li>
+<li>How To Make Memorial Day BBQ w/ Chef Tyler</li>
+<li>How To Make Margherita Pizza w/ Chef Tucker</li>
+<li>How To Make Maine Lobster Rolls w/ Chefs Jason and Tyler</li>
+<li>How To Make Lamb and Potatoes w/ Chef Tyler</li>
+<li>How To Make Fried Chicken Taco with Chef Rogelio</li>
+<li>How To Make Fresh Pasta Carbonara w/ Chef Jason</li>
+<li>How To Make French Omelette w/ Chef Connie</li>
+<li>And so much more!!</li>
+                    </ul>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">As a member do we get tip and tricks from the chefs? Can we ask them questions?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                  
+
+                    <p>Yes!! You will get access to all of the following tips and tricks plus!! You will be invited to our Chef Forum where you can ask the chefs of Truffle Shuffle questions directly.</p>
+                    <ul>
+<li>Whisking Aioli w/ Chef Tucker</li>
+<li>Use Paper To Measure w/ Chef Jeremy</li>
+<li>Use Jimmies w/ Chef Jeremy</li>
+<li>Toasting Buns w/ Chef Tucker</li>
+<li>Scallion Dip w/ Chef Connie</li>
+<li>Over Your Head w/ Chef Jeremy</li>
+<li>Fish Tips w/ Chef Tucker</li>
+<li>Fish Tip w/ Chef Connie</li>
+<li>Cream In Cinnamon w/ Chef Jeremy</li>
+<li>Chip and Dip w/ Chef Jeremy</li>
+<li>Berries and Cream w/ Chef Jeremy</li>
+<li>Batter Test w/ Chef Jeremy</li>
+<li>Avocado Dice w/ Chef Connie</li>
+<li>Chef Tip| Alcohol for Dish and Chef w/ Chef Connie</li>
+<li>Western Style Knife w/ Chef Alejandro</li>
+<li>Velouté Sauce w/ Chef</li>
+</ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">Do you offer any formatted courses like you would get if you went to culinary school? Or similar to master class?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Yes!!!! We are working on these now. These are our Protege Series Classes that are meant for structured learning.</p> 
+
+                    <p>We will be releasing a new class each month that you will have access to free as a member. </p>
+                    
+                    <p>Below are some of the classes that we have in the works; </p>
+                    
+                    <ul>
+                    <li>Knife Skills and Cooking Basics 101</li>
+                    <li>Mother Sauce Series 101</li>
+                    <li>Fresh Pasta Series 101 </li>
+                    <li>Mixology Series 101</li>
+                    <li>Kids Cooking Series 101</li>
+                    </ul>
+                    
+                    <p>As a member you will be able to vote on what the next series we do is!</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">Can I cancel or pause my subscription?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Yes! You will have full flexibility into managing your subscription. You can pause, skip or even give the subscription to someone else for a month.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">What if I forget to select my box?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>If you forget to select your box then we will be able to select the next option for you from our On Demand Options. When you are onboard to the membership we will ask you a series of questions. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">When does Truffle Shuffle deliver?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>We work to provide you with the freshest ingredients possible. We will ship out your box as close as possible to the date of the live class! If you are planning to do an On Demand Class then we will ship the box by the wednesday of that week you have selected. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">How much does the Truffle Shuffle VIP Box Membership Cost?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>The membership costs $129 a month and this gets one incredible ingredient box a month and access to all of the live and on demand classes happening each month! </p>
+
+                    <p>Plus you will be a part of the inner circle of the chefs and get an added benefit of access to all of the Truffle Shuffle Online CookBook which consists of all of our recipes, tips and culinary courses.</p> 
+                    
+                    <p>As well as access to our online community where you can communicate with other Truffle Shufflers and the chefs!</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">Why would I choose to be a VIP Box Member?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Truffle Shuffle is America’s #1 Online Cooking Class, Offering a wide array of online classes with interactive instruction from the chef. Featured on Shark Tank, O Magazine, The Kelly Clarkson Show and Forbes as the number one way to learn how to cook! Not just online but anywhere. </p>
+
+                    <p>We believe that food is love and that if you are able to learn how to cook just a little bit better than we believe that has a profound impact on your life. When you become a member you get access to all of the content, recipes and live experiences that we have available at Truffle Shuffle. We know you are busy so we have worked hard to build the distribution to make it possible for you to receive all of the ingredients that you need for your experience plus the ability to add in some extra goodies that are only available to you as a member!</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">Who is this VIP Box Membership For?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>This membership is not for anyone. It is only for people that truly, truly love food and are struggling to find a way to find quality time with their loved ones. What Truffle Shuffle does is more than just provide a cooking class and all of the ingredients it provides mandatory quality time each month with yourself or your loved ones. So this membership is for the person that loves food and wants to find a way to have more quality time each month. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">Can I do more than one class a month?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>Yes! As a member you will get access to all of the live classes happening each month and will get 10% off the ingredient kit that you order.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-content-block-plans-plus">
+              <div class="faq-heading-wrapper-plans-plus" data-ix="faq-expand-plus">
+                <h5 class="faq-heading-plans-plus">I am already a member from your pre-sales earlier this year, is this the same or different?</h5>
+                <div class="faq-img-wrapper-plans-plus"><img src="images/expand_1expand.png" loading="lazy" alt="" class="faq-heading-img-plans-plus"></div>
+              </div>
+              <div class="faq-expand-wrapper-plans-plus">
+                <div class="faq-expand-inner-plans-plus">
+                  <div class="faq-expand-rte-plans-plus w-richtext">
+                    <p>If you are already a member then… Thank you so much for your continued support!! Your Pre Sale Commitment to support Truffle Shuffle has been incredible and we would not be here without you. 
+                  </p>
+                    <p>When we first started building the membership program we started out by believing that the way we could offer more value for our guests and members was to build a marketplace that allows for chefs like Tyler and I to launch and scale their personal brands. After testing this theory for months and getting feedback from our members while in Beta. We have come to the conclusion that Truffle Shuffle can offer the most value to our guests by having tight controls over each aspect of the experience. We have learned that chefs provide the same level of service and quality that you are looking for. They need to be vetted and trained first. 
+                  </p>
+                    <p>So in order to keep our commitment to quality and consistency we have decided to move from a marketplace model with credits where chefs teach on Truffle Shuffle to a monthly service model built under a great brand where you learn with Truffle Shuffle. 
+                  </p>
+                    <p>This will allow for a level of simplification that makes the logistics and fulfillment of Truffle Shuffle even greater and will allow us to offer a better, more consistent service to you. With this model we will be able to grow the members to a point where we can afford to open up a second distribution facility which will allow us to increase the overall value that we are able to provide you. I would like to personally onboard you to Truffle Shuffle’s monthly membership plan if you would like to. If not then we are able to provide you with the total credit value plus 10% in your account. 
+                  </p>
+                    <p>You may set up a meeting with me directly <a href="https://meetings.hubspot.com/jason1215/membership-transition-onboarding">here</a>. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        $(".faq-content-block-plans-plus").on('click', 
+        function() {
+
+        
+
+          if ($(this).children(".faq-expand-wrapper-plans-plus").hasClass('show')==true)
+          {
+            $(this).children(".faq-expand-wrapper-plans-plus").removeClass('show');
+           
+          } else {
+            $(this).children(".faq-expand-wrapper-plans-plus").addClass('show');
+          }
+
+
+          
+        }
+      );
+
+        
+    });
+</script>
+
+
+<script>
+  document.getElementById("pop-up-btn").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.add("show");
+  });
+  document.getElementById("pop-up-btn-2").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.add("show");
+  });
+  document.getElementById("pop-up-btn-3").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.add("show");
+  });
+  document.getElementById("pop-up-btn-4").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.add("show");
+  });
+  
+  document.getElementById("close-pop-up").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.remove("show");
+  });
+
+  document.getElementById("pop-up-background").addEventListener("click", function(){
+    document.getElementById("popup-container").classList.remove("show");
+  });
+</script>

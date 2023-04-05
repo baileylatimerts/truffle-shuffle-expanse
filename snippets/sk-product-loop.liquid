@@ -1,0 +1,448 @@
+{% assign jc_product_tag = '' %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign compare_at_price = current_variant.compare_at_price -%}
+{%- assign price = current_variant.price -%}
+
+{% assign chef_image = '' %}
+{% assign chef_name = '' %}
+
+{% assign hover_image = '' %}
+
+{% if product.images.size > 1 %}
+  {% assign hover_image = product.images[1] %}
+{% endif %}
+
+{% comment %}
+  {% for tag in product.tags %}
+
+    {% if tag == "Truffle Shuffle" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Truffle-New-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Truffle Shuffle' %}
+      {% elsif tag == "Chef Joe Sasto" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-joe-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Joe Sasto' %}
+      {% elsif tag == "Chef Alejandro Toscano" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Alejandro-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Alejandro Toscano' %}
+      {% elsif tag == "Chef Connie McGuire" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-connie-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Connie McGuire' %}
+      {% elsif tag == "Chef Tucker Ricchio" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-tucker-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Tucker Ricchio' %}
+      {% elsif tag == "Chef Rogelio Garcia" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Rogelio-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Rogelio Garcia' %}
+      {% elsif tag == "Somm Sarah" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Sarah-new-headshot-final-min.jpg' %}
+        {% assign chef_name = "Somm Sarah" %}
+      {% elsif tag == "Chef Darryl Bell" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Darryl-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Darryl Bell' %}
+      {% elsif tag == "Chef Jackson Yu" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-Jackson-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Jackson Yu' %}
+      {% elsif tag == "Chef Ian Rosenstrauch" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-ian-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Ian Rosenstrauch' %}
+      {% elsif tag == "Chef Kelsey Barnard" %}
+        {% assign chef_image = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Chef-kelsey-new-headshot-final-min.jpg' %}
+        {% assign chef_name = 'Chef Kelsey Barnard' %}
+    {% endif %}
+
+  {% endfor %}
+{% endcomment %}
+
+{% comment %}
+  260391960599 - on demand
+  159801835543 - live cooking experiences
+  159801802775 - small batch
+{% endcomment %}
+
+{% assign jc_is_small_batch = false %}
+
+{% assign is_live_experience = false %}
+{% assign review_icon = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/like-min-plus.png' %}
+{% assign review_icon_alt = 'Thumbs Up' %}
+
+{% for collection in product.collections %}
+  {% if collection.id == 260391960599 %}
+    {% assign jc_product_tag = 'On-Demand' %}
+    {% assign is_on_demand = true %}
+  {% endif %}
+
+  {% if collection.id == 159801835543 %}
+    {% assign jc_product_tag = 'Live' %}
+    {% assign is_live_experience = true %}
+    {% assign review_icon = '//cdn.shopify.com/s/files/1/0259/6510/1090/files/Type-Icon-min.png' %}
+    {% assign review_icon_alt = 'Type' %}
+  {% endif %}
+
+  {% if collection.id == 159801802775 %}
+    {% assign jc_is_small_batch = true %}
+  {% endif %}
+{% endfor %}
+
+{% if hide_product_url == true %}
+  {% assign product_url = '#' %}
+{% else %}
+  {% if custom_url == blank %}
+    {% assign product_url = product.url %}
+  {% else %}
+    {% assign product_url = custom_url %}
+  {% endif %}
+{% endif %}
+
+{% if new_tab == true %}
+  {% assign jc_new_tab = 'target="blank"' %}
+{% else %}
+  {% assign jc_new_tab = '' %}
+{% endif %}
+
+{% assign review_url = product.url | append: '#reviews' %}
+
+{% assign reviews_count = product.metafields.reviews.rating_count %}
+{% assign reviews_rating = product.metafields.reviews.rating %}
+
+{% assign meta_date_time = product.metafields.event_fields.event_date %}
+{% assign experience_type = product.metafields.product_info.experience_type %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calendar-list-event uuid-210987 ecaRepeatId-1">
+  <style>
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event {
+      color: #000000 !important;
+      background: #ffffff !important;
+      border-top: 1px solid #000000 !important;
+      border-left: 1px solid #000000 !important;
+      border-right: 1px solid #000000 !important;
+      border-radius: 3px !important;
+      margin-bottom: 10px !important;
+      border-bottom: 1px solid #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event:first-child {
+      border-radius: 3px !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event:last-child {
+      border-radius: 3px !important;
+      margin-bottom: 0 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+      #event-calendar-app
+      .calendar-list-event__short-description,
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__properties,
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__time,
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+      #event-calendar-app
+      .calendar-list-event__location-desc
+      a {
+      color: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+      #event-calendar-app
+      .calendar-list-event__location-desc
+      svg {
+      fill: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+      #event-calendar-app
+      .calendar-list-event__availability
+      svg {
+      fill: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__featured {
+      color: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__buy-tickets {
+      background: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__image {
+      background: #ffffff !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__availability {
+      color: #000000 !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__header:hover {
+      background: #ffffff !important;
+    }
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3'] #event-calendar-app .calendar-list-event__color-210987 {
+      background: #000000 !important;
+    }
+
+    div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+      #event-calendar-app
+      .calendar-list-event__color2-210987 {
+      background: #000000 !important;
+    }
+  </style>
+
+  <div class="calendar-list-event__header calendar-list-event__header--has-ticket clickable">
+    <div class="calendar-list-event__color2 calendar-list-event__color2-210987"></div>
+    <div class="calendar-list-event__color calendar-list-event__color-210987"></div>
+    <div class="calendar-list-event__date">
+      <div class="calendar-list-event__date__from">
+        <div class="calendar-list-event__date__day">{{product.metafields.product_info.date_and_time}}</div>
+        
+      </div>
+    </div>
+    <div class="calendar-list-event__details calendar-list-event__details--with-thumbnail">
+      <img
+        class="calendar-list-event__image"
+        src="{{ product.featured_image | img_url: '500x' }}"
+      >
+      <div class="calendar-list-event__content">
+        <div class="calendar-list-event__name">{{ product.title }}</div>
+        <div class="calendar-list-event__short-description">With {{ product.vendor }}</div>
+        <div class="calendar-list-event__properties">
+          <span class="calendar-list-event__time eca-list-event-time">
+            <style>
+              div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+                #event-calendar-app
+                .calendar-list-event__time.eca-list-event-time,
+              div[data-widgetuuid='c5d4c592-0894-44ec-9a0f-723348b440e3']
+                #event-calendar-app
+                .calendar-list-event__time.eca-list-event-time
+                svg {
+                color: #000000 !important;
+                fill: #000000 !important;
+              }
+            </style>
+
+            <div class="eca-flex eca-flex__center">
+              <svg viewBox="0 0 512 512" class="s-padding s12">
+                <title>Clock</title><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+              </svg>
+              <span>{{ meta_date_time }}</span>
+            </div>
+          </span>
+          <div class="calendar-list-event__tickets-section calendar-list-event__tickets-section--bottom">
+            <div class="calendar-list-event__tickets-container calendar-list-event__tickets-container--tickets-link">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calendar-list-event__tickets-section calendar-list-event__tickets-section--side">
+      <div class="calendar-list-event__tickets-container calendar-list-event__tickets-container--tickets-link">
+
+        <a
+          target="_blank"
+          class="ticket-link-button"
+          href="{{product.metafields.product_info.class_details}}"
+        >
+          <div class="eca-flex eca-flex__center eca-flex__justify-center">
+            <span class="ticket-link-button__text">CLASS DETAILS</span>
+          </div>
+        </a>
+
+        {%- comment -%}
+          
+          <a
+            target="_blank"
+            class="ticket-link-button"
+            href="{{product.metafields.product_info.live_class_link}}"
+          >
+            <div class="eca-flex eca-flex__center eca-flex__justify-center">
+              <span class="ticket-link-button__text">JOIN LIVE CLASS</span>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            class="ticket-link-button"
+            href="{{product.metafields.product_info.ondemand_class_link}}"
+          >
+            <div class="eca-flex eca-flex__center eca-flex__justify-center">
+              <span class="ticket-link-button__text">ON-DEMAND CLASS</span>
+            </div>
+          </a>
+        {%- endcomment -%}
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% comment -%}
+
+
+<div class="product-flex-col-plus">
+  <div class="product-flex-col-inner-plus">
+    <div
+      class="product-flex-col-img-block-plus"
+      {% if product.featured_image %}
+        style="background-image: url({{ product.featured_image | img_url: '1000x' }});"
+      {% endif %}
+    >
+      {% unless jc_product_tag == blank %}
+        <div class="product-flex-col-tag-plus">{{ jc_product_tag }}</div>
+      {% endunless %}
+      <div class="product-flex-col-like-link-plus w-inline-block">
+        {%- comment -%}
+          {% render 'ZooomyListWishlistColl', product: product %}
+        {%- endcomment -%}
+      </div>
+
+      <a
+        href="{{product_url}}"
+        class="product-flex-col-chef-img-plus"
+        {% unless hover_image == blank %}
+          style="background-image:url('{{ hover_image | img_url: '800x' }}');background-color: rgba(0, 0, 0, 0.6);"
+        {% endunless %}
+        {{ jc_new_tab }}
+      ></a>
+    </div>
+
+    {% unless meta_date_time == blank %}
+      <div class="product-flex-col-date-section-plus">
+        <a href="{{product_url}}">{{ meta_date_time }}</a>
+      </div>
+    {% endunless %}
+
+    <div class="product-flex-col-bottom-wrapper-plus">
+      <div class="product-flex-col-heading-wrapper-plus">
+        <div class="product-flex-col-heading-plus">
+          <a href="{{product_url}}" class="product-flex-col-heading-link-plus" {{ jc_new_tab }}>{{ product.title }}</a>
+        </div>
+        <div class="product-flex-col-sub-heading-plus">with {{ product.vendor }}</div>
+
+        {%- comment -%}
+          {% unless jc_is_small_batch == true %}
+            {% unless chef_name == blank %}
+            {% endunless %}
+          {% endunless %}
+        {%- endcomment -%}
+      </div>
+
+      <div class="product-flex-col-meta-section-plus">
+        <div class="product-flex-col-meta-row-plus">
+          <a
+            href="{{review_url}}"
+            class="product-flex-col-meta-link-plus w-inline-block {% if hide_price == true %}product-flex-col-meta-link-plus-full-mobile{% endif %}"
+            ><img src="{{review_icon}}" loading="lazy" alt="{{review_icon_alt}}" class="product-flex-col-meta-img-plus">
+
+            {% if is_live_experience == true %}
+              {{ experience_type }}
+
+            {% else %}
+              {% if custom_review == true %}
+                <div>Leave a Review</div>
+              {% else %}
+                {% if reviews_count == blank %}
+                  <div>No reviews</div>
+                {% else %}
+                  <div>{{ reviews_rating.value }} ({{ reviews_count }})</div>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          </a>
+          {% unless hide_price == true %}
+            <a
+              href="#"
+              class="product-flex-col-meta-link-plus {% if is_on_demand == true %}product-flex-col-meta-link-plus-first{% endif %} w-inline-block"
+              ><img
+                src="//cdn.shopify.com/s/files/1/0259/6510/1090/files/dollar-plus.png"
+                loading="lazy"
+                alt="Dollar sign icon"
+                class="product-flex-col-meta-img-plus"
+              >
+              {% if compare_at_price > price %}
+                <div>
+                  <span style="text-decoration: line-through">{{ compare_at_price | money }}</span>
+                  <span>{{ price | money }}</span>
+                </div>
+              {% else %}
+                <div>{{ price | money }}</div>
+              {% endif %}
+            </a>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+
+    {% unless hide_product_form == true %}
+      {% form 'product', product %}
+        {% assign is_available = product.available %}
+
+        {% if is_available == true %}
+          {% assign cart_btn_text = 'Add To Cart' %}
+          {% assign cart_disabled = '' %}
+        {% else %}
+          {% assign cart_btn_text = 'Sold Out' %}
+          {% assign cart_disabled = 'disabled="disabled"' %}
+        {% endif %}
+
+        <input
+          type="number"
+          class="form-quantity-input-product w-input"
+          maxlength="256"
+          name="quantity"
+          value="1"
+          min="1"
+          pattern="[0-9]*"
+          id="Quantity"
+          required=""
+          style="display: none;"
+        >
+        <select name="id" class="jc-product-input-hide" style="display: none;">
+          {% for variant in product.variants %}
+            <option
+              {% if variant == product.selected_or_first_available_variant %}
+                selected="selected"
+              {% endif %}
+              value="{{ variant.id }}"
+            >
+              {{ variant.title }} - {{ variant.price | money }}
+            </option>
+          {% endfor %}
+        </select>
+
+        <div class="product-flex-col-btn-wrapper-plus">
+          <button class="product-flex-col-btn-plus w-inline-block" type="submit" {{ cart_disabled }}>
+            <span class="btn-flex-col-text"
+              ><span class="flex-col-btn-price-mobile">{{ price | money }} - </span>{{ cart_btn_text -}}
+            </span>
+          </button>
+          {% comment %}
+            `
+            <input class="product-flex-col-btn-plus w-inline-block" type="submit" value="{{cart_btn_text}}" {{cart_disabled}} />
+          {% endcomment %}
+        </div>
+      {% endform %}
+    {% endunless %}
+
+    {% if on_demand_btn == true %}
+      <div class="product-flex-col-btn-wrapper-plus product-btn-wrapper-private-plus">
+        <a href="{{product.url}}" class="product-flex-col-btn-plus w-inline-block events-scroll-form" target="_blank"
+          >View</a
+        >
+      </div>
+    {% endif %}
+  </div>
+</div>
+{%- endcomment -%}

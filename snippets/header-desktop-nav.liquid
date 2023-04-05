@@ -1,0 +1,203 @@
+{%- liquid
+  unless limit
+    assign limit = main_menu.links.size
+  endunless
+  unless offset
+    assign offset = 0
+  endunless
+-%}
+
+<ul class="site-nav site-navigation site-navigation--{{ nav_position }} small--hide" role="navigation">
+  {%- for link in main_menu.links limit: limit offset: offset -%}
+    {%- liquid
+      assign has_dropdown = false
+      assign is_megamenu = false
+      if link.levels > 0
+        assign has_dropdown = true
+        if link.levels > 1
+          assign is_megamenu = true
+        endif
+      endif
+
+      assign isCollection = false
+      if show_mega_products
+        if is_megamenu and link.url contains routes.collections_url
+          assign collection_handle = link.url | remove: routes.collections_url | remove: '/'
+          assign collection_drop = collections[collection_handle ]
+          assign isCollection = true
+        endif
+      endif
+    -%}
+
+    <li
+      class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}"
+      {% if has_dropdown %}aria-haspopup="true"{% endif %}>
+
+      <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+        {{ link.title }}
+      </a>
+      {%- if is_megamenu -%}
+        {%- assign previous_column_type = '' -%}
+        <div class="site-nav__dropdown megamenu text-left">
+          <div class="page-width">
+            <div class="site-nav__dropdown-animate megamenu__wrapper">
+              <div class="megamenu__cols">
+                <div class="megamenu__col">
+                  {%- for childlink in link.links -%}
+                    {%- liquid
+                      assign create_new_column = false
+
+                      if childlink.levels > 0 and forloop.index != 1
+                        assign create_new_column = true
+                      endif
+
+                      if childlink.levels == 0 and previous_column_type == 'full'
+                        assign create_new_column = true
+                      endif
+                    -%}
+
+                    {%- if create_new_column -%}
+                      </div><div class="megamenu__col">
+                    {%- endif -%}
+
+                    <div class="megamenu__col-title">
+                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
+                    </div>
+
+                    {%- liquid
+                      if childlink.levels > 0
+                        assign previous_column_type = 'full'
+                      else
+                        assign previous_column_type = 'single'
+                      endif
+                    -%}
+
+                    {%- for grandchildlink in childlink.links -%}
+                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                        {{grandchildlink.title}}
+                      </a>
+                    {%- endfor -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+              {%- if isCollection -%}
+
+
+
+
+
+
+
+
+
+                <div class="megamenu__featured">
+                  <div class="product-grid"><div class="grid-item grid-product " data-product-handle="i-love-food-t-shirts" data-product-id="6782143660055">
+                    <div class="grid-item__content"><div class="grid-product__actions"><button class="btn btn--circle btn--icon quick-product__btn js-modal-open-quick-modal-6782143660055 small--hide" title="Quick shop" tabindex="-1" data-handle="i-love-food-t-shirts" aria-expanded="false">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
+                                <span class="icon__fallback-text">Quick shop</span>
+                              </button>
+                  <button type="button" class="text-link quick-add-btn js-quick-add-form js-modal-open-quick-add" title="Add to cart" tabindex="-1" aria-expanded="false">
+                                  <span class="btn btn--circle btn--icon">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64"><path class="cls-1" d="M32 9v46m23-23H9"></path></svg>
+                                    <span class="icon__fallback-text">Add to cart</span>
+                                  </span>
+                                </button></div><a href="https://www.truffleshufflesf.com/products/black-truffle-carpaccio-2-82oz?selling_plan=739246103" class="grid-item__link">
+                        <div class="grid-product__image-wrap">
+                          <div class="grid-product__tags"></div><div class="grid__image-ratio grid__image-ratio--square">
+                              <img class="lazyautosizes lazyloaded" data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="https://cdn.shopify.com/s/files/1/0259/6510/1090/products/TruffleCarpaccio_900x.jpg?v=1669235953 160w, https://cdn.shopify.com/s/files/1/0259/6510/1090/products/TruffleCarpaccio_900x.jpg?v=1669235953" sizes="248px" srcset="https://cdn.shopify.com/s/files/1/0259/6510/1090/products/TruffleCarpaccio_900x.jpg?v=1669235953">
+                              <noscript>
+                                <img class="grid-product__image lazyloaded"
+                                  src="https://cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618"
+                                  alt="">
+                              </noscript>
+                            </div><div class="grid-product__secondary-image small--hide"><img class="lazyautosizes lazyloaded" data-widths="[360, 540, 720, 1000]" data-aspectratio="1.0" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 360w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 540w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 720w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 1000w" sizes="250px" srcset="//cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 360w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 540w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 720w, //cdn.shopify.com/s/files/1/0259/6510/1090/products/Untitleddesign-2022-04-25T153710.672_900x.jpg?v=1669234618 1000w">
+                            </div></div>
+
+                        <div class="grid-item__meta">
+                          <div class="grid-item__meta-main"><div class="grid-product__title">BUY ONE GET ONE FREE! STOCKING STUFFER SPECIAL: TRUFFLE CARPACCIO</div>
+                  <div style="display: none;" class="jdgm-widget jdgm-preview-badge jdgm-preview-badge--with-link jdgm--done-setup" data-id="6782143660055" data-template="product" data-auto-install="false">
+                    
+                  <div class="jdgm-prev-badge jdgm--js" data-average-rating="0.00" data-number-of-reviews="0">
+                    <span class="jdgm-prev-badge__stars" data-score="0.00"><span class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span></span>
+                    <span class="jdgm-prev-badge__text">No reviews</span>
+                  </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="grid-product__vendor">Truffle Shuffle</div></div>
+                          <div class="grid-item__meta-secondary">
+                            <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">$20<sup>00</sup></span>
+                  <span class="visually-hidden">$49.99</span>
+                  </span></div><span class="shopify-product-reviews-badge" data-id="6782143660055"></span></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  </div>
+                </div>
+
+
+
+
+{%comment%}
+                <div class="megamenu__featured">
+                  <div class="product-grid">
+                    {%- liquid
+                      assign mega_product = collection_drop.products.first
+                      render 'product-grid-item', product: mega_product
+
+                      if settings.quick_shop_enable
+                        render 'quick-shop-modal', product: mega_product
+                      endif
+                    -%}
+                  </div>
+                </div>
+{%endcomment%}
+
+
+
+
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- elsif has_dropdown -%}
+        <div class="site-nav__dropdown">
+          <ul class="site-nav__dropdown-animate site-nav__dropdown-list text-left">
+            {%- for childlink in link.links -%}
+              {%- liquid
+                assign has_sub_dropdown = false
+                if childlink.levels > 0
+                  assign has_sub_dropdown = true
+                endif
+              -%}
+
+              <li class="{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+                <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ childlink.title | escape }}
+                  {%- if has_sub_dropdown -%}
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                  {%- endif -%}
+                </a>
+                {%- if has_sub_dropdown -%}
+                  <ul class="site-nav__deep-dropdown">
+                    {%- for grandchildlink in childlink.links -%}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>

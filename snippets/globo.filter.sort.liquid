@@ -1,0 +1,885 @@
+{% raw %}
+{% assign root_url = {% endraw %}"{%- if routes.root_url != "/" -%}{{ routes.root_url }}{%- endif -%}"{% raw %} %}
+{% assign page = {% endraw %}"{{ request.page_type }}"{% raw %} %}
+<div id="gf-controls-container">
+    {% if page != 'search' %}
+  <form class="gf-controls-search-form">
+    <input value="{{terms | escape}}" onkeyup="this.setAttribute('value', this.value); searchProducts(this.value);" name="q" placeholder="{{translation.product.search | default: "Search products"}}" aria-label="{{translation.product.search | default: "Search products"}}" autocomplete="off" class="gf-controls-search-input"/>
+    <button onclick="clearSearchProducts()" type="button" class="gf-controls-clear-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.414 10l6.293-6.293a1 1 0 10-1.414-1.414L10 8.586 3.707 2.293a1 1 0 00-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 101.414 1.414L10 11.414l6.293 6.293A.998.998 0 0018 17a.999.999 0 00-.293-.707L11.414 10z" fill="#5C5F62"/></svg>
+    </button>
+    <button type="button" class="gf-controls-search-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2 8c0-3.309 2.691-6 6-6s6 2.691 6 6-2.691 6-6 6-6-2.691-6-6zm17.707 10.293l-5.395-5.396A7.946 7.946 0 0016 8c0-4.411-3.589-8-8-8S0 3.589 0 8s3.589 8 8 8a7.954 7.954 0 004.897-1.688l5.396 5.395A.998.998 0 0020 19a1 1 0 00-.293-.707z" fill="#3d4246"/></svg>
+    </button>
+  </form>
+  {% endif %}
+    {% if pagination.total > 0 %}
+  <div class="gf-actions">
+    <div class="gf-filter-trigger">
+      <div class="gf-refine-toggle-mobile" tabindex="0">
+        <span onclick="globofilter.toggleCanvas()"><i class="fa fa-tasks" aria-hidden="true"></i> {{translation.filter.filter_by | default: "Filter by"}}</span>
+      </div>
+    </div>
+
+    <span class="gf-summary">
+          </span>
+
+    <div class="gf-filter-selection">
+
+                        <div class="sort-by limit-by hidden-xs">
+        <label for="setLimit">{{translation.product.limit | default: "Show"}}</label>
+        <select id="setLimit" class="sortby-select" onchange="setLimit(this.value); return false;">
+          <option selected value="12">12</option><option  value="24">24</option><option  value="48">48</option>        </select>
+      </div>
+            
+            {% assign relevance = '' %}
+      {% endraw %}{% if request.page_type == 'search' %}{% raw %}
+      {% assign relevance = 'relevance,' %}
+      {% endraw %}{% endif %}{% raw %}
+      
+      {% assign available_sort = relevance | append: 'featured,best-selling,price-ascending,price-descending,sale-descending,' | append: sort_by | append: ',{% endraw %}{{collection.default_sort_by}}{% raw %}' | replace: "featured", "manual" | split: "," | uniq %}
+      {% capture sort_by_text %}
+        {% if sort_by =='best-selling' %}
+          {{translation.sort.best_selling | default: "Best Selling"}}
+        {% elsif sort_by == 'manual' %}
+          {{translation.sort.manually | default: "Featured"}}
+        {% elsif sort_by == 'relevance' %}
+          {{translation.sort.relevance | default: "Relevance"}}
+        {% elsif sort_by == 'featured' %}
+          {{translation.sort.manually | default: "Featured"}}
+        {% elsif sort_by == 'stock-descending' %}
+          {{translation.sort.availability_in_stock_first | default: "Availability"}}
+        {% elsif sort_by == 'title-ascending' %}
+          {{translation.sort.alphabetically_a_z | default: "Alphabetically, A-Z"}}
+        {% elsif sort_by == 'title-descending' %}
+          {{translation.sort.alphabetically_z_a | default: "Alphabetically, Z-A"}}
+        {% elsif sort_by == 'price-ascending' %}
+          {{translation.sort.price_low_to_high | default: "Price, low to high"}}
+        {% elsif sort_by == 'price-descending' %}
+          {{translation.sort.price_high_to_low | default: "Price, high to low"}}
+        {% elsif sort_by == 'created-descending' %}
+          {{translation.sort.date_new_to_old | default: "Date, new to old"}}
+        {% elsif sort_by == 'created-ascending' %}
+          {{translation.sort.date_old_to_new | default: "Date, old to new"}}
+        {% elsif sort_by == 'sale-descending' %}
+          {{translation.sort.sale_off | default: "% Sale off"}}
+                {% elsif sort_by == 'mf-on_demand-faq_answer_5-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_5 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_answer_5-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_5 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_question_5-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_5 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_question_5-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_5 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_answer_4-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_4 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_answer_4-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_4 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_question_4-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_4 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_question_4-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_4 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_answer_3-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_3 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_answer_3-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_3 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_question_3-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_3 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_question_3-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_3 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_answer_2-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_2 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_answer_2-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_2 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_question_2-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_2 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_question_2-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_2 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_answer_1-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_1 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_answer_1-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_answer_1 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-faq_question_1-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_1 ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-faq_question_1-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Faq_question_1 descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_contact_link-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_contact_link ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_contact_link-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_contact_link descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_contact_text-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_contact_text ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_contact_text-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_contact_text descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_bio-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_bio ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_bio-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_bio descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_title-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_title ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_title-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_title descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-host_section_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_section_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-host_section_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Host_section_heading descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-wine_section_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-wine_section_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-wine_section_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-wine_section_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_heading descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-wine_section_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-wine_section_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Wine_section_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_5_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_5_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_5_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_5_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_5_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_5_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_4_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_4_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_4_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_4_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_4_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_4_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_3_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_3_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_3_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_3_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_3_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_3_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_2_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_2_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_2_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_2_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_2_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_2_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_1_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_1_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_1_image-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_image ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_1_image-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_image descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_1_name-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_name ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_1_name-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_name descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-below_hero_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Below_hero_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-below_hero_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Below_hero_heading descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-main_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Main_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-main_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Main_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-top_sub_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Top_sub_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-top_sub_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Top_sub_heading descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-top_main_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Top_main_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-top_main_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Top_main_heading descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-page_url-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Page_url ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-page_url-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Page_url descending{% endif %}
+                {% elsif sort_by == 'mf-reviews-rating-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Reviews Rating ascending{% endif %}
+        {% elsif sort_by == 'mf-reviews-rating-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Reviews Rating descending{% endif %}
+                {% elsif sort_by == 'mf-reviews-rating_count-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Reviews Rating_count ascending{% endif %}
+        {% elsif sort_by == 'mf-reviews-rating_count-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Reviews Rating_count descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-menu_description-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Menu_description ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-menu_description-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Menu_description descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_5_content-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_content ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_5_content-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_5_content descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_1_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_1_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_1_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_2_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_2_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_2_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_3_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_3_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_3_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-tab_4_vid_id-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_vid_id ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-tab_4_vid_id-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Tab_4_vid_id descending{% endif %}
+                {% elsif sort_by == 'mf-on_demand-below_hero_sub_heading-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Below_hero_sub_heading ascending{% endif %}
+        {% elsif sort_by == 'mf-on_demand-below_hero_sub_heading-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}On_demand Below_hero_sub_heading descending{% endif %}
+                {% elsif sort_by == 'mf-age_verification-product-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Age_verification Product ascending{% endif %}
+        {% elsif sort_by == 'mf-age_verification-product-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Age_verification Product descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-date_and_time-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Date_and_time ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-date_and_time-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Date_and_time descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-experience_type-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Experience_type ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-experience_type-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Experience_type descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-serving_info-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Serving_info ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-serving_info-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Serving_info descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-class_length-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Class_length ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-class_length-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Class_length descending{% endif %}
+                {% elsif sort_by == 'mf-product_info-cocktail_mixer-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Cocktail_mixer ascending{% endif %}
+        {% elsif sort_by == 'mf-product_info-cocktail_mixer-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Product_info Cocktail_mixer descending{% endif %}
+                {% elsif sort_by == 'mf-event_fields-event_date-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Event_fields Event_date ascending{% endif %}
+        {% elsif sort_by == 'mf-event_fields-event_date-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Event_fields Event_date descending{% endif %}
+                {% elsif sort_by == 'mf-ecomposer-countdown-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Ecomposer Countdown ascending{% endif %}
+        {% elsif sort_by == 'mf-ecomposer-countdown-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Ecomposer Countdown descending{% endif %}
+                {% elsif sort_by == 'mf-ecomposer-countdown_from-ascending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Ecomposer Countdown_from ascending{% endif %}
+        {% elsif sort_by == 'mf-ecomposer-countdown_from-descending' %}
+          {% if translation.sort[sort_by] %}{{translation.sort[sort_by]}}{% else %}Ecomposer Countdown_from descending{% endif %}
+                {% endif %}
+      {% endcapture %}
+      {% comment %}
+      <div class="sort-by">
+        <label for="changeSortBy" class="sort-by-toggle" role="button" tabindex="0" aria-expanded="false">{{translation.sort.sort_by | default: "Sort by"}}</label>
+        <select id="changeSortBy" class="sortby-select" onchange="changeSortBy(this.value); return false;">
+          {% if available_sort contains 'best-selling' %}<option {% if sort_by == 'best-selling' %} selected{% endif %} value="best-selling">{{translation.sort.best_selling | default: "Best Selling"}}</option>{% endif %}
+          {% if available_sort contains 'featured' or available_sort contains 'manual' %}<option {% if sort_by == 'manual' %} selected{% endif %} value="manual">{{translation.sort.manually | default: "Featured"}}</option>{% endif %}
+          {% if available_sort contains 'stock-descending' %}<option {% if sort_by == 'stock-descending' %} selected{% endif %} value="stock-descending">{{translation.sort.availability_in_stock_first | default: "Availability"}}</option>{% endif %}
+          {% if available_sort contains 'relevance' %}<option {% if sort_by == 'relevance' %} selected{% endif %} value="relevance">{{translation.sort.relevance | default: "Relevance"}}</option>{% endif %}
+          {% if available_sort contains 'title-ascending' %}<option {% if sort_by == 'title-ascending' %} selected{% endif %} value="title-ascending">{{translation.sort.alphabetically_a_z | default: "Alphabetically, A-Z"}}</option>{% endif %}
+          {% if available_sort contains 'title-descending' %}<option {% if sort_by == 'title-descending' %} selected{% endif %} value="title-descending">{{translation.sort.alphabetically_z_a | default: "Alphabetically, Z-A"}}</option>{% endif %}
+          {% if available_sort contains 'price-ascending' %}<option {% if sort_by == 'price-ascending' %} selected{% endif %} value="price-ascending">{{translation.sort.price_low_to_high | default: "Price, low to high"}}</option>{% endif %}
+          {% if available_sort contains 'price-descending' %}<option {% if sort_by == 'price-descending' %} selected{% endif %} value="price-descending">{{translation.sort.price_high_to_low | default: "Price, high to low"}}</option>{% endif %}
+          {% if available_sort contains 'created-descending' %}<option {% if sort_by == 'created-descending' %} selected{% endif %} value="created-descending">{{translation.sort.date_new_to_old | default: "Date, new to old"}}</option>{% endif %}
+          {% if available_sort contains 'created-ascending' %}<option {% if sort_by == 'created-ascending' %} selected{% endif %} value="created-ascending">{{translation.sort.date_old_to_new | default: "Date, old to new"}}</option>{% endif %}
+          {% if available_sort contains 'sale-descending' %}<option {% if sort_by == 'sale-descending' %} selected{% endif %} value="sale-descending">{{translation.sort.sale_off | default: "% Sale off"}}</option>{% endif %}
+        </select>
+      </div>
+      {% endcomment %}
+      <div class="sort-by">
+        <label for="globo-dropdown-sort_options" class="sort-by-toggle" role="button" tabindex="0" aria-expanded="false"><span>{{sort_by_text}}</span></label>
+        <div id="globo-dropdown-sort_options" class="globo-dropdown-custom__options">
+          {% for sort in available_sort %}
+            {% if sort == 'best-selling' %}
+              <span data-sort="best-selling" onclick="changeSortBy('best-selling');">{{translation.sort.best_selling | default: "Best Selling"}}</span>
+            {% elsif sort == 'featured' or sort == 'manual' %}
+              <span data-sort="manual" onclick="changeSortBy('manual');">{{translation.sort.manually | default: "Featured"}}</span>
+            {% elsif sort == 'stock-descending' %}
+              <span data-sort="stock-descending" onclick="changeSortBy('stock-descending');">{{translation.sort.availability_in_stock_first | default: "Availability"}}</span>
+            {% elsif sort == 'relevance' %}
+              <span data-sort="relevance" onclick="changeSortBy('relevance');">{{translation.sort.relevance | default: "Relevance"}}</span>
+            {% elsif sort == 'title-ascending' %}
+              <span data-sort="title-ascending" onclick="changeSortBy('title-ascending');">{{translation.sort.alphabetically_a_z | default: "Alphabetically, A-Z"}}</span>
+            {% elsif sort == 'title-descending' %}
+              <span data-sort="title-descending" onclick="changeSortBy('title-descending');">{{translation.sort.alphabetically_z_a | default: "Alphabetically, Z-A"}}</span>
+            {% elsif sort == 'price-ascending' %}
+              <span data-sort="price-ascending" onclick="changeSortBy('price-ascending');">{{translation.sort.price_low_to_high | default: "Price, low to high"}}</span>
+            {% elsif sort == 'price-descending' %}
+              <span data-sort="price-descending" onclick="changeSortBy('price-descending');">{{translation.sort.price_high_to_low | default: "Price, high to low"}}</span>
+            {% elsif sort == 'created-descending' %}
+              <span data-sort="created-descending" onclick="changeSortBy('created-descending');">{{translation.sort.date_new_to_old | default: "Date, new to old"}}</span>
+            {% elsif sort == 'created-ascending' %}
+              <span data-sort="created-ascending" onclick="changeSortBy('created-ascending');">{{translation.sort.date_old_to_new | default: "Date, old to new"}}</span>
+            {% elsif sort == 'sale-descending' %}
+              <span data-sort="sale-descending" onclick="changeSortBy('sale-descending');">{{translation.sort.sale_off | default: "% Sale off"}}</span>
+                        {% elsif sort == 'mf-on_demand-faq_answer_5-ascending' %}
+              <span data-sort="mf-on_demand-faq_answer_5-ascending" onclick="changeSortBy('mf-on_demand-faq_answer_5-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_5 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_answer_5-descending' %}
+              <span data-sort="mf-on_demand-faq_answer_5-descending" onclick="changeSortBy('mf-on_demand-faq_answer_5-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_5 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_question_5-ascending' %}
+              <span data-sort="mf-on_demand-faq_question_5-ascending" onclick="changeSortBy('mf-on_demand-faq_question_5-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_5 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_question_5-descending' %}
+              <span data-sort="mf-on_demand-faq_question_5-descending" onclick="changeSortBy('mf-on_demand-faq_question_5-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_5 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_answer_4-ascending' %}
+              <span data-sort="mf-on_demand-faq_answer_4-ascending" onclick="changeSortBy('mf-on_demand-faq_answer_4-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_4 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_answer_4-descending' %}
+              <span data-sort="mf-on_demand-faq_answer_4-descending" onclick="changeSortBy('mf-on_demand-faq_answer_4-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_4 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_question_4-ascending' %}
+              <span data-sort="mf-on_demand-faq_question_4-ascending" onclick="changeSortBy('mf-on_demand-faq_question_4-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_4 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_question_4-descending' %}
+              <span data-sort="mf-on_demand-faq_question_4-descending" onclick="changeSortBy('mf-on_demand-faq_question_4-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_4 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_answer_3-ascending' %}
+              <span data-sort="mf-on_demand-faq_answer_3-ascending" onclick="changeSortBy('mf-on_demand-faq_answer_3-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_3 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_answer_3-descending' %}
+              <span data-sort="mf-on_demand-faq_answer_3-descending" onclick="changeSortBy('mf-on_demand-faq_answer_3-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_3 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_question_3-ascending' %}
+              <span data-sort="mf-on_demand-faq_question_3-ascending" onclick="changeSortBy('mf-on_demand-faq_question_3-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_3 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_question_3-descending' %}
+              <span data-sort="mf-on_demand-faq_question_3-descending" onclick="changeSortBy('mf-on_demand-faq_question_3-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_3 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_answer_2-ascending' %}
+              <span data-sort="mf-on_demand-faq_answer_2-ascending" onclick="changeSortBy('mf-on_demand-faq_answer_2-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_2 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_answer_2-descending' %}
+              <span data-sort="mf-on_demand-faq_answer_2-descending" onclick="changeSortBy('mf-on_demand-faq_answer_2-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_2 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_question_2-ascending' %}
+              <span data-sort="mf-on_demand-faq_question_2-ascending" onclick="changeSortBy('mf-on_demand-faq_question_2-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_2 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_question_2-descending' %}
+              <span data-sort="mf-on_demand-faq_question_2-descending" onclick="changeSortBy('mf-on_demand-faq_question_2-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_2 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_answer_1-ascending' %}
+              <span data-sort="mf-on_demand-faq_answer_1-ascending" onclick="changeSortBy('mf-on_demand-faq_answer_1-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_1 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_answer_1-descending' %}
+              <span data-sort="mf-on_demand-faq_answer_1-descending" onclick="changeSortBy('mf-on_demand-faq_answer_1-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_answer_1 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-faq_question_1-ascending' %}
+              <span data-sort="mf-on_demand-faq_question_1-ascending" onclick="changeSortBy('mf-on_demand-faq_question_1-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_1 ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-faq_question_1-descending' %}
+              <span data-sort="mf-on_demand-faq_question_1-descending" onclick="changeSortBy('mf-on_demand-faq_question_1-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Faq_question_1 descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_image-ascending' %}
+              <span data-sort="mf-on_demand-host_image-ascending" onclick="changeSortBy('mf-on_demand-host_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_image-descending' %}
+              <span data-sort="mf-on_demand-host_image-descending" onclick="changeSortBy('mf-on_demand-host_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_contact_link-ascending' %}
+              <span data-sort="mf-on_demand-host_contact_link-ascending" onclick="changeSortBy('mf-on_demand-host_contact_link-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_contact_link ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_contact_link-descending' %}
+              <span data-sort="mf-on_demand-host_contact_link-descending" onclick="changeSortBy('mf-on_demand-host_contact_link-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_contact_link descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_contact_text-ascending' %}
+              <span data-sort="mf-on_demand-host_contact_text-ascending" onclick="changeSortBy('mf-on_demand-host_contact_text-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_contact_text ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_contact_text-descending' %}
+              <span data-sort="mf-on_demand-host_contact_text-descending" onclick="changeSortBy('mf-on_demand-host_contact_text-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_contact_text descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_bio-ascending' %}
+              <span data-sort="mf-on_demand-host_bio-ascending" onclick="changeSortBy('mf-on_demand-host_bio-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_bio ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_bio-descending' %}
+              <span data-sort="mf-on_demand-host_bio-descending" onclick="changeSortBy('mf-on_demand-host_bio-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_bio descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_title-ascending' %}
+              <span data-sort="mf-on_demand-host_title-ascending" onclick="changeSortBy('mf-on_demand-host_title-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_title ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_title-descending' %}
+              <span data-sort="mf-on_demand-host_title-descending" onclick="changeSortBy('mf-on_demand-host_title-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_title descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_name-ascending' %}
+              <span data-sort="mf-on_demand-host_name-ascending" onclick="changeSortBy('mf-on_demand-host_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_name-descending' %}
+              <span data-sort="mf-on_demand-host_name-descending" onclick="changeSortBy('mf-on_demand-host_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-host_section_heading-ascending' %}
+              <span data-sort="mf-on_demand-host_section_heading-ascending" onclick="changeSortBy('mf-on_demand-host_section_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_section_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-host_section_heading-descending' %}
+              <span data-sort="mf-on_demand-host_section_heading-descending" onclick="changeSortBy('mf-on_demand-host_section_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Host_section_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-wine_section_content-ascending' %}
+              <span data-sort="mf-on_demand-wine_section_content-ascending" onclick="changeSortBy('mf-on_demand-wine_section_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-wine_section_content-descending' %}
+              <span data-sort="mf-on_demand-wine_section_content-descending" onclick="changeSortBy('mf-on_demand-wine_section_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-wine_section_heading-ascending' %}
+              <span data-sort="mf-on_demand-wine_section_heading-ascending" onclick="changeSortBy('mf-on_demand-wine_section_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-wine_section_heading-descending' %}
+              <span data-sort="mf-on_demand-wine_section_heading-descending" onclick="changeSortBy('mf-on_demand-wine_section_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-wine_section_image-ascending' %}
+              <span data-sort="mf-on_demand-wine_section_image-ascending" onclick="changeSortBy('mf-on_demand-wine_section_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-wine_section_image-descending' %}
+              <span data-sort="mf-on_demand-wine_section_image-descending" onclick="changeSortBy('mf-on_demand-wine_section_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Wine_section_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_5_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-tab_5_vid_id-ascending" onclick="changeSortBy('mf-on_demand-tab_5_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_5_vid_id-descending' %}
+              <span data-sort="mf-on_demand-tab_5_vid_id-descending" onclick="changeSortBy('mf-on_demand-tab_5_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_5_image-ascending' %}
+              <span data-sort="mf-on_demand-tab_5_image-ascending" onclick="changeSortBy('mf-on_demand-tab_5_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_5_image-descending' %}
+              <span data-sort="mf-on_demand-tab_5_image-descending" onclick="changeSortBy('mf-on_demand-tab_5_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_5_name-ascending' %}
+              <span data-sort="mf-on_demand-tab_5_name-ascending" onclick="changeSortBy('mf-on_demand-tab_5_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_5_name-descending' %}
+              <span data-sort="mf-on_demand-tab_5_name-descending" onclick="changeSortBy('mf-on_demand-tab_5_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_4_content-ascending' %}
+              <span data-sort="mf-on_demand-tab_4_content-ascending" onclick="changeSortBy('mf-on_demand-tab_4_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_4_content-descending' %}
+              <span data-sort="mf-on_demand-tab_4_content-descending" onclick="changeSortBy('mf-on_demand-tab_4_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_4_image-ascending' %}
+              <span data-sort="mf-on_demand-tab_4_image-ascending" onclick="changeSortBy('mf-on_demand-tab_4_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_4_image-descending' %}
+              <span data-sort="mf-on_demand-tab_4_image-descending" onclick="changeSortBy('mf-on_demand-tab_4_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_4_name-ascending' %}
+              <span data-sort="mf-on_demand-tab_4_name-ascending" onclick="changeSortBy('mf-on_demand-tab_4_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_4_name-descending' %}
+              <span data-sort="mf-on_demand-tab_4_name-descending" onclick="changeSortBy('mf-on_demand-tab_4_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_3_content-ascending' %}
+              <span data-sort="mf-on_demand-tab_3_content-ascending" onclick="changeSortBy('mf-on_demand-tab_3_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_3_content-descending' %}
+              <span data-sort="mf-on_demand-tab_3_content-descending" onclick="changeSortBy('mf-on_demand-tab_3_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_3_image-ascending' %}
+              <span data-sort="mf-on_demand-tab_3_image-ascending" onclick="changeSortBy('mf-on_demand-tab_3_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_3_image-descending' %}
+              <span data-sort="mf-on_demand-tab_3_image-descending" onclick="changeSortBy('mf-on_demand-tab_3_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_3_name-ascending' %}
+              <span data-sort="mf-on_demand-tab_3_name-ascending" onclick="changeSortBy('mf-on_demand-tab_3_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_3_name-descending' %}
+              <span data-sort="mf-on_demand-tab_3_name-descending" onclick="changeSortBy('mf-on_demand-tab_3_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_2_content-ascending' %}
+              <span data-sort="mf-on_demand-tab_2_content-ascending" onclick="changeSortBy('mf-on_demand-tab_2_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_2_content-descending' %}
+              <span data-sort="mf-on_demand-tab_2_content-descending" onclick="changeSortBy('mf-on_demand-tab_2_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_2_image-ascending' %}
+              <span data-sort="mf-on_demand-tab_2_image-ascending" onclick="changeSortBy('mf-on_demand-tab_2_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_2_image-descending' %}
+              <span data-sort="mf-on_demand-tab_2_image-descending" onclick="changeSortBy('mf-on_demand-tab_2_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_2_name-ascending' %}
+              <span data-sort="mf-on_demand-tab_2_name-ascending" onclick="changeSortBy('mf-on_demand-tab_2_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_2_name-descending' %}
+              <span data-sort="mf-on_demand-tab_2_name-descending" onclick="changeSortBy('mf-on_demand-tab_2_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_1_content-ascending' %}
+              <span data-sort="mf-on_demand-tab_1_content-ascending" onclick="changeSortBy('mf-on_demand-tab_1_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_1_content-descending' %}
+              <span data-sort="mf-on_demand-tab_1_content-descending" onclick="changeSortBy('mf-on_demand-tab_1_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_1_image-ascending' %}
+              <span data-sort="mf-on_demand-tab_1_image-ascending" onclick="changeSortBy('mf-on_demand-tab_1_image-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_image ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_1_image-descending' %}
+              <span data-sort="mf-on_demand-tab_1_image-descending" onclick="changeSortBy('mf-on_demand-tab_1_image-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_image descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_1_name-ascending' %}
+              <span data-sort="mf-on_demand-tab_1_name-ascending" onclick="changeSortBy('mf-on_demand-tab_1_name-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_name ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_1_name-descending' %}
+              <span data-sort="mf-on_demand-tab_1_name-descending" onclick="changeSortBy('mf-on_demand-tab_1_name-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_name descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-below_hero_heading-ascending' %}
+              <span data-sort="mf-on_demand-below_hero_heading-ascending" onclick="changeSortBy('mf-on_demand-below_hero_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Below_hero_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-below_hero_heading-descending' %}
+              <span data-sort="mf-on_demand-below_hero_heading-descending" onclick="changeSortBy('mf-on_demand-below_hero_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Below_hero_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-main_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-main_vid_id-ascending" onclick="changeSortBy('mf-on_demand-main_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Main_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-main_vid_id-descending' %}
+              <span data-sort="mf-on_demand-main_vid_id-descending" onclick="changeSortBy('mf-on_demand-main_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Main_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-top_sub_heading-ascending' %}
+              <span data-sort="mf-on_demand-top_sub_heading-ascending" onclick="changeSortBy('mf-on_demand-top_sub_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Top_sub_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-top_sub_heading-descending' %}
+              <span data-sort="mf-on_demand-top_sub_heading-descending" onclick="changeSortBy('mf-on_demand-top_sub_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Top_sub_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-top_main_heading-ascending' %}
+              <span data-sort="mf-on_demand-top_main_heading-ascending" onclick="changeSortBy('mf-on_demand-top_main_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Top_main_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-top_main_heading-descending' %}
+              <span data-sort="mf-on_demand-top_main_heading-descending" onclick="changeSortBy('mf-on_demand-top_main_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Top_main_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-page_url-ascending' %}
+              <span data-sort="mf-on_demand-page_url-ascending" onclick="changeSortBy('mf-on_demand-page_url-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Page_url ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-page_url-descending' %}
+              <span data-sort="mf-on_demand-page_url-descending" onclick="changeSortBy('mf-on_demand-page_url-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Page_url descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-reviews-rating-ascending' %}
+              <span data-sort="mf-reviews-rating-ascending" onclick="changeSortBy('mf-reviews-rating-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Reviews Rating ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-reviews-rating-descending' %}
+              <span data-sort="mf-reviews-rating-descending" onclick="changeSortBy('mf-reviews-rating-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Reviews Rating descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-reviews-rating_count-ascending' %}
+              <span data-sort="mf-reviews-rating_count-ascending" onclick="changeSortBy('mf-reviews-rating_count-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Reviews Rating_count ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-reviews-rating_count-descending' %}
+              <span data-sort="mf-reviews-rating_count-descending" onclick="changeSortBy('mf-reviews-rating_count-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Reviews Rating_count descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-menu_description-ascending' %}
+              <span data-sort="mf-product_info-menu_description-ascending" onclick="changeSortBy('mf-product_info-menu_description-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Menu_description ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-menu_description-descending' %}
+              <span data-sort="mf-product_info-menu_description-descending" onclick="changeSortBy('mf-product_info-menu_description-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Menu_description descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_5_content-ascending' %}
+              <span data-sort="mf-on_demand-tab_5_content-ascending" onclick="changeSortBy('mf-on_demand-tab_5_content-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_content ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_5_content-descending' %}
+              <span data-sort="mf-on_demand-tab_5_content-descending" onclick="changeSortBy('mf-on_demand-tab_5_content-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_5_content descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_1_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-tab_1_vid_id-ascending" onclick="changeSortBy('mf-on_demand-tab_1_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_1_vid_id-descending' %}
+              <span data-sort="mf-on_demand-tab_1_vid_id-descending" onclick="changeSortBy('mf-on_demand-tab_1_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_1_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_2_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-tab_2_vid_id-ascending" onclick="changeSortBy('mf-on_demand-tab_2_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_2_vid_id-descending' %}
+              <span data-sort="mf-on_demand-tab_2_vid_id-descending" onclick="changeSortBy('mf-on_demand-tab_2_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_2_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_3_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-tab_3_vid_id-ascending" onclick="changeSortBy('mf-on_demand-tab_3_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_3_vid_id-descending' %}
+              <span data-sort="mf-on_demand-tab_3_vid_id-descending" onclick="changeSortBy('mf-on_demand-tab_3_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_3_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-tab_4_vid_id-ascending' %}
+              <span data-sort="mf-on_demand-tab_4_vid_id-ascending" onclick="changeSortBy('mf-on_demand-tab_4_vid_id-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_vid_id ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-tab_4_vid_id-descending' %}
+              <span data-sort="mf-on_demand-tab_4_vid_id-descending" onclick="changeSortBy('mf-on_demand-tab_4_vid_id-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Tab_4_vid_id descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-on_demand-below_hero_sub_heading-ascending' %}
+              <span data-sort="mf-on_demand-below_hero_sub_heading-ascending" onclick="changeSortBy('mf-on_demand-below_hero_sub_heading-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Below_hero_sub_heading ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-on_demand-below_hero_sub_heading-descending' %}
+              <span data-sort="mf-on_demand-below_hero_sub_heading-descending" onclick="changeSortBy('mf-on_demand-below_hero_sub_heading-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}On_demand Below_hero_sub_heading descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-age_verification-product-ascending' %}
+              <span data-sort="mf-age_verification-product-ascending" onclick="changeSortBy('mf-age_verification-product-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Age_verification Product ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-age_verification-product-descending' %}
+              <span data-sort="mf-age_verification-product-descending" onclick="changeSortBy('mf-age_verification-product-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Age_verification Product descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-date_and_time-ascending' %}
+              <span data-sort="mf-product_info-date_and_time-ascending" onclick="changeSortBy('mf-product_info-date_and_time-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Date_and_time ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-date_and_time-descending' %}
+              <span data-sort="mf-product_info-date_and_time-descending" onclick="changeSortBy('mf-product_info-date_and_time-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Date_and_time descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-experience_type-ascending' %}
+              <span data-sort="mf-product_info-experience_type-ascending" onclick="changeSortBy('mf-product_info-experience_type-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Experience_type ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-experience_type-descending' %}
+              <span data-sort="mf-product_info-experience_type-descending" onclick="changeSortBy('mf-product_info-experience_type-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Experience_type descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-serving_info-ascending' %}
+              <span data-sort="mf-product_info-serving_info-ascending" onclick="changeSortBy('mf-product_info-serving_info-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Serving_info ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-serving_info-descending' %}
+              <span data-sort="mf-product_info-serving_info-descending" onclick="changeSortBy('mf-product_info-serving_info-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Serving_info descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-class_length-ascending' %}
+              <span data-sort="mf-product_info-class_length-ascending" onclick="changeSortBy('mf-product_info-class_length-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Class_length ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-class_length-descending' %}
+              <span data-sort="mf-product_info-class_length-descending" onclick="changeSortBy('mf-product_info-class_length-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Class_length descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-product_info-cocktail_mixer-ascending' %}
+              <span data-sort="mf-product_info-cocktail_mixer-ascending" onclick="changeSortBy('mf-product_info-cocktail_mixer-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Cocktail_mixer ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-product_info-cocktail_mixer-descending' %}
+              <span data-sort="mf-product_info-cocktail_mixer-descending" onclick="changeSortBy('mf-product_info-cocktail_mixer-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Product_info Cocktail_mixer descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-event_fields-event_date-ascending' %}
+              <span data-sort="mf-event_fields-event_date-ascending" onclick="changeSortBy('mf-event_fields-event_date-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Event_fields Event_date ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-event_fields-event_date-descending' %}
+              <span data-sort="mf-event_fields-event_date-descending" onclick="changeSortBy('mf-event_fields-event_date-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Event_fields Event_date descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-ecomposer-countdown-ascending' %}
+              <span data-sort="mf-ecomposer-countdown-ascending" onclick="changeSortBy('mf-ecomposer-countdown-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Ecomposer Countdown ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-ecomposer-countdown-descending' %}
+              <span data-sort="mf-ecomposer-countdown-descending" onclick="changeSortBy('mf-ecomposer-countdown-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Ecomposer Countdown descending{% endif %}
+              </span>
+                        {% elsif sort == 'mf-ecomposer-countdown_from-ascending' %}
+              <span data-sort="mf-ecomposer-countdown_from-ascending" onclick="changeSortBy('mf-ecomposer-countdown_from-ascending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Ecomposer Countdown_from ascending{% endif %}
+              </span>
+            {% elsif sort == 'mf-ecomposer-countdown_from-descending' %}
+              <span data-sort="mf-ecomposer-countdown_from-descending" onclick="changeSortBy('mf-ecomposer-countdown_from-descending');">
+                {% if translation.sort[sort] %}{{translation.sort[sort]}}{% else %}Ecomposer Countdown_from descending{% endif %}
+              </span>
+                        {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+          </div>
+        <div class="globo-selected-items-wrapper visible-xs">
+      {% if has_filter and filters %}
+      <ul class="globo-selected-items">
+        {% capture selected_item_html %}
+        {% assign filter_count = 0 %}
+        {% for filter in filters %}
+          {% if filter.is_selected %}
+            {% if filter.style == 'Slider' %}
+              {% assign filter_count = filter_count | plus: 1 %}
+              <li class="selected-item gf-option-label">
+                <a onclick="removeFilter({{filter.id}})">
+                  <span class="selected-item">
+                    <strong>
+                      {% if filter.attribute == 'Price' %}
+                        <span class="money">{{filter.values.min | money}}</span> - <span class="money">{{filter.values.max | money}}</span>
+                      {% elsif filter.attribute == 'Percent Sale' %}
+                        {{filter.values.min}}% - {{filter.values.max}}%
+                      {% else %}
+                        {{filter.values.min}} - {{filter.values.max}}
+                      {% endif %}
+                    </strong>
+                  </span>
+                  <span class="gf-clear">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.414 10l6.293-6.293a1 1 0 10-1.414-1.414L10 8.586 3.707 2.293a1 1 0 00-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 101.414 1.414L10 11.414l6.293 6.293A.998.998 0 0018 17a.999.999 0 00-.293-.707L11.414 10z" fill="#5C5F62"/></svg>
+                  </span>
+                </a>
+              </li>
+            {% else %}
+              {% for value in filter.values %}
+                {% if value.selected %}
+                  {% assign filter_count = filter_count | plus: 1 %}
+                  <li class="selected-item gf-option-label">
+                    <a onclick="removeFilterValue({{filter.id}}, '{{value.value | replace:"\'", "\\\'" | escape_once}}')">
+                      <span class="selected-item">
+                        <strong>
+                          {% if filter.style == 'Rating' %}
+                          <span class="gf-label gf-stars">
+                            {% for star in (1..5) %}
+                              {% if star <= value.value %}
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#ff9800"/></svg>
+                              {% else %}
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.71 15.116l3.357-1.658.892.452 2.327 1.178-.56-3.912.708-.707 1.29-1.29-3.235-.576-.445-.915-1.059-2.176L8.4 8.683l-1.005.168-2.098.35 1.975 1.975-.141.99-.422 2.95zM5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#ff9800"/></svg>
+                              {% endif %}
+                            {% endfor %}
+                          </span>
+                          {% elsif filter.attribute contains 'metafield:' and value.value contains 'https:' -%}
+                          <img style="max-height: 21px;display: block;" src="{{ value.value }}" />
+                          {%- else -%}
+                          {{value.label}}
+                          {%- endif -%}
+                        </strong>
+                      </span>
+                      <span class="gf-clear"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.414 10l6.293-6.293a1 1 0 10-1.414-1.414L10 8.586 3.707 2.293a1 1 0 00-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 101.414 1.414L10 11.414l6.293 6.293A.998.998 0 0018 17a.999.999 0 00-.293-.707L11.414 10z" fill="#5C5F62"/></svg></span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% endcapture %}
+        {% if filter_count > 1 %}
+        <li class="selected-item gf-option-label"><a onclick="clearAllFilter()" class="clear-refinements">{{ translation.filter.clear_all | default: "Clear all"}}</a></li>
+        {% endif %}
+        {{selected_item_html}}
+      </ul>
+      {% endif %}
+    </div>
+    
+  </div>
+  {% endif %}
+</div>
+{% endraw %}

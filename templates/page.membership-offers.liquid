@@ -1,0 +1,106 @@
+{% if customer.tags contains 'Active Subscriber' %}
+  <div class="flex-row-outer-page">
+    <div class="flex-col-outer-page-1">
+      {% section 'plus-landing-menu-vertical' %}
+    </div>
+
+    <div class="flex-col-outer-page-2">
+      <div class="calendar-wrapper-plus-landing">
+        <div class="container-large">
+          <div class="calendar-section-heading-wrapper-home">
+            <h3 class="section-heading-plus"><a>Membership Offers</a></h3>
+          </div>
+
+          <div class="culinary-library-wrapper">
+            <div class="culinary-library-inner">
+
+
+              
+              
+              {% liquid
+                assign membership_addons = 'membership-add-ons' | collection_url
+                assign collection = collections[membership_addons]
+                if collection.products
+                  assign count = collection.products_count
+                  assign count_label = 'collections.general.items_with_count'
+                endif
+              %}
+              
+              <div class="culinary-library-wrapper member">
+                <div class="culinary-library-inner member">
+                  <div class="collection-grid__wrapper member">
+                    <div class="collection-filter">
+                      <div class="collection-mobile-filters medium-up--hide">
+                        <div class="collection-mobile-filters__holder" id="CollectionInlineFilterWrap"></div>
+                      </div>
+                    </div>
+              
+                    {%- if collection.products.size == 0 -%}
+                      <div class="index-section">{{ 'collections.general.no_matches' | t }}</div>
+                    {%- endif -%}
+              
+                    <div
+                      data-section-id="{% if section.id %}{{section.id}}{% endif %}"
+                      data-sectionId="{% if section.id %}{{section.id}}{% endif %}"
+                      {% if section.blocks %}
+                        data-blocks="{ {%- capture blocks_json -%}{% for block in section.blocks %}{%- capture block_json -%}"{{ block.type }}":{{ block.settings | json }}{%- endcapture -%}{{ block_json | prepend: ","  }}{% endfor %}{%- endcapture -%}{{ blocks_json | remove_first: "," }} }"
+                      {% endif %}
+                      data-settings="{% if section.settings %}{{section.settings | json}}{% endif %}"
+                      data-globo-filter-items
+                      class="new-grid product-grid collection-grid"
+                      data-view="{{ productGridView }}"
+                      data-scroll-to
+                    >
+                      {%- for product in collection.products -%}
+                        {%- render 'product-grid-item', product: product -%}
+              
+                        {%- if quick_shop_enable -%}
+                          {%- render 'quick-shop-modal', product: product -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- container-large -->
+      </div>
+      <!-- alendar-wrapper-plus-landing -->
+    </div>
+    <!-- flex-col-outer-page-2 -->
+  </div>
+  <!-- flex-row-outer-page -->
+
+  <style type="text/css">
+    #event-calendar-app button.subcribe-to-calendar__inverse[type='button'] {
+      color: #ffffff !important;
+    }
+
+    #event-calendar-app .eca-calendar .fc-view-container span.fc-day-number {
+      color: #000000 !important;
+    }
+  </style>
+
+{% else %}
+  <div class="container-large margin-top">
+    <div class="calendar-section-heading-wrapper-home">
+      <h3 class="section-heading-plus">Sorry, this page is for members only</h3>
+      <p class="extra-margin-b">This page can only be accessed if you have a current Truffle Shuffle VIP Membership.</p>
+    </div>
+
+    <div class="hero-col-btn-wrapper-account-plus">
+      <a href="https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions" class="btn-main-plus w-button"
+        >ABOUT THE MEMBERSHIP</a
+      >
+    </div>
+  </div>
+  <!-- container-large -->
+{% endif %}

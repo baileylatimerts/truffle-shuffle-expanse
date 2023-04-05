@@ -1,0 +1,26 @@
+<div class="page-width page-width--narrow page-content">
+  <header class="section-header">
+    <h1 class="section-header__title">
+      {{ page.title | escape }}
+
+      {%if page.handle == 'rewards-new'%}
+      <div class="hero-col-btn-wrapper-account-plus">
+        <a href="/account" class="btn-main-plus w-button">MY ACCOUNT</a>
+      </div>
+      {%endif%}
+
+
+    </h1>
+  </header>
+
+  <div class="rte rte--nomargin">
+    {{ page.content }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section"
+}
+{% endschema %}
