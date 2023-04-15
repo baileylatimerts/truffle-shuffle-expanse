@@ -129,6 +129,12 @@
       "settings": {
       }
     },
+    "479db6c7-d22f-429c-98ff-bd1cf5a7e857": {
+      "type": "feature-text-2",
+      "settings": {
+        "text": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
+      }
+    },
     "e1dfb103-9870-4a97-97bd-bf7a669f6d92": {
       "type": "image-row",
       "blocks": {
@@ -151,6 +157,14 @@
       ],
       "settings": {
       }
+    },
+    "64b2dabd-9160-45dc-8900-a2b4f8f2294e": {
+      "type": "invest-form",
+      "settings": {
+        "column_1_title": "Join the waitlist to invest",
+        "column_1_question": "Have questions?",
+        "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce"
+      }
     }
   },
   "order": [
@@ -159,6 +173,8 @@
     "7d2d05a0-b20d-47a7-a206-96993c1588e1",
     "64c45c24-138a-423d-aa4d-8a17c3fe491c",
     "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb",
-    "e1dfb103-9870-4a97-97bd-bf7a669f6d92"
+    "479db6c7-d22f-429c-98ff-bd1cf5a7e857",
+    "e1dfb103-9870-4a97-97bd-bf7a669f6d92",
+    "64b2dabd-9160-45dc-8900-a2b4f8f2294e"
   ]
 }

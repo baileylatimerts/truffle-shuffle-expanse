@@ -252,6 +252,11 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+}
+
 .bg-cover {
   background-size: cover
 }
@@ -325,6 +330,11 @@
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem
 }
 
@@ -441,6 +451,10 @@
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-96 {
+    height: 24rem
+  }
+
   .lg\:w-1\/5 {
     width: 20%
   }
