@@ -1,1 +1,126 @@
-{"sections":{"1671300638a3c923f1":{"type":"apps","blocks":{"bcb4be20-6deb-4f91-b0ba-85536fc8703e":{"type":"shopify:\/\/apps\/blog-article-filter-search-pro\/blocks\/app-block\/4d517ee7-df79-49ad-9f0a-91f02b184ae0","settings":{}}},"block_order":["bcb4be20-6deb-4f91-b0ba-85536fc8703e"],"settings":{"full_width":false,"space_around":true}},"main":{"type":"blog-template","settings":{"blog_show_rss":false,"blog_show_tags":false,"blog_show_date":false,"blog_show_comments":true,"blog_show_author":false,"blog_image_size":"wide"}},"sidebar":{"type":"blog-sidebar","disabled":true,"blocks":{"tags":{"type":"tags","disabled":true,"settings":{}},"010be5e4-1608-4dac-9cb0-499e3814c0f2":{"type":"product","disabled":true,"settings":{"featured_product":"black-truffle-carpaccio-2-82oz"}},"c933c190-73b6-40df-9e33-c03bdcbd0791":{"type":"article","settings":{"title":"Featured Holiday Recipe!","article":"truffle-shuffle-blog\/beef-wellington-a-phenomenal-dish-with-a-murky-history","blog_show_tags":false,"blog_show_date":false,"blog_show_comments":true,"blog_show_author":false,"blog_image_size":"square"}},"2d708eda-2163-4dad-b0b3-91c9595ee903":{"type":"share","disabled":true,"settings":{}}},"block_order":["tags","010be5e4-1608-4dac-9cb0-499e3814c0f2","c933c190-73b6-40df-9e33-c03bdcbd0791","2d708eda-2163-4dad-b0b3-91c9595ee903"],"settings":{}},"ef87cb73-43a9-4f1a-a41c-af5305f04262":{"type":"promo-grid","disabled":true,"blocks":{"template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-0":{"type":"advanced","settings":{"subheading":"","heading":"Announce your promotion","textarea":"Include the smaller details of your promotion in text below the title.","cta_text1":"Shop This","cta_link1":"","cta_text2":"Shop All","cta_link2":"","video_url":"","width":"50","height":500,"text_align":"vertical-center horizontal-center","focal_point":"center","color_accent":"#ffffff"}},"template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-1":{"type":"advanced","settings":{"subheading":"","heading":"Announce your promotion","textarea":"Include the smaller details of your promotion in text below the title.","cta_text1":"Shop This","cta_link1":"","cta_text2":"Shop All","cta_link2":"","video_url":"","width":"50","height":500,"text_align":"vertical-center horizontal-center","focal_point":"center","color_accent":"#ffffff"}}},"block_order":["template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-0","template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-1"],"settings":{"full_width":false,"gutter_size":20,"space_above":true,"space_below":true}}},"order":["1671300638a3c923f1","main","sidebar","ef87cb73-43a9-4f1a-a41c-af5305f04262"],"wrapper":"div.page-width.page-content.blog-layout"}
+{
+  "sections": {
+    "1671300638a3c923f1": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": true,
+        "blog_show_author": false,
+        "blog_image_size": "wide"
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "disabled": true,
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "010be5e4-1608-4dac-9cb0-499e3814c0f2": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "featured_product": "black-truffle-carpaccio-2-82oz"
+          }
+        },
+        "c933c190-73b6-40df-9e33-c03bdcbd0791": {
+          "type": "article",
+          "settings": {
+            "title": "Featured Holiday Recipe!",
+            "article": "truffle-shuffle-blog\/beef-wellington-a-phenomenal-dish-with-a-murky-history",
+            "blog_show_tags": false,
+            "blog_show_date": false,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "square"
+          }
+        },
+        "2d708eda-2163-4dad-b0b3-91c9595ee903": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "tags",
+        "010be5e4-1608-4dac-9cb0-499e3814c0f2",
+        "c933c190-73b6-40df-9e33-c03bdcbd0791",
+        "2d708eda-2163-4dad-b0b3-91c9595ee903"
+      ],
+      "settings": {
+      }
+    },
+    "ef87cb73-43a9-4f1a-a41c-af5305f04262": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-0",
+        "template--15030292086807__ef87cb73-43a9-4f1a-a41c-af5305f04262-16713004643e44d4c4-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    }
+  },
+  "order": [
+    "1671300638a3c923f1",
+    "main",
+    "sidebar",
+    "ef87cb73-43a9-4f1a-a41c-af5305f04262"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}
