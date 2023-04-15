@@ -1,53 +1,20 @@
-<div class="flex flex-col md:flex-row">
-  <div class="w-full  bg-white flex flex-col items-center justify-center p-8 lg:p-24">
-    <h1 class="text-3xl font-bold mb-6 text-center">{{ section.settings.column_1_title }}</h1>
+<div class="flex flex-col md:flex-row py-8 px-8 lg:px-24">
+  <div class="md:w-1/2">
+    <h2 class="text-3xl font-bold  ">{{ section.settings.column_1_title }}</h2>
+  </div>
+  <div class="md:w-1/2 md:ml-4">
 
-    <form
-      action="https://api.hsforms.com/submissions/v3/integration/submit/your-portal-id/your-form-guid"
-      method="POST"
-      id="hubspot-form"
-      class="w-full"
-      style="max-width:475px">
-      <div class="mb-4">
-        <label for="name" class="sr-only">Name</label>
-        <input
-          type="text"
-          name="fields[firstname]"
-          id="name"
-          placeholder="Your Name"
-          required
-          class="w-full bg-gray-200 p-3 rounded-md">
-      </div>
-
-      <div class="mb-4">
-        <label for="email" class="sr-only">Email</label>
-        <input
-          type="email"
-          name="fields[email]"
-          id="email"
-          placeholder="Your Email"
-          required
-          class="w-full bg-gray-200 p-3 rounded-md">
-      </div>
-
-      <input
-        type="hidden"
-        name="skipValidation"
-        value="true">
-
-      <button type="submit" class="btn btn--full">Submit</button>
-    </form>
-
-    <p class="mt-4">
-      {{ section.settings.column_1_question }}
-      <a
-        href="{{ section.settings.hubspot_meeting_link }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline">Book a call</a>
-    </p>
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({region: "na1", portalId: "8527712", formId: "d3e70d40-40b9-409d-816f-d7958cccf1d8"});
+    </script>
   </div>
 </div>
+
+
 
 {% schema %}
   {
