@@ -98,11 +98,67 @@
       ],
       "settings": {
       }
+    },
+    "64c45c24-138a-423d-aa4d-8a17c3fe491c": {
+      "type": "feature-text",
+      "settings": {
+        "title": "Now on StartEngine",
+        "description": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
+      }
+    },
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb": {
+      "type": "image-row",
+      "blocks": {
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png"
+          }
+        },
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0",
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1"
+      ],
+      "settings": {
+      }
+    },
+    "e1dfb103-9870-4a97-97bd-bf7a669f6d92": {
+      "type": "image-row",
+      "blocks": {
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg"
+          }
+        },
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0",
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44",
-    "7d2d05a0-b20d-47a7-a206-96993c1588e1"
+    "7d2d05a0-b20d-47a7-a206-96993c1588e1",
+    "64c45c24-138a-423d-aa4d-8a17c3fe491c",
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb",
+    "e1dfb103-9870-4a97-97bd-bf7a669f6d92"
   ]
 }

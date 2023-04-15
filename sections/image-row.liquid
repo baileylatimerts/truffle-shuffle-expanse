@@ -1,0 +1,38 @@
+<div class="flex flex-col lg:flex-row">
+  {% for block in section.blocks %}
+    <div class="w-full md:w-1/2 h-96 bg-cover bg-center" style="background-image: url('{{ block.settings.background_image | img_url: 'master' }}')"></div>
+  {% endfor %}
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Image Row",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image",
+        "blocks": [
+          {
+            "type": "image"
+          }, {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
