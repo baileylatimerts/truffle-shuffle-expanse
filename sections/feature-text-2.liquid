@@ -1,0 +1,24 @@
+<div class="flex items-center justify-center py-8 px-8 lg:px-24 bg-black">
+  <div class="md:w-1/2">
+    <p class="text-xl text-center text-white">{{ section.settings.text }}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Feature Text 2",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feature Text 2",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}

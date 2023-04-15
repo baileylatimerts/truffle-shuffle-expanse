@@ -5,9 +5,176 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44": {
+      "type": "startengine-hero",
+      "settings": {
+        "column_1_title": "Join the waitlist to invest",
+        "column_1_question": "Have questions?",
+        "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce",
+        "column_2_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3d5180a859ba4130b8145491246f1046.mp4"
+      }
+    },
+    "7d2d05a0-b20d-47a7-a206-96993c1588e1": {
+      "type": "marquee",
+      "blocks": {
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes.png"
+          }
+        },
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shark-tank.png"
+          }
+        },
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oprah.png"
+          }
+        },
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kelly_clarkson.png"
+          }
+        },
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eater_logo_1.png"
+          }
+        },
+        "b898e6de-9d6b-442f-998e-2ee71aecfe0a": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes.png"
+          }
+        },
+        "05f057fc-ed43-4f76-a43a-6a56fbb06fb1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shark-tank.png"
+          }
+        },
+        "6a93a9a6-bf18-4394-a511-e91be1c27330": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oprah.png"
+          }
+        },
+        "6ba85921-ded5-4c8b-95d0-5ea3d3989204": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kelly_clarkson.png"
+          }
+        },
+        "42afa912-7125-43bd-a276-98d9f4b71d37": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eater_logo_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-0",
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-1",
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-4",
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-3",
+        "template--15090591662103__7d2d05a0-b20d-47a7-a206-96993c1588e1-1681519505b55981ec-2",
+        "b898e6de-9d6b-442f-998e-2ee71aecfe0a",
+        "05f057fc-ed43-4f76-a43a-6a56fbb06fb1",
+        "6a93a9a6-bf18-4394-a511-e91be1c27330",
+        "6ba85921-ded5-4c8b-95d0-5ea3d3989204",
+        "42afa912-7125-43bd-a276-98d9f4b71d37"
+      ],
+      "settings": {
+      }
+    },
+    "64c45c24-138a-423d-aa4d-8a17c3fe491c": {
+      "type": "feature-text",
+      "settings": {
+        "title": "Now on StartEngine",
+        "description": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
+      }
+    },
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb": {
+      "type": "image-row",
+      "blocks": {
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png"
+          }
+        },
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0",
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1"
+      ],
+      "settings": {
+      }
+    },
+    "479db6c7-d22f-429c-98ff-bd1cf5a7e857": {
+      "type": "feature-text-2",
+      "settings": {
+        "text": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
+      }
+    },
+    "e1dfb103-9870-4a97-97bd-bf7a669f6d92": {
+      "type": "image-row",
+      "blocks": {
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg"
+          }
+        },
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0",
+        "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1"
+      ],
+      "settings": {
+      }
+    },
+    "64b2dabd-9160-45dc-8900-a2b4f8f2294e": {
+      "type": "invest-form",
+      "settings": {
+        "column_1_title": "Join the waitlist to invest",
+        "column_1_question": "Have questions?",
+        "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44",
+    "7d2d05a0-b20d-47a7-a206-96993c1588e1",
+    "64c45c24-138a-423d-aa4d-8a17c3fe491c",
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb",
+    "479db6c7-d22f-429c-98ff-bd1cf5a7e857",
+    "e1dfb103-9870-4a97-97bd-bf7a669f6d92",
+    "64b2dabd-9160-45dc-8900-a2b4f8f2294e"
   ]
 }

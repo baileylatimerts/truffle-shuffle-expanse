@@ -1,0 +1,77 @@
+{% stylesheet %}
+  /* Add your custom CSS for the marquee animation */
+  @media(max-width:1023px) {
+  .marquee {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+}
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  {% endstylesheet %}
+  
+
+  
+  {% if section.blocks.size > 0 %}
+    <div class="overflow-hidden relative py-8 border-top border-bottom">
+      <div class="whitespace-nowrap space-x-4 marquee linear duration-10000 motion-safe:animate-none flex items-center justify-center">
+        {% for block in section.blocks %}
+          <div class="inline-block">
+            {% if block.settings.image != blank %}
+              <img class="  mr-8" style="max-width: 100px;" src="{{ block.settings.image.src | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+
+  {% schema %}
+    {
+      "name": "Scrolling Marquee",
+      "class": "scrolling-marquee",
+      "blocks": [
+        {
+          "type": "image",
+          "name": "Image",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            }
+          ]
+        }
+      ],
+      "presets": [
+    {
+      "name": "Marquee",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+    }
+    {% endschema %}
