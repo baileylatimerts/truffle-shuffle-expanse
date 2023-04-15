@@ -86,6 +86,7 @@
         },
         "5691f574-69b9-402d-8ea9-b00c577a878f": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "❤️ For every kit we sell, we donate a meal to someone in need through the Alameda Community Food Bank"
           }
