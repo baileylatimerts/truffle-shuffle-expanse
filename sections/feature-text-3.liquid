@@ -1,0 +1,41 @@
+<div class="flex flex-col md:flex-row py-8 px-8 lg:px-24 bg-black">
+  <div class="md:w-1/2">
+    <h2 class="text-3xl font-bold text-white">{{ section.settings.title }}</h2>
+  </div>
+  <div class="md:w-1/2 md:ml-4">
+    <p class="text-white text-lg leading-7">{{ section.settings.description_1 }}</p>
+    <p class="text-white text-lg leading-7">{{ section.settings.description_2 }}</p>
+    <p class="text-white text-lg leading-7">{{ section.settings.description_3 }}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Feature Text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "textarea",
+        "id": "description_1",
+        "label": "Description 1"
+      }, {
+        "type": "textarea",
+        "id": "description_2",
+        "label": "Description 2"
+      }, {
+        "type": "textarea",
+        "id": "description_3",
+        "label": "Description 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feature Text",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
