@@ -42,6 +42,10 @@
   margin-bottom: 1rem
 }
 
+.mb-12 {
+  margin-bottom: 3rem
+}
+
 .block {
   display: block
 }
@@ -313,6 +317,10 @@
 @media (min-width: 1024px) {
   .lg\:mr-12 {
     margin-right: 3rem
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px
   }
 
   .lg\:h-96 {
