@@ -9,8 +9,8 @@
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44": {
       "type": "startengine-hero",
       "settings": {
-        "column_1_title": "Join the waitlist to invest",
-        "column_1_question": "Have questions?",
+        "column_1_title": "Cooking Classes + Top Chefs + Ingredients Delivered",
+        "column_1_question": "",
         "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce",
         "column_2_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3d5180a859ba4130b8145491246f1046.mp4"
       }
@@ -112,13 +112,15 @@
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png"
+            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png",
+            "id": ""
           }
         },
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg"
+            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg",
+            "id": ""
           }
         }
       },
@@ -151,13 +153,15 @@
         "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg"
+            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg",
+            "id": ""
           }
         },
         "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg"
+            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg",
+            "id": "form"
           }
         }
       },
@@ -247,13 +251,15 @@
         "template--15091645939735__f064c14b-f125-4c16-8f3f-380ca2d97f43-168176782488443d0b-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/CleanShot_2023-04-17_at_14.41_1.jpg"
+            "background_image": "shopify:\/\/shop_images\/CleanShot_2023-04-17_at_14.41_1.jpg",
+            "id": ""
           }
         },
         "template--15091645939735__f064c14b-f125-4c16-8f3f-380ca2d97f43-168176782488443d0b-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/CleanShot_2023-04-17_at_14.42_1.jpg"
+            "background_image": "shopify:\/\/shop_images\/CleanShot_2023-04-17_at_14.42_1.jpg",
+            "id": ""
           }
         }
       },

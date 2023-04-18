@@ -22,8 +22,16 @@
   inset: 0px
 }
 
+.mb-12 {
+  margin-bottom: 3rem
+}
+
 .mb-6 {
   margin-bottom: 1.5rem
+}
+
+.ml-4 {
+  margin-left: 1rem
 }
 
 .mr-8 {
@@ -32,18 +40,6 @@
 
 .mt-4 {
   margin-top: 1rem
-}
-
-.ml-4 {
-  margin-left: 1rem
-}
-
-.mb-4 {
-  margin-bottom: 1rem
-}
-
-.mb-12 {
-  margin-bottom: 3rem
 }
 
 .block {
@@ -315,10 +311,6 @@
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-12 {
-    margin-right: 3rem
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px
   }
@@ -338,10 +330,6 @@
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem
-  }
-
-  .lg\:pr-12 {
-    padding-right: 3rem
   }
 
   .lg\:pr-20 {
