@@ -1,6 +1,7 @@
 <div class="flex flex-col md:flex-row">
   <div class="w-full md:w-1/2 bg-white flex flex-col items-center justify-center p-8 lg:p-24">
-    <h1 class="text-3xl font-bold mb-6 text-center">{{ section.settings.column_1_title }}</h1>
+    <h1 class="text-3xl font-bold mb-2 text-center">{{ section.settings.column_1_title }}</h1>
+    <p class="text-lg mb-8">{{ section.settings.description }}</p>
     <a href="#form" class="btn">Invest now</a>
   </div>
 
@@ -20,12 +21,20 @@
         "id": "column_1_title",
         "label": "Column 1 Title",
         "default": "Sign up for our newsletter"
-      }, {
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Cooking Classes + Top Chefs + Ingredients Delivered"
+      },
+      {
         "type": "text",
         "id": "column_1_question",
         "label": "Column 1 Question",
         "default": "Have questions?"
-      }, {
+      },
+      {
         "type": "text",
         "id": "hubspot_meeting_link",
         "label": "Hubspot Meeting Link",
