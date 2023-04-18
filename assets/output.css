@@ -58,6 +58,10 @@
   margin-top: 4rem
 }
 
+.mt-8 {
+  margin-top: 2rem
+}
+
 .block {
   display: block
 }
@@ -333,6 +337,10 @@
 
   .lg\:mr-20 {
     margin-right: 5rem
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem
   }
 
   .lg\:h-96 {
