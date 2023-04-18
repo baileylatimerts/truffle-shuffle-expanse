@@ -499,6 +499,15 @@
         "title": "As seen  on 👇",
         "divider": false
       }
+    },
+    "20abcaf4-a990-46f9-9489-f4049c17facf": {
+      "type": "feature-text-4",
+      "settings": {
+        "title": "Truffle Shuffle is going <br>live on Startengine",
+        "description": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023",
+        "btn_link": "shopify:\/\/pages\/invest",
+        "btn_text": "Invest Now"
+      }
     }
   },
   "order": [
@@ -514,6 +523,7 @@
     "282f0805-d804-4ae2-93d4-894083e3ad86",
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "1677021793adcde42b",
-    "logo-list"
+    "logo-list",
+    "20abcaf4-a990-46f9-9489-f4049c17facf"
   ]
 }
