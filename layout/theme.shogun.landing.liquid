@@ -60,7 +60,11 @@ This file can be re-written at any time.
 
     {%- render 'font-face' -%}
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+
+
     {%- render 'css-variables' -%}
+    {{ 'output.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
 
     {% if template == 'page.explore-truffle-shuffle-plus' or template == 'page.culinary-academy' or template == 'page.membership-home' or template == 'page.invite-friend' or template == 'page.your-classes' or template == 'page.membership-offers' %}
       {{ 'truffle-shuffle-custom-plus.css' | asset_url | stylesheet_tag: preload: true }}
@@ -110,10 +114,10 @@ This file can be re-written at any time.
       };
       theme.settings = {
         cartType: {{ settings.cart_type | json }},
-        isCustomerTemplate:{% if request.page_type contains 'customers/' %}
-          true
+        isCustomerTemplate:{% if request.page_type contains 'customers/' %}true
         {% else %}
-          false{% endif %},
+          false
+        {% endif %},
         moneyFormat: {{ shop.money_format | json }},
         saveType: {{ settings.product_save_type | json }},
         productImageSize: {{ settings.product_grid_image_size | json }},
@@ -153,7 +157,7 @@ This file can be re-written at any time.
     {% render 'judgeme_core' %}
 
     {% render 'qikify-apps' %}
-    
+
 
     {% render 'gift-card-pro' %}
 
@@ -177,9 +181,9 @@ This file can be re-written at any time.
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-  
-{% include 'store-credit-launcher' %}
 
+    {% include 'store-credit-launcher' %}
+  
 </head>
 
 
