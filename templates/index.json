@@ -176,8 +176,71 @@
         "home_featured_products": "may-experiences",
         "count": 5,
         "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "83c85538-9356-4a6e-8475-34e089ec8ace": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "On-demand Classes",
+        "home_featured_products": "on-demand-classes",
+        "count": 5,
+        "mobile_scrollable": true,
         "view_all": false,
         "divider": false
+      }
+    },
+    "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3"
+      ],
+      "settings": {
+        "featured_product": "black-truffle-carpaccio-2-82oz",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
       }
     },
     "a11284d2-e900-4638-8389-f851b52c6cd1": {
@@ -425,7 +488,7 @@
       "type": "apps",
       "blocks": {
         "5522330e-436a-4839-a311-5f8b0fc2eab4": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-playlist-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
           "disabled": true,
           "settings": {
             "playlist_id": "rl_pl_540",
@@ -517,6 +580,8 @@
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
+    "83c85538-9356-4a6e-8475-34e089ec8ace",
+    "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
     "2ee7733b-804d-4067-a7e2-d6f0a423c9f4",
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
