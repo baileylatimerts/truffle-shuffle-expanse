@@ -201,12 +201,14 @@
         },
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "is_tab": false
           }
         },
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "variant_labels": true,
             "picker_type": "button",
@@ -220,13 +222,20 @@
             "show_dynamic_checkout": true,
             "surface_pickup_enable": true
           }
+        },
+        "0779769a-f799-4a10-aa98-46dfedf67ec1": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
         }
       },
       "block_order": [
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0",
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1",
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2",
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3"
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3",
+        "0779769a-f799-4a10-aa98-46dfedf67ec1"
       ],
       "settings": {
         "featured_product": "black-truffle-carpaccio-2-82oz",
