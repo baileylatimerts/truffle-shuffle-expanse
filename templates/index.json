@@ -451,6 +451,7 @@
         },
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-0": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Experiences",
@@ -470,6 +471,7 @@
         },
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-1": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Small Batch Products",
