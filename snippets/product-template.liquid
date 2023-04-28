@@ -278,7 +278,7 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
                     </div>
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
-                      <div class="product__quantity">
+                      <div class="product__quantity {% if product.id == 6887244562455 or product.id == 6887260225559 %}hidden{%endif%}">
                         <label for="Quantity-{{ section_id }}-{{ product.id }}">{{ 'products.product.quantity' | t }}</label>
                         <div class="js-qty__wrapper">
                           <input type="text" id="Quantity-{{ section_id }}-{{ product.id }}"
