@@ -1,0 +1,53 @@
+<div class="flex flex-col md:flex-row">
+  <div class="w-full md:w-1/2 bg-white flex flex-col items-center justify-center p-8 lg:p-24">
+    <h1 class="text-3xl font-bold mb-2 text-center">{{ section.settings.title }}</h1>
+    <p class="text-lg mb-8 text-center">{{ section.settings.description }}</p>
+    <a href="{{ section.settings.btn_link }}" class="btn">{{ section.settings.btn_text }}</a>
+  </div>
+
+  <div
+    class="w-full md:w-1/2 h-64 lg:h-96 bg-cover bg-center relative"
+    style="min-height: 300px; background-image: url('{{ section.settings.image | img_url: 'master' }}');"
+    style="">
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Split Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Sign up for our newsletter"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Cooking Classes + Top Chefs + Ingredients Delivered"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text"
+      }, {
+        "type": "text",
+        "id": "btn_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Split Section"
+      }
+    ]
+  }
+{% endschema %}
