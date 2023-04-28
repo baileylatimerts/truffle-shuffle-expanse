@@ -34,24 +34,21 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "888bda7b-ec30-4722-a56d-757df51f11ef": {
           "type": "hero",
-          "disabled": true,
           "settings": {
-            "top_subheading": "Check out our first course!",
-            "title": "<p>How to sharpen a knife<\/p>",
+            "top_subheading": "",
+            "title": "<p>40% OFF<\/p><p>ON ALL PRODUCTS!<\/p>",
             "title_size": 70,
-            "subheading": "Learn the basics of knife sharpening!",
-            "link": "https:\/\/www.truffleshufflesf.com\/apps\/my\/course\/how_to_sharpen_a_knife",
-            "link_text": "Start Course",
+            "subheading": "To celebrate our 100,000th shipment, we are offering a AMAZING discount for you!",
+            "link": "https:\/\/www.trufflhttps:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
+            "link_text": "Shop now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Culinary_Library_Thumbnail_Template_7.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Culinary_Library_Thumbnail_Template_7.jpg",
+            "image": "shopify:\/\/shop_images\/Bela_Posters_2.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -112,13 +109,32 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "7301bdb9-958c-4518-8851-53a9c28c7447": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Overlaid Hero Slide<\/p>",
+            "title_size": 70,
+            "subheading": "And optional subtext",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "888bda7b-ec30-4722-a56d-757df51f11ef",
         "bd7da909-eaf9-4b58-a7e6-88eba209e60f",
         "8adcb75f-0832-4a35-9b98-2183b4042ced",
-        "3c91c59a-50a8-45bc-afd5-0b5888cb3057"
+        "3c91c59a-50a8-45bc-afd5-0b5888cb3057",
+        "7301bdb9-958c-4518-8851-53a9c28c7447"
       ],
       "settings": {
         "full_width": true,
@@ -580,6 +596,58 @@
         "btn_link": "shopify:\/\/pages\/invest",
         "btn_text": "Join the Waitlist Today"
       }
+    },
+    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Overlaid Hero Slide<\/p>",
+            "title_size": 70,
+            "subheading": "Perfect for rich lifestyle photography.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Make an Impact<\/p>",
+            "title_size": 70,
+            "subheading": "Supports multiple text alignments and mobile-specific images.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0",
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
@@ -598,6 +666,7 @@
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "1677021793adcde42b",
     "logo-list",
-    "20abcaf4-a990-46f9-9489-f4049c17facf"
+    "20abcaf4-a990-46f9-9489-f4049c17facf",
+    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a"
   ]
 }
