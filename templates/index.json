@@ -2,6 +2,7 @@
   "sections": {
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -201,6 +202,17 @@
       "settings": {
         "title": "On-demand Classes",
         "home_featured_products": "on-demand-classes",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "112c8514-76a6-40b3-a9bb-a0839403ebc2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "On-demand Classes",
+        "home_featured_products": "products-gifts",
         "count": 5,
         "mobile_scrollable": true,
         "view_all": false,
@@ -658,6 +670,7 @@
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
+    "112c8514-76a6-40b3-a9bb-a0839403ebc2",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
     "2ee7733b-804d-4067-a7e2-d6f0a423c9f4",
