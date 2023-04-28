@@ -41,14 +41,14 @@
           "settings": {
             "top_subheading": "",
             "title": "<p>40% OFF<\/p><p>ON ALL PRODUCTS!<\/p>",
-            "title_size": 70,
+            "title_size": 73,
             "subheading": "To celebrate our 100,000th shipment, we are offering a AMAZING discount for you!",
             "link": "https:\/\/www.trufflhttps:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
             "link_text": "Shop now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/Bela_Posters_2.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
