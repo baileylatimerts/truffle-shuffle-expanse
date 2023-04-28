@@ -241,10 +241,9 @@
           },
           "77d8f076-1cba-44d1-a5c5-bbac749369ad": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery\">Check out our Valentine's Day Experience! <\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery\">Check out our Valentine's Day Experience! <\/a><\/p>"
+              "richtext": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\">We've reached 100,000 shipments! To celebrate, we are offering 40% off on any product! Shop now!<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\">We've reached 100,000 shipments! To celebrate, we are offering 40% off on any product! Shop now!<\/a><\/p>"
             }
           },
           "4f461417-ce04-4617-81b2-ec681e853d90": {
