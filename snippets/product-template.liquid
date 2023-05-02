@@ -319,6 +319,9 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
 
 
                   {%- when 'size_chart' -%}
+
+                    {% unless product.id == 6886976356375 %}
+
                     {% if connect_to_sizechart == false %}
                       {%- capture size_chart_title -%}
                         {{ 'products.general.size_chart' | t }}<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class="a" d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path class="a" d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39M46.78 33.53v7.44M38.65 33.53v7.44M30.52 33.53v7.44M22.39 33.53v7.44"/></svg>
@@ -338,7 +341,15 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
                         {% endstyle %}
                       </div>
                     {% endif %}
+
+                     {% endunless %}
+
+
                   {%- when 'variant_picker' -%}
+
+                    {% unless product.id == 6886976356375 %}
+
+
                     <div class="product-block" {% if block.settings.product_dynamic_variants_enable %}data-dynamic-variants-enabled{% endif %} {{ block.shopify_attributes }}>
                       {%- unless product.has_only_default_variant -%}
                         {%- for option in product.options_with_values -%}
@@ -384,7 +395,13 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
                         {%- endfor -%}
                       {%- endunless -%}
                     </div>
+
+                    {% endunless %}
+
+
                   {%- when 'buy_buttons' -%}
+
+                    {% unless product.id == 6886976356375 %}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- unless product.empty? -%}
                         <div class="product-block">
@@ -405,6 +422,10 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
                           ></div>
                       {%- endif -%}
                     </div>
+
+                    {%- endunless -%}
+
+                    
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
