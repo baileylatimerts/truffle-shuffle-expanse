@@ -88,20 +88,18 @@
     },
     "19ad8f24-15f2-4c35-92a7-d8b289553232": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-22_at_2.58.13_PM.png",
-        "image2": "shopify:\/\/shop_images\/Screen_Shot_2023-01-22_at_3.02.47_PM.png",
+        "image": "shopify:\/\/shop_images\/finale-watch-party_1.png",
         "image_width": 700,
-        "subtitle": "OMG!",
-        "title": "",
-        "text": "<p>Celebrate your love this year with the most delicious wagyu dinner. Use code \"OMG23\" to get this $275 Valentine's day experience for $129 as your first box as a member. <\/p>",
-        "button_label": "Get Offer",
-        "button_link": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions",
+        "subtitle": "",
+        "title": "Watch party",
+        "text": "<p>We are hosting the ultimate watch party for the Next Level Chef at an outdoor cinema in San Francisco!! Come root for Chef Tucker to make it to the finale! 🥳<\/p>",
+        "button_label": "Get Tickets",
+        "button_link": "https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261",
         "button_style": "primary",
         "align_text": "center",
-        "layout": "right",
-        "color_scheme": "1",
+        "layout": "left",
+        "color_scheme": "none",
         "divider": false
       }
     },
