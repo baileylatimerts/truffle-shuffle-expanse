@@ -88,6 +88,7 @@
     },
     "19ad8f24-15f2-4c35-92a7-d8b289553232": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/finale-watch-party_1.png",
         "image_width": 700,
@@ -488,7 +489,7 @@
           "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
           "disabled": true,
           "settings": {
-            "playlist_id": "rl_pl_540",
+            "playlist_id": "",
             "debugging_script": ""
           }
         }
