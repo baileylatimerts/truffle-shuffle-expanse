@@ -14,11 +14,9 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "888bda7b-ec30-4722-a56d-757df51f11ef": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>40% OFF ON ALL PRODUCTS!<\/p>",
@@ -511,7 +509,7 @@
       "type": "feature-text-4",
       "settings": {
         "title": "Truffle Shuffle is <br>live on Startengine!",
-        "description": "Truffle Shuffle has launched a community round on StartEngine! Check out our campaign page and invest in Truffle Shuffle today! ✨",
+        "description": "Truffle Shuffle has launched a community round on StartEngine! Get exciting perks and exclusive bonus rewards if you invest within 72 hours! Check out our campaign page and invest in Truffle Shuffle today! ✨",
         "btn_link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
         "btn_text": "Invest in Truffle Shuffle Today"
       }
