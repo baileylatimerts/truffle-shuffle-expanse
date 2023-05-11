@@ -88,6 +88,23 @@
         "height_mobile": 300
       }
     },
+    "d95b34e8-da01-429a-b93f-4e652d0661ac": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design.png",
+        "image_width": 670,
+        "subtitle": "",
+        "title": "Donate to the food bank",
+        "text": "<p>Join our fundraiser to support our local food bank - <a href=\"https:\/\/www.accfb.org\/\">Alameda County Community Food Bank<\/a>! By donating, you'll be helping to provide food for those in need in our community.<\/p>",
+        "button_label": "Donate here!",
+        "button_link": "https:\/\/www.truffleshufflesf.com\/products\/fundraiser-for-the-alameda-county-community-food-bank",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
     "19ad8f24-15f2-4c35-92a7-d8b289553232": {
       "type": "text-and-image",
       "settings": {
@@ -116,23 +133,6 @@
         "count": 5,
         "mobile_scrollable": true,
         "view_all": false,
-        "divider": false
-      }
-    },
-    "d95b34e8-da01-429a-b93f-4e652d0661ac": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_design.png",
-        "image_width": 670,
-        "subtitle": "",
-        "title": "Donate to the food bank",
-        "text": "<p>Join our fundraiser to support our local food bank - <a href=\"https:\/\/www.accfb.org\/\">Alameda County Community Food Bank<\/a>! By donating, you'll be helping to provide food for those in need in our community.<\/p>",
-        "button_label": "Donate here!",
-        "button_link": "https:\/\/www.truffleshufflesf.com\/products\/fundraiser-for-the-alameda-county-community-food-bank",
-        "button_style": "primary",
-        "align_text": "center",
-        "layout": "left",
-        "color_scheme": "none",
         "divider": false
       }
     },
@@ -511,7 +511,7 @@
       "type": "feature-text-4",
       "settings": {
         "title": "Truffle Shuffle is <br>live on Startengine!",
-        "description": "Truffle Shuffle has launched a crowdfunding campaign on StartEngine! Check out our campaign page and invest in Truffle Shuffle today! ✨",
+        "description": "Truffle Shuffle has launched a community round on StartEngine! Check out our campaign page and invest in Truffle Shuffle today! ✨",
         "btn_link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
         "btn_text": "Invest in Truffle Shuffle Today"
       }
@@ -652,9 +652,9 @@
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "slideshow",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
+    "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
-    "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "527778b3-28bc-4a2b-86e3-999b06667fac",
