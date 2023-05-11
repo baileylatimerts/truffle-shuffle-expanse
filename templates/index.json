@@ -507,6 +507,15 @@
         "space_below": false
       }
     },
+    "20abcaf4-a990-46f9-9489-f4049c17facf": {
+      "type": "feature-text-4",
+      "settings": {
+        "title": "Truffle Shuffle is <br>live on Startengine!",
+        "description": "Truffle Shuffle has launched a crowdfunding campaign on StartEngine! Check out our campaign page and invest in Truffle Shuffle today! ✨",
+        "btn_link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
+        "btn_text": "Invest in Truffle Shuffle Today"
+      }
+    },
     "1677021793adcde42b": {
       "type": "apps",
       "blocks": {
@@ -586,15 +595,6 @@
         "divider": false
       }
     },
-    "20abcaf4-a990-46f9-9489-f4049c17facf": {
-      "type": "feature-text-4",
-      "settings": {
-        "title": "Truffle Shuffle is going <br>live on Startengine",
-        "description": "Truffle Shuffle is launching a crowdfunding campaign on StartEngine soon!  Sign up to our waitlist to be the first in line to invest when our campaign goes live.  We’ve got some great perks as well for early investors so join the waitlist today to receive a bonus on your investment when the campaign launches!",
-        "btn_link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
-        "btn_text": "Invest in Truffle Shuffle Today"
-      }
-    },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
       "type": "slideshow",
       "disabled": true,
@@ -665,9 +665,9 @@
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
     "282f0805-d804-4ae2-93d4-894083e3ad86",
     "8940e18b-033f-4ded-85f7-20008c761e49",
+    "20abcaf4-a990-46f9-9489-f4049c17facf",
     "1677021793adcde42b",
     "logo-list",
-    "20abcaf4-a990-46f9-9489-f4049c17facf",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a"
   ]
 }
