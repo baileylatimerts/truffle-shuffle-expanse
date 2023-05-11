@@ -88,14 +88,13 @@
     },
     "19ad8f24-15f2-4c35-92a7-d8b289553232": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/finale-watch-party_1.png",
+        "image": "shopify:\/\/shop_images\/Watch_Party_Social_Post_1.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Watch party",
-        "text": "<p>We are hosting the ultimate watch party for the Next Level Chef at an outdoor cinema in San Francisco!! Come root for Chef Tucker to make it to the finale! 🥳<\/p><p>May 11th | Doors open at 7pm<\/p><p>Limited tickets available 🎟️<\/p>",
-        "button_label": "Get Tickets",
+        "text": "<p>For Truffle Shufflers who can't make it to the watch party in SF, join us on our Instagram Live at 7pm PT!<\/p>",
+        "button_label": "Join the Livestream Party!",
         "button_link": "https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261",
         "button_style": "primary",
         "align_text": "center",
