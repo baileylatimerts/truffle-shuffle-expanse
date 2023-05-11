@@ -12,6 +12,8 @@
         "column_1_title": "Invest in Truffle Shuffle",
         "description": "Cooking Classes + Top Chefs + Ingredients Delivered",
         "column_1_question": "",
+        "button_link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
+        "button_text": "Invest in Truffle Shuffle",
         "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce",
         "column_2_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cc01cb9b504846389e4ef1ba5d735a01.mp4"
       }
@@ -175,6 +177,7 @@
     },
     "64b2dabd-9160-45dc-8900-a2b4f8f2294e": {
       "type": "invest-form",
+      "disabled": true,
       "settings": {
         "column_1_title": "Join the waitlist to invest",
         "column_1_question": "Have questions?",
