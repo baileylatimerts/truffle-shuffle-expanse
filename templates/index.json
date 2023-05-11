@@ -118,6 +118,23 @@
         "divider": false
       }
     },
+    "d95b34e8-da01-429a-b93f-4e652d0661ac": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11_Posters_3.jpg",
+        "image_width": 670,
+        "subtitle": "",
+        "title": "Donate to the food bank",
+        "text": "<p>Join our fundraiser to support our local food bank - <a href=\"https:\/\/www.accfb.org\/\">Alameda County Community Food Bank<\/a>! By donating, you'll be helping to provide food for those in need in our community.<\/p>",
+        "button_label": "Donate here!",
+        "button_link": "https:\/\/www.truffleshufflesf.com\/products\/fundraiser-for-the-alameda-county-community-food-bank",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "disabled": true,
@@ -162,23 +179,6 @@
         "text": "<p>We have teamed up with Far Niente winery to create an exclusive perfect pairing experience featuring their beautiful wines and renowned winemaker Nicole Marchesi!<\/p>",
         "button_label": "Book now!",
         "button_link": "https:\/\/farnientefamily.farniente.com\/events\/truffle-shuffle-june",
-        "button_style": "primary",
-        "align_text": "center",
-        "layout": "left",
-        "color_scheme": "none",
-        "divider": false
-      }
-    },
-    "d95b34e8-da01-429a-b93f-4e652d0661ac": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/11_Posters_2.jpg",
-        "image_width": 670,
-        "subtitle": "",
-        "title": "Donate to the food bank",
-        "text": "<p>Join our fundraiser to support our local food bank - <a href=\"https:\/\/www.accfb.org\/\">Alameda County Community Food Bank<\/a>! By donating, you'll be helping to provide food for those in need in our community.<\/p>",
-        "button_label": "Donate here!",
-        "button_link": "https:\/\/www.truffleshufflesf.com\/products\/fundraiser-for-the-alameda-county-community-food-bank",
         "button_style": "primary",
         "align_text": "center",
         "layout": "left",
@@ -653,10 +653,10 @@
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
+    "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "527778b3-28bc-4a2b-86e3-999b06667fac",
-    "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "112c8514-76a6-40b3-a9bb-a0839403ebc2",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
