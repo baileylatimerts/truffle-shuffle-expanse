@@ -20,7 +20,7 @@
           "settings": {
             "heading": "next level chef finale LiveStream party!",
             "heading_size": "h2",
-            "text": "<h4>May 11 at 7pm PT<\/h4><p>For Truffle Shufflers who can't make it to the watch party in SF, join us on our Instagram Live at 7pm PT!<\/p>",
+            "text": "<h4>May 11 at 7pm PT<\/h4><p><strong>For Truffle Shufflers who can't make it to the watch party in SF, you can join the livestream party so we can support Chef Tucker together! 💛<\/strong><\/p>",
             "content_alignment": "left"
           }
         },
@@ -57,7 +57,7 @@
         "background_image": "shopify:\/\/shop_images\/Tucker_Actionshot2_1x1_16b88d85-4ec2-45e5-ac50-0a7d2d37d99f.jpg",
         "blur_image": false,
         "overlay_color": "#ffffff",
-        "overlay_opacity": 50,
+        "overlay_opacity": 54,
         "focal_point": "center",
         "mobile_image_focal_point": "top"
       }
