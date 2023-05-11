@@ -120,6 +120,7 @@
     },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -172,7 +173,7 @@
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/11_Posters_2.jpg",
-        "image_width": 700,
+        "image_width": 670,
         "subtitle": "",
         "title": "Donate to the food bank",
         "text": "<p>Join our fundraiser to support our local food bank - <a href=\"https:\/\/www.accfb.org\/\">Alameda County Community Food Bank<\/a>! By donating, you'll be helping to provide food for those in need in our community.<\/p>",
@@ -249,6 +250,7 @@
     },
     "112c8514-76a6-40b3-a9bb-a0839403ebc2": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Small Batch Products",
         "home_featured_products": "products-gifts",
@@ -376,6 +378,7 @@
     },
     "8940e18b-033f-4ded-85f7-20008c761e49": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "d3dca96e-442b-4c34-a169-8954d283bf25": {
           "type": "advanced",
@@ -409,6 +412,7 @@
         },
         "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Become a member today!",
@@ -468,6 +472,7 @@
         },
         "27e2c59a-46d5-4fc5-bb01-931f6c9aaa08": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "looking for a way to bring people together virtually?",
             "heading": "Host your own truffle shuffle!",
