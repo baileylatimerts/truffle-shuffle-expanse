@@ -97,8 +97,8 @@
         "8f903a76-2703-487b-a73a-3b7200005dad": {
           "type": "feature",
           "settings": {
-            "heading": "Chef Tucker's Next Level Course",
-            "text": "Teaches you everything from what knifes to choose to her favorite recipes to how to win a cooking competition show!!!"
+            "heading": "Chef Tucker Swag",
+            "text": "Get a limited release signature #teamtucker T Shirt and signature Chef Tucker Gastronomy Gangster Apron."
           }
         },
         "849f3d22-1655-496c-9cfa-313e82f26b14": {
@@ -134,6 +134,60 @@
         "title": "When you purchase lifetime access you get"
       }
     },
+    "07e76c5f-a437-4205-8eb8-1e7b41a0b9fc": {
+      "type": "feature-text",
+      "settings": {
+        "title": "Chef Tucker’s Next Level Course",
+        "description": "Dive into Chef Tucker's first-ever course series! Learn her top tips, from picking knives to winning cooking shows, and even her favorite recipes. Don't miss out!"
+      }
+    },
+    "67ce2557-3704-405d-a433-8d3b23eccc28": {
+      "type": "feature-text-3",
+      "settings": {
+        "title": "Chef Tucker’s Kitchen Basics",
+        "description_1": "How to set up your station",
+        "description_2": "How to be successful cooking in your kitchen and cooking along in the classes",
+        "description_3": "Know your knife roll: What knives do you need and how to maintain them",
+        "description_4": "Chef Tucker’s Four-Part Pasta Series",
+        "description_5": "Chef Tucker’s Butchery Series",
+        "description_6": "Chef Tucker’s Best dishes from around the world",
+        "description_7": "Plus so much more!",
+        "description_8": ""
+      }
+    },
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb": {
+      "type": "image-row",
+      "blocks": {
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/img.jpg",
+            "id": ""
+          }
+        },
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/img-1.jpg",
+            "id": ""
+          }
+        },
+        "1314faeb-5d44-4f3a-9ed2-2ba2a8b0a7db": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "id": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0",
+        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1",
+        "1314faeb-5d44-4f3a-9ed2-2ba2a8b0a7db"
+      ],
+      "settings": {
+      }
+    },
     "c37ee260-6a65-4a38-a0f3-7815fccd025e": {
       "type": "feature-text-3",
       "settings": {
@@ -142,7 +196,10 @@
         "description_2": "Score early lifetime access to Truffle Shuffle Sous Chef Membership, usually $49\/month! You'll get unlimited access to all our live and past cooking classes. It's a deal that's too good to miss!",
         "description_3": "Why join us? Simple! Cooking ups your life's game. Better cooking equals awesome food, and awesome food equals a fantastic life. Join the thousands cooking weekly with Truffle Shuffle and Chef Tucker!",
         "description_4": "Get 10% off everything at the Truffle Shuffle store! Your savings in the first year alone will pay for your membership. It's a win-win!",
-        "description_5": "Looking to become a 'Gastronomy Gangster'? There's no better spot online than right here!"
+        "description_5": "Looking to become a 'Gastronomy Gangster'? There's no better spot online than right here!",
+        "description_6": "",
+        "description_7": "",
+        "description_8": ""
       }
     },
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44": {
@@ -249,39 +306,6 @@
       "settings": {
         "title": "The details",
         "description": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
-      }
-    },
-    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb": {
-      "type": "image-row",
-      "blocks": {
-        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
-          "type": "image",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/img.jpg",
-            "id": ""
-          }
-        },
-        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
-          "type": "image",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/img-1.jpg",
-            "id": ""
-          }
-        },
-        "1314faeb-5d44-4f3a-9ed2-2ba2a8b0a7db": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "id": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0",
-        "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1",
-        "1314faeb-5d44-4f3a-9ed2-2ba2a8b0a7db"
-      ],
-      "settings": {
       }
     },
     "479db6c7-d22f-429c-98ff-bd1cf5a7e857": {
@@ -417,6 +441,38 @@
       ],
       "settings": {
       }
+    },
+    "f21b02e0-77f0-465b-919b-0fbcb0c5982a": {
+      "type": "feature-text-3",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description_1": "",
+        "description_2": "",
+        "description_3": "",
+        "description_4": "",
+        "description_5": "",
+        "description_6": "",
+        "description_7": "",
+        "description_8": ""
+      }
+    },
+    "57ba699e-bbdf-47ab-a47f-fc412494fab4": {
+      "type": "feature-text-4",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description": "",
+        "btn_link": "",
+        "btn_text": ""
+      }
+    },
+    "974b92a6-4e6a-45ec-907b-67a81aa37c92": {
+      "type": "feature-text-2",
+      "disabled": true,
+      "settings": {
+        "text": ""
+      }
     }
   },
   "order": [
@@ -426,15 +482,20 @@
     "8b22fae2-cede-4aaa-bfb8-357e91c3a7cc",
     "3f4973ed-4b2e-4cf3-819f-5fe97ea0187c",
     "d3107869-da0c-4c8f-946a-46cdbf9dd407",
+    "07e76c5f-a437-4205-8eb8-1e7b41a0b9fc",
+    "67ce2557-3704-405d-a433-8d3b23eccc28",
+    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb",
     "c37ee260-6a65-4a38-a0f3-7815fccd025e",
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44",
     "7d2d05a0-b20d-47a7-a206-96993c1588e1",
     "64c45c24-138a-423d-aa4d-8a17c3fe491c",
-    "ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb",
     "479db6c7-d22f-429c-98ff-bd1cf5a7e857",
     "e1dfb103-9870-4a97-97bd-bf7a669f6d92",
     "64b2dabd-9160-45dc-8900-a2b4f8f2294e",
     "b4eb832f-437a-4a14-b013-9fe50903647a",
-    "f064c14b-f125-4c16-8f3f-380ca2d97f43"
+    "f064c14b-f125-4c16-8f3f-380ca2d97f43",
+    "f21b02e0-77f0-465b-919b-0fbcb0c5982a",
+    "57ba699e-bbdf-47ab-a47f-fc412494fab4",
+    "974b92a6-4e6a-45ec-907b-67a81aa37c92"
   ]
 }
