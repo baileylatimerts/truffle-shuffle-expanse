@@ -52,9 +52,9 @@
       ],
       "settings": {
         "layout": "hero",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "none",
-        "background_image": "shopify:\/\/shop_images\/Tucker_Actionshot2_1x1_762eee37-7b25-4dc5-b271-9def8cc29038.jpg",
+        "background_image": "shopify:\/\/shop_images\/Tucker_Actionshot2_1x1_16b88d85-4ec2-45e5-ac50-0a7d2d37d99f.jpg",
         "blur_image": false,
         "overlay_color": "#ffffff",
         "overlay_opacity": 50,
