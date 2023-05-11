@@ -17,7 +17,7 @@
         "link": "",
         "color_accent": "#ffffff",
         "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1580f111dd86416faa6dd2cdf21c836d.mp4",
         "overlay_opacity": 0,
         "height": 650,
         "height_mobile": 300
@@ -32,7 +32,7 @@
         "button_link": "",
         "button_text": "",
         "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce",
-        "column_2_video_url": ""
+        "column_2_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e39b62acf4cd4447b3a5550fd149f160.mp4"
       }
     },
     "8b22fae2-cede-4aaa-bfb8-357e91c3a7cc": {
@@ -82,6 +82,7 @@
     },
     "3f4973ed-4b2e-4cf3-819f-5fe97ea0187c": {
       "type": "split-section",
+      "disabled": true,
       "settings": {
         "title": "Something big is happening",
         "description": "RSVP to a secret event Truffle Shuffle in San Francisco",
@@ -90,13 +91,58 @@
         "btn_link": "https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261"
       }
     },
+    "d3107869-da0c-4c8f-946a-46cdbf9dd407": {
+      "type": "features-section",
+      "blocks": {
+        "8f903a76-2703-487b-a73a-3b7200005dad": {
+          "type": "feature",
+          "settings": {
+            "heading": "Chef Tucker's Next Level Course",
+            "text": "Teaches you everything from what knifes to choose to her favorite recipes to how to win a cooking competition show!!!"
+          }
+        },
+        "849f3d22-1655-496c-9cfa-313e82f26b14": {
+          "type": "feature",
+          "settings": {
+            "heading": "Mentorship with Chef Tucker for a year!",
+            "text": "Every month you will be invited to a private shopping list class with Chef Tucker! Plus access to her chef forum to ask her qustions directly!!"
+          }
+        },
+        "8aa88988-3752-493c-bf39-a985f02764f3": {
+          "type": "feature",
+          "settings": {
+            "heading": "Lifetime access to live classes every week",
+            "text": "Teaches you everything from what knifes to choose to her favorite recipes to how to win a cooking competition show"
+          }
+        },
+        "1f440866-4a78-4825-87bc-d7b0477dba5a": {
+          "type": "feature",
+          "settings": {
+            "heading": "Access to our entire culinary library of recipes and on demand classes",
+            "text": "Teaches you everything from what knifes to choose to her favorite recipes to how to win a cooking competition show"
+          }
+        }
+      },
+      "block_order": [
+        "8f903a76-2703-487b-a73a-3b7200005dad",
+        "849f3d22-1655-496c-9cfa-313e82f26b14",
+        "8aa88988-3752-493c-bf39-a985f02764f3",
+        "1f440866-4a78-4825-87bc-d7b0477dba5a"
+      ],
+      "settings": {
+        "overline": "Limited Time Offer",
+        "title": "When you purchase lifetime access you get"
+      }
+    },
     "c37ee260-6a65-4a38-a0f3-7815fccd025e": {
       "type": "feature-text-3",
       "settings": {
-        "title": "The Details",
-        "description_1": "May 11th",
-        "description_2": "Doors open at 6:30pm",
-        "description_3": "37.78981794489164, -122.39293471590348"
+        "title": "5 reasons you need this",
+        "description_1": "Meet Chef Tucker Ricchio, our 'Next Level Chef' picked by Gordon Ramsay himself! Get in on the action with exclusive access to her top-notch recipes, skills, and techniques. Trust us, you don't want to miss this!",
+        "description_2": "Score early lifetime access to Truffle Shuffle Sous Chef Membership, usually $49\/month! You'll get unlimited access to all our live and past cooking classes. It's a deal that's too good to miss!",
+        "description_3": "Why join us? Simple! Cooking ups your life's game. Better cooking equals awesome food, and awesome food equals a fantastic life. Join the thousands cooking weekly with Truffle Shuffle and Chef Tucker!",
+        "description_4": "Get 10% off everything at the Truffle Shuffle store! Your savings in the first year alone will pay for your membership. It's a win-win!",
+        "description_5": "Looking to become a 'Gastronomy Gangster'? There's no better spot online than right here!"
       }
     },
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44": {
@@ -211,14 +257,14 @@
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/latimer_a_black_marble_table_with_bottles_of_wine_and_champage__ef5eb97b-0fb0-4904-8354-949c996c6492.png",
+            "background_image": "shopify:\/\/shop_images\/img.jpg",
             "id": ""
           }
         },
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/latimer_a_black_marble_table_that_has_truffles_on_it_in_a_home__ca411065-cb3d-47cd-88ea-afb8d8fd3c32.png",
+            "background_image": "shopify:\/\/shop_images\/img-1.jpg",
             "id": ""
           }
         },
@@ -379,6 +425,7 @@
     "c7e3cbcc-7ec4-419f-bc64-83b5b3060766",
     "8b22fae2-cede-4aaa-bfb8-357e91c3a7cc",
     "3f4973ed-4b2e-4cf3-819f-5fe97ea0187c",
+    "d3107869-da0c-4c8f-946a-46cdbf9dd407",
     "c37ee260-6a65-4a38-a0f3-7815fccd025e",
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44",
     "7d2d05a0-b20d-47a7-a206-96993c1588e1",

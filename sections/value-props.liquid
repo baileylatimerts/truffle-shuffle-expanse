@@ -11,7 +11,7 @@ Value Props Section
 <div class="mx-auto px-4 flex justify-center items-center py-16 border-top border-bottom value-props">
   <div class="flex flex-col lg:flex-row" style="max-width: 800px">
     {% for block in section.blocks %}
-      <div class="text-center lg:w-1/3">
+      <div class="text-center lg:w-1/3 mb-4 lg:mb-0">
         <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
         <h4 class=" mb-2">{{ block.settings.heading }}</h4>
         <p>{{ block.settings.text }}</p>
