@@ -12,11 +12,63 @@
         "divider": false
       }
     },
+    "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1": {
+      "type": "countdown",
+      "blocks": {
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-0": {
+          "type": "content",
+          "settings": {
+            "heading": "next level chef finale LiveStream party!",
+            "heading_size": "h2",
+            "text": "<h4>May 11 at 7pm PT<\/h4><p>For Truffle Shufflers who can't make it to the watch party in SF, join us on our Instagram Live at 7pm PT!<\/p>",
+            "content_alignment": "left"
+          }
+        },
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2023",
+            "month": "05",
+            "day": "11",
+            "hour": "19",
+            "minute": "00",
+            "hide_timer": true,
+            "text": "<p>Head to our IG Live!<\/p>"
+          }
+        },
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-2": {
+          "type": "button",
+          "settings": {
+            "button_link": "https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261",
+            "button": "Join the Livestream Party!",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-0",
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-1",
+        "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-2"
+      ],
+      "settings": {
+        "layout": "hero",
+        "full_width": false,
+        "color_scheme": "none",
+        "background_image": "shopify:\/\/shop_images\/Tucker_Actionshot2_1x1_762eee37-7b25-4dc5-b271-9def8cc29038.jpg",
+        "blur_image": false,
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 50,
+        "focal_point": "center",
+        "mobile_image_focal_point": "top"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "888bda7b-ec30-4722-a56d-757df51f11ef": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>40% OFF ON ALL PRODUCTS!<\/p>",
@@ -648,6 +700,7 @@
   },
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
+    "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "slideshow",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
     "d95b34e8-da01-429a-b93f-4e652d0661ac",
