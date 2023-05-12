@@ -364,68 +364,6 @@
         "height_mobile": 300
       }
     },
-    "282f0805-d804-4ae2-93d4-894083e3ad86": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "ad182cff-eb26-48e6-a6b0-c603f62ad624": {
-          "type": "separator",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-0": {
-          "type": "price",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-1": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "is_tab": true
-          }
-        },
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-2": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "dropdown",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
-        },
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": false
-          }
-        }
-      },
-      "block_order": [
-        "ad182cff-eb26-48e6-a6b0-c603f62ad624",
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-0",
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-1",
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-2",
-        "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-3"
-      ],
-      "settings": {
-        "featured_product": "beginner-fresh-pasta-class-with-chef-tucker",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
-    },
     "8940e18b-033f-4ded-85f7-20008c761e49": {
       "type": "promo-grid",
       "disabled": true,
@@ -696,6 +634,59 @@
         "autoplay": true,
         "autoplay_speed": 7
       }
+    },
+    "3c4d5871-6451-407a-8ef8-158d6f95e90b": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-0",
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-1",
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-2",
+        "template--15086526136343__3c4d5871-6451-407a-8ef8-158d6f95e90b-1683851431516c310e-3"
+      ],
+      "settings": {
+        "featured_product": "lifetime-membership",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
     }
   },
   "order": [
@@ -714,11 +705,11 @@
     "a11284d2-e900-4638-8389-f851b52c6cd1",
     "2ee7733b-804d-4067-a7e2-d6f0a423c9f4",
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
-    "282f0805-d804-4ae2-93d4-894083e3ad86",
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "20abcaf4-a990-46f9-9489-f4049c17facf",
     "1677021793adcde42b",
     "logo-list",
-    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a"
+    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
+    "3c4d5871-6451-407a-8ef8-158d6f95e90b"
   ]
 }
