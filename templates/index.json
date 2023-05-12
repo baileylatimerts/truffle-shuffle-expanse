@@ -68,6 +68,7 @@
     },
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1": {
       "type": "countdown",
+      "disabled": true,
       "blocks": {
         "template--15086526136343__f2ceaa70-fedf-4ed0-8d49-723c792f7eb1-1683836618ffa04763-0": {
           "type": "content",
@@ -118,6 +119,7 @@
     },
     "19ad8f24-15f2-4c35-92a7-d8b289553232": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/3_38ecb1ec-4271-48d1-a6d5-d860df45e2c3.png",
         "image2": "shopify:\/\/shop_images\/2_ac040c5e-5cf2-47df-bde9-462bd6c46638.png",
