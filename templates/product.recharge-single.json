@@ -2,11 +2,13 @@
   "sections": {
     "shogun-helper": {
       "type": "shogun-helper",
+      "disabled": true,
       "settings": {
       }
     },
     "shogun-above": {
       "type": "shogun-above",
+      "disabled": true,
       "settings": {
       }
     },
@@ -72,7 +74,6 @@
         },
         "76016324-b9a7-4d7c-a384-cd8f4ea02cfc": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -143,8 +144,23 @@
         "product_video_style": "unmuted"
       }
     },
+    "27c35b83-bbc8-48c6-a4f4-59886e7fb5d8": {
+      "type": "feature-text-3",
+      "settings": {
+        "title": "Act now and get",
+        "description_1": "Early Access to Our Sous Chef Membership",
+        "description_2": "Next Level Chef Tucker Swag \n(Chef Tucker Signature Shirt + Chef Tuck Signature Gastronomy Gangster Apron)",
+        "description_3": "First Access to Chef Tucker’s Next Level Course",
+        "description_4": "One year mentorship with Chef Tucker!!!",
+        "description_5": "",
+        "description_6": "",
+        "description_7": "",
+        "description_8": ""
+      }
+    },
     "sub": {
       "type": "product-full-width",
+      "disabled": true,
       "blocks": {
         "description": {
           "type": "description",
@@ -199,6 +215,7 @@
       "blocks": {
         "judgeme_review_widget_14a82b3b": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
           }
         }
@@ -245,12 +262,21 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "8aeb1d14-53b6-4b28-b1a3-ad007b5d9ad9": {
+      "type": "feature-text",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description": ""
+      }
     }
   },
   "order": [
     "shogun-helper",
     "shogun-above",
     "main",
+    "27c35b83-bbc8-48c6-a4f4-59886e7fb5d8",
     "sub",
     "judgeme_section_review_widget_eff4",
     "recommendations",
@@ -258,6 +284,7 @@
     "more-products-collection",
     "recently-viewed",
     "collection-return",
-    "shogun-below"
+    "shogun-below",
+    "8aeb1d14-53b6-4b28-b1a3-ad007b5d9ad9"
   ]
 }
