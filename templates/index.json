@@ -12,6 +12,60 @@
         "divider": false
       }
     },
+    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>limited time offer<\/p>",
+            "title_size": 49,
+            "subheading": "Get Chef Tucker's exclusive swag,  first access to her next level course, one year mentorship, and more!",
+            "link": "",
+            "link_text": "Grab this deal!",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes_1.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Make an Impact<\/p>",
+            "title_size": 70,
+            "subheading": "Supports multiple text alignments and mobile-specific images.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0",
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1": {
       "type": "countdown",
       "blocks": {
@@ -583,62 +637,6 @@
         "divider": false
       }
     },
-    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>limited time offer<\/p>",
-            "title_size": 49,
-            "subheading": "Get Chef Tucker's exclusive swag,  first access to her next level course, one year mentorship, and more!",
-            "link": "",
-            "link_text": "Grab this deal!",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes_1.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Make an Impact<\/p>",
-            "title_size": 70,
-            "subheading": "Supports multiple text alignments and mobile-specific images.",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0",
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
     "3c4d5871-6451-407a-8ef8-158d6f95e90b": {
       "type": "featured-product",
       "disabled": true,
@@ -695,6 +693,7 @@
   },
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
+    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
@@ -713,7 +712,6 @@
     "20abcaf4-a990-46f9-9489-f4049c17facf",
     "1677021793adcde42b",
     "logo-list",
-    "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "3c4d5871-6451-407a-8ef8-158d6f95e90b"
   ]
 }
