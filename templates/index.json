@@ -80,64 +80,6 @@
         "divider": false
       }
     },
-    "slideshow": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "888bda7b-ec30-4722-a56d-757df51f11ef": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>40% OFF ON ALL PRODUCTS!<\/p>",
-            "title_size": 40,
-            "subheading": "To celebrate our 100,000th shipment, we are offering a AMAZING discount for you!",
-            "link": "https:\/\/www.truffleshufflesf.com\/collections\/",
-            "link_text": "Shop now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Bela_Posters_5.png",
-            "image_mobile": "shopify:\/\/shop_images\/Bela_Posters_5.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "bd7da909-eaf9-4b58-a7e6-88eba209e60f": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Mother's Day Special: <\/p>",
-            "title_size": 40,
-            "subheading": "Our next edible adventure lands in Lebanon! Learn how to make this next level dish!",
-            "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
-            "link_text": "Shop now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "20% 100%"
-          }
-        }
-      },
-      "block_order": [
-        "888bda7b-ec30-4722-a56d-757df51f11ef",
-        "bd7da909-eaf9-4b58-a7e6-88eba209e60f"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": -10,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 5
-      }
-    },
     "951d4be5-24fb-471b-9815-27420eb6e8bf": {
       "type": "hero-video",
       "disabled": true,
@@ -185,6 +127,62 @@
         "mobile_scrollable": true,
         "view_all": false,
         "divider": false
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "888bda7b-ec30-4722-a56d-757df51f11ef": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>40% OFF ON ALL PRODUCTS!<\/p>",
+            "title_size": 40,
+            "subheading": "To celebrate our 100,000th shipment, we are offering a AMAZING discount for you!",
+            "link": "https:\/\/www.truffleshufflesf.com\/collections\/",
+            "link_text": "Shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Bela_Posters_5.png",
+            "image_mobile": "shopify:\/\/shop_images\/Bela_Posters_5.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "bd7da909-eaf9-4b58-a7e6-88eba209e60f": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Truffle Shuffle is <br\/>live on Startengine!<\/p>",
+            "title_size": 40,
+            "subheading": "Truffle Shuffle has launched a community round on StartEngine! Get exciting perks and exclusive bonus rewards if you invest within 72 hours! Check out our campaign page and invest in Truffle Shuffle today! ✨",
+            "link": "https:\/\/www.startengine.com\/offering\/truffleshuffle",
+            "link_text": "Invest in Truffle Shuffle Today",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes.png",
+            "image_mobile": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes.png",
+            "overlay_opacity": 0,
+            "focal_point": "20% 100%"
+          }
+        }
+      },
+      "block_order": [
+        "888bda7b-ec30-4722-a56d-757df51f11ef",
+        "bd7da909-eaf9-4b58-a7e6-88eba209e60f"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -10,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
       }
     },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
@@ -560,6 +558,7 @@
     },
     "20abcaf4-a990-46f9-9489-f4049c17facf": {
       "type": "feature-text-4",
+      "disabled": true,
       "settings": {
         "title": "Truffle Shuffle is <br>live on Startengine!",
         "description": "Truffle Shuffle has launched a community round on StartEngine! Get exciting perks and exclusive bonus rewards if you invest within 72 hours! Check out our campaign page and invest in Truffle Shuffle today! ✨",
@@ -703,10 +702,10 @@
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
-    "slideshow",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
     "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
+    "slideshow",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "527778b3-28bc-4a2b-86e3-999b06667fac",
