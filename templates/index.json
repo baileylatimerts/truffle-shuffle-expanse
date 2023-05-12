@@ -165,8 +165,7 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes.png",
-            "image_mobile": "shopify:\/\/shop_images\/Waiting_Screen_May_Dishes.png",
+            "image": "shopify:\/\/shop_images\/Party-bg.png",
             "overlay_opacity": 0,
             "focal_point": "20% 100%"
           }
@@ -242,6 +241,7 @@
       "blocks": {
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
