@@ -66,6 +66,17 @@
         "autoplay_speed": 7
       }
     },
+    "83c85538-9356-4a6e-8475-34e089ec8ace": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "June menu",
+        "home_featured_products": "june-experiences",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1": {
       "type": "countdown",
       "disabled": true,
@@ -259,18 +270,6 @@
         "overlay_opacity": 22,
         "height": 540,
         "height_mobile": 420
-      }
-    },
-    "83c85538-9356-4a6e-8475-34e089ec8ace": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "On-demand Classes",
-        "home_featured_products": "on-demand-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
       }
     },
     "527778b3-28bc-4a2b-86e3-999b06667fac": {
@@ -696,6 +695,7 @@
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
+    "83c85538-9356-4a6e-8475-34e089ec8ace",
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
@@ -703,7 +703,6 @@
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
     "slideshow",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
-    "83c85538-9356-4a6e-8475-34e089ec8ace",
     "527778b3-28bc-4a2b-86e3-999b06667fac",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "112c8514-76a6-40b3-a9bb-a0839403ebc2",
