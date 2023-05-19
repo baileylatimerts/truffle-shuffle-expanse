@@ -213,6 +213,414 @@ Valentines Lava Cake 💖 On-Demand: 6862871199767
                         {{ 'cart.label.price' | t }}
                       </label>
 
+
+                      {%- comment -%}
+                      Member Program Info v1.0
+                      {%- endcomment -%}
+                      {%- liquid
+if use_variant
+  assign target = product.selected_or_first_available_variant
+else
+  assign target = product
+endif
+assign price = target.price | default: 1999
+
+##### CONFIGURATION 
+
+### Default member price messaging
+
+## Member price label(Example: Member price, VIP price, Rewards price, Club price)
+assign memberPriceLabel = 'Member price'
+
+## Determines if the member price discount is displayed as `$ off` or `% off` (Possible values: amount, percentage)
+assign discountDisplayStyle = 'amount'
+
+## Member price messaging for guests (unauthenticated shoppers)
+assign defaultMessageForGuests = 'Member price available'
+
+## Member price messaging for customers (authenticated shoppers)
+assign defaultMessageForCustomers = 'Member price available'
+
+## Member price messaging when products contain OTP and SUB discounts
+assign defaultMessageForMultiDiscounts = 'Member price available'
+
+### Default display options
+
+## Determines the default member price displayed to non-members (Use membership program customer tag)
+assign customerTag = 'rc-member-default-program-name'
+
+## Determines what should be displayed to guests(Possible values: price, defaultMessageForGuests)
+assign guestDefault = 'price'
+
+## Determines what should be displayed to customers(Possible values: price, defaultMessageForCustomers)
+assign customerDefault = 'price'
+
+## Determines what should be displayed when product contains OTP and SUB discounts(Possible values: otp, sub, defaultMessageForMultiDiscounts)
+assign multiDiscountDefault = 'defaultMessageForMultiDiscounts'
+
+  ##### END CONFIGURATION
+
+assign isCustomer = false
+if customer
+  assign isCustomer = true
+  for c_tag in customer.tags
+    if c_tag contains 'rc-member'
+      if c_tag contains '-active'
+        assign customerTag = c_tag | remove: '-active'
+      elsif c_tag contains '-inactive'
+        assign customerTag = c_tag | remove: '-inactive'
+      else
+        assign customerTag = c_tag
+      endif
+      break
+    endif
+  endfor
+endif
+
+for p_tag in product.tags
+  if p_tag contains customerTag
+    assign program = p_tag | split: '|'
+    if customerTag == program.first
+      assign productTag = p_tag
+      break
+    endif
+  endif
+endfor
+-%}
+
+                      <style>
+                        /* styles for discount amounts (e.g., 20% Off)*/
+                        .rc-member-price span i,
+                        .rc_widget__price.rc_widget__price--onetime span,
+                        .rc_widget__price.rc_widget__price--subsave span,
+                        .rc-m-discount {
+                          display: inline-block;
+                          color: red;
+                          font-weight: normal;
+                          font-style: italic;
+                          font-size: 14px;
+                        }
+                        .rc-member-discount {
+                          font-size: 1.5rem;
+                          line-height: 1;
+                        }
+                        /* styles for default message */
+                        .rc-default-message {
+                          margin: 0;
+                          font-style: italic;
+                        }
+                      </style>
+                      <div
+                        class="price__member price__member-{{ product.id }}"
+                        data-rc-product-tag="{{ productTag }}"
+                        data-rc-customer-tag="{{ customerTag }}"
+                        data-rc-member-text="{{ memberPriceLabel }}"
+                        data-shpfy-currency="{{ shop.currency }}"
+                        data-shpfy-currency-symbol="{{ cart.currency.symbol }}"
+                        data-shpfy-initial-price="{{ price | money_without_currency }}"
+                        data-rc-show-dollar-savings="{{ discountDisplayStyle }}"
+                        data-multi-discount-display="{{ multiDiscountDefault }}">
+                        <div class="price-item--member">
+                          <div style="display:flex;">
+                            <p style="font-weight:bold; margin:0;" class="rc-member-price-container">
+                              <span class="rc-member-price"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- // Displays default messaging  -->
+                      <p class="rc-default-message-{{ product.id }} rc-default-message"></p>
+
+                      <script type="text/javascript">
+                        (function () {
+                        const memberClass = '.price__member-{{ product.id }}';
+                        const memberElement = document.querySelector(memberClass);
+                          const membershipProductTag = memberElement.getAttribute('data-rc-product-tag');
+                          const productTagSplit = membershipProductTag.split('|');
+                          const customerTag = memberElement.getAttribute('data-rc-customer-tag');
+                          const memberPriceLabel = memberElement.getAttribute('data-rc-member-text');
+                          const rcMessage = document.querySelector('.rc-default-message-{{ product.id }}');
+                        const initialPrice = Number(memberElement.getAttribute('data-shpfy-initial-price').replace(/[^0-9\.-]+/g,""));
+                          const discountDisplayStyle = memberElement.getAttribute('data-rc-show-dollar-savings');
+                          // default message
+                          const defaultMessageForGuests = '{{ defaultMessageForGuests }}';
+                        const defaultMessageForCustomers = '{{ defaultMessageForCustomers }}';
+                        const multiDiscountDefault = memberElement.getAttribute('data-multi-discount-display');
+                          const defaultMessageForMultiDiscounts = '{{ defaultMessageForMultiDiscounts }}';
+                        const guestDefault = '{{ guestDefault }}';
+                        const customerDefault = '{{ customerDefault }}';
+                        const isCustomer = '{{ isCustomer }}';
+                        const widgetStyle = document.createElement('style');
+                          // injects widget styles
+                          widgetStyle.innerHTML = `
+                            .rc-radio.rc_widget__option--subsave .rc_widget__option__label.rc-radio__label,
+                            .rc-radio.rc_widget__option--onetime .rc_widget__option__label.rc-radio__label {
+                              display: inline;
+                              font-weight:normal;
+                              font-size:1.5rem;
+                            }
+                            .rc-radio .rc-radio__label {
+                              margin:0;
+                              flex-wrap: wrap;
+                            }
+                            .rc-radio .rc-radio__label b,
+                            .rc-radio .rc-radio__label span,
+                            .rc-checkbox__descriptor,
+                            .rc-option__descriptor{
+                              display: inline;
+                            }
+                            .rc-template__button-group .rc-radio .rc-radio__label b,
+                            .rc-template__button-group .rc-radio .rc-radio__label span,
+                            .rc-checkbox__label {
+                              line-height: 1.5;
+                            }
+                          `;
+                          
+                          //checks if purchase types exist
+                          function indexOfPurchaseType(string) {
+                            const subTypeIndex = productTagSplit.findIndex(element => {
+                              if (element.includes(string)) { return true; }
+                            });
+                            return subTypeIndex;
+                          }
+                          //splits the discount string
+                          function discountTagSplit( indexOfType, subType){
+                            const discountInfo = productTagSplit[indexOfType].split(':');
+                            const discountAmount = discountInfo[1];
+                            const discountType = discountInfo[2];
+                            memberElement.setAttribute( `rc-${subType}-discount-amount`, discountAmount );
+                            memberElement.setAttribute( `rc-${subType}-discount-type`, discountType );
+                          }
+                          //updates the member info in header on PDP or tile footer in PCP
+                          function updateMemberInfo(){
+                            const otp = indexOfPurchaseType('otp');
+                            const sub = indexOfPurchaseType('sub');
+                            // set default message
+                            if(membershipProductTag){
+                              if (productTagSplit.length > 3) {
+                                discountTagSplit(otp, 'otp'); 
+                                discountTagSplit(sub, 'sub'); 
+                                switch(multiDiscountDefault){
+                                  case 'otp':
+                                    updateMemberPrice('otp', '.price__member-{{ product.id }} .rc-member-price');
+                        break;
+                                  case 'sub':
+                                    updateMemberPrice('sub', '.price__member-{{ product.id }} .rc-member-price');
+                        break;
+                                  case 'defaultMessageForMultiDiscounts':
+                                    memberElement.style.display = "none"; 
+                                    rcMessage.innerHTML = defaultMessageForMultiDiscounts;
+                                    break;
+                                }
+                              } else if(productTagSplit.length < 4) {
+                                if (otp != -1) { 
+                                  discountTagSplit(otp, 'otp'); 
+                                  updateMemberPrice('otp', '.price__member-{{ product.id }} .rc-member-price');
+                        }
+                                if (sub != -1) { 
+                                  discountTagSplit(sub, 'sub'); 
+                                  updateMemberPrice('sub', '.price__member-{{ product.id }} .rc-member-price');
+                        }
+                              }
+                              if (isCustomer === 'true'){
+                                if ( customerDefault === 'defaultMessageForCustomers'){
+                                  document.querySelector('.price__member-{{ product.id }} .rc-member-price').style.display  = 'none';
+                        rcMessage.innerHTML = defaultMessageForCustomers
+                                }
+                              } else if (isCustomer === 'false') {
+                                if ( guestDefault === 'defaultMessageForGuests'){
+                                  document.querySelector('.price__member-{{ product.id }} .rc-member-price').style.display  = 'none';
+                        rcMessage.innerHTML = defaultMessageForGuests
+                                } 
+                              }
+                            }
+                          }
+                        
+                          // format for money
+                          function formatMoney (price, currencyAndMoney = false){
+                            const currencyCode = memberElement.getAttribute('data-shpfy-currency');
+                            const currencySymbol = memberElement.getAttribute('data-shpfy-currency-symbol');
+                            return `${currencySymbol}${ Number(price).toFixed(2)} ${(currencyAndMoney) ? ` ${currencyCode}`: ''}`;
+                          }
+                        
+                          // calculates and displays member price on PDP and PCP
+                          function updateMemberPrice(purchaseType, container, subDiscount, showCurrencyCode = true) {
+                            if (membershipProductTag){
+                              const membershipPrice = document.querySelector(container);
+                              const discountAmount = Number(memberElement.getAttribute(`rc-${purchaseType}-discount-amount`));
+                              const discountType = memberElement.getAttribute(`rc-${purchaseType}-discount-type`);
+                              let totalAmount = discountAmount;
+                              let memberLanguage =  memberPriceLabel ? memberPriceLabel : 'Member price';
+                              let discountLanguage = '';
+                              let displayPrice;
+                        
+                              if (discountType === 'percent') {
+                                const percentage = totalAmount * 0.01;
+                                const percentDiscountPrice = initialPrice * percentage;
+                                const newDiscountPrice = initialPrice - percentDiscountPrice;
+                                finalPrice =  Number(newDiscountPrice).toFixed(2);
+                                // initial discount from recharge subs
+                                if (subDiscount) {
+                                  const subAmountOff = ( subDiscount * .01 ) * newDiscountPrice;
+                                  finalPrice =  Number(newDiscountPrice - subAmountOff).toFixed(2);
+                                }
+                                // adds in the new html with disount
+                                if(discountDisplayStyle === 'amount'){
+                                  discountLanguage = `$${ Number(initialPrice - finalPrice).toFixed(2)} Off`;
+                                } else {
+                                  discountLanguage = `${totalAmount}% Off`
+                                }
+                              } else if (discountType == 'fixed') {
+                                totalAmount = initialPrice - discountAmount;
+                                finalPrice =  Number(totalAmount).toFixed(2);
+                                // adds in the new html with disount
+                                discountLanguage = `$${discountAmount} Off`
+                        
+                                // initial discount from recharge subs
+                                if (subDiscount) {
+                                  totalAmount = (initialPrice - discountAmount) - (initialPrice * (subDiscount * 0.01));
+                                  finalPrice =  Number(totalAmount).toFixed(2);
+                                  // adds in the new html with disount
+                                  if(discountDisplayStyle === 'amount'){
+                                    discountLanguage = `$${ Number(initialPrice - finalPrice).toFixed(2)} Off`;
+                                  } else {
+                                    discountLanguage = `${subDiscount}% + $${discountAmount} Off`;
+                                  }
+                                }
+                              }
+                        
+                              // shows or hides currency code
+                              displayPrice = showCurrencyCode ? formatMoney(finalPrice, true) : formatMoney(finalPrice);
+                              // adds in the new html with disount
+                              membershipPrice.innerHTML = 
+                              `<div class="rc-member-discount">
+                          <span>
+                            <b>${memberLanguage}: ${ displayPrice }</b>&nbsp;<i class="rc-m-discount">${discountLanguage}</i>
+                          </span>
+                        </div>`;
+                        }
+                          }
+                        
+                          // Changes prices on page load
+                          updateMemberInfo();
+
+                        {% unless request.page_type == 'collection' %}
+                          // Updates prices in widget on widget load
+                          const checkExist = setInterval(function() {
+                                // Check if RC widget exists on the page, if not, check again in 100ms
+                                if (document.querySelector('.rc-widget')) {
+                                  // Clear interval so this only runs once
+                                  clearInterval(checkExist);
+                                  document.head.appendChild(widgetStyle);
+                                  const displayPrice = document.querySelector('.price-item--regular.recharge-inner-most-price');
+                                  const regexDiscount = /\d+/;
+                                  // 2.0 widget templates
+                                  const radio = document.querySelector('.rc-template__radio');
+                                  const radioGroup = document.querySelector('.rc-template__radio-group');
+                                  const buttonGroup = document.querySelector('.rc-template__button-group');
+                                  const checkbox = document.querySelector('.rc-template__checkbox .rc-checkbox');
+                                  // legacy widget
+                                  const radioLegacy = document.querySelector('.rc-template__legacy-radio');
+                                  // sub only
+                                  const subOnly2_0 = document.querySelector('.rc-subscription-only');
+                          
+                                  // shows initial price in header outside widget
+                                  if (displayPrice){ displayPrice.style.display = 'none'; }
+                                  document.querySelector('.price__regular').innerHTML = `<span class="rc-initial-price">${formatMoney(initialPrice, true)}</span>`;
+                          // hides initial checkbox discount
+                                  if(checkbox){
+                                    if(checkbox.hasAttribute('data-option-subsave')){
+                                      document.querySelector('.rc-option__discount.rc_widget__option__discount').style.display = 'none';
+                                    }
+                                  }
+                                  function getSubDiscount(discElement){
+                                    const discountString = document.querySelector(discElement).innerHTML;
+                                    let rcSubDiscountAmount = 0;
+                                    if (discountString.match(regexDiscount)){
+                                      rcSubDiscountAmount = discountString.match(regexDiscount)[0];
+                                    }
+                                    return rcSubDiscountAmount;
+                                  }
+                                  // checks widget template and displays discounts
+                                  function updatedWidgetPrices (discElement, subElement, otpElement) {
+                                    const subDiscountAmount = getSubDiscount(discElement);
+                                    const subAmount = memberElement.getAttribute('rc-sub-discount-amount');
+                                    const subType = memberElement.getAttribute('rc-sub-discount-type');
+                                    const otpAmount = memberElement.getAttribute('rc-otp-discount-amount');
+                                    const otpType = memberElement.getAttribute('rc-otp-discount-type');
+                                    document.querySelector('.price__member-{{ product.id }} .rc-member-price').innerHTML = '';
+                          if (subElement && subAmount){ 
+                                      updateMemberPrice('sub', subElement, subDiscountAmount, false);
+                                      updateMemberPrice('sub', '.price__member-{{ product.id }} .rc-member-price', subDiscountAmount, false);
+                          }
+                                    if (otpElement && otpAmount){ 
+                                      updateMemberPrice('otp', otpElement, 0, false);
+                                      updateMemberPrice('otp', '.price__member-{{ product.id }} .rc-member-price', 0, false);
+                          }
+                                  }
+                                  function subOnlyView(){
+                                    document.querySelector('.price__member-{{ product.id }} .rc-member-price').innerHTML = '';
+                          updateMemberPrice('sub', '.price__member-{{ product.id }} .rc-member-price');
+                          }
+                                  function conditionalRender(template, attr, legacyArr, twoOArr){
+                                    let subDiscountAmount = 0;
+                                    document.querySelector('.price__member-{{ product.id }} .rc-member-price').innerHTML = '';
+                          if (template.hasAttribute(attr)){
+                                      if (template.querySelector('input')) {
+                                        // legacy template
+                                        updatedWidgetPrices(legacyArr[0],legacyArr[1], legacyArr[2]);
+                                      } else {
+                                        // Sub only
+                                        subOnlyView()
+                                      }
+                                    } else {
+                                      // 2.0
+                                      updatedWidgetPrices(twoOArr[0], twoOArr[1], twoOArr[2]);
+                                    }
+                                  }
+                          
+                                  // check widget template type 
+                                  let legacyParams = [], twoOParams = [];
+                                  switch(true){
+                                    case !!subOnly2_0:
+                                      subOnlyView()
+                                      break;
+                                    case !!radioLegacy:
+                                      legacyParams = ['.rc-option__subsave .rc-option__discount', '.rc-option__subsave .rc_widget__option__label', '.rc-option__onetime .rc_widget__option__label'];
+                                      conditionalRender( radioLegacy, "data-template-legacy-radio", legacyParams );
+                                      break;
+                                    case !!radio:
+                                      updatedWidgetPrices('.rc-radio__subscription', '.subscription-radio .rc-radio__label', '.onetime-radio .rc-radio__label');
+                                      break;
+                                    case !!radioGroup:
+                                      legacyParams = ['.rc-template__radio-group .rc_widget__option__discount','.rc-option__subsave .rc-radio__label', '.rc-option__onetime .rc-radio__label'];
+                                      twoOParams = ['.rc-template__radio-group .subscription-radio .discount-label', '.subscription-radio .rc-radio__label', '.onetime-radio .rc-radio__label'];
+                                      conditionalRender( radioGroup, "data-template-radio-group", legacyParams, twoOParams );
+                                      break;
+                                    case !!buttonGroup:
+                                      legacyParams = ['.rc-template__button-group .rc_widget__option__discount','.rc-option__subsave .rc_widget__option__label', '.rc-option__onetime .rc_widget__option__label'];
+                                      twoOParams = ['.rc-template__button-group .subscription-radio .discount-label','.subscription-radio .rc-radio__label', '.onetime-radio .rc-radio__label'];
+                                      conditionalRender( buttonGroup, "data-template-button-group", legacyParams, twoOParams );
+                                      break;
+                                    case !!checkbox:
+                                      legacyParams = ['.rc-template__checkbox .rc_widget__option__discount', '.rc-checkbox__label .rc-option__text'];
+                                      twoOParams = ['.rc-checkbox__subscription', '.rc-checkbox__subscription'];
+                                      conditionalRender( checkbox, "data-option-subsave", legacyParams, twoOParams );
+                                      break;
+                                    default:
+                                      break;
+                                  }
+                                } 
+                              }, 100);
+                        {% endunless %}
+                        })();
+                      </script>
+                      {%- comment -%}
+                      End of Member Program Info
+                      {%- endcomment -%}
+
+
                       {%- assign hide_sale_price = true -%}
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
