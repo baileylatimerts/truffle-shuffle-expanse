@@ -165,6 +165,23 @@
         "height_mobile": 300
       }
     },
+    "527778b3-28bc-4a2b-86e3-999b06667fac": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Far_Niente_6.4.23_Class_Flyer.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Black Truffle Raviolo & NY Strip Steak with Far Niente",
+        "text": "<p>We have teamed up with Far Niente winery to create an exclusive perfect pairing experience featuring their beautiful wines and renowned winemaker Nicole Marchesi!<\/p>",
+        "button_label": "Book now!",
+        "button_link": "https:\/\/farnientefamily.farniente.com\/events\/truffle-shuffle-june",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
     "d95b34e8-da01-429a-b93f-4e652d0661ac": {
       "type": "text-and-image",
       "settings": {
@@ -270,24 +287,6 @@
         "overlay_opacity": 22,
         "height": 540,
         "height_mobile": 420
-      }
-    },
-    "527778b3-28bc-4a2b-86e3-999b06667fac": {
-      "type": "text-and-image",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Far_Niente_6.4.23_Class_Flyer.png",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Black Truffle Raviolo & NY Strip Steak with Far Niente",
-        "text": "<p>We have teamed up with Far Niente winery to create an exclusive perfect pairing experience featuring their beautiful wines and renowned winemaker Nicole Marchesi!<\/p>",
-        "button_label": "Book now!",
-        "button_link": "https:\/\/farnientefamily.farniente.com\/events\/truffle-shuffle-june",
-        "button_style": "primary",
-        "align_text": "center",
-        "layout": "left",
-        "color_scheme": "none",
-        "divider": false
       }
     },
     "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
@@ -699,11 +698,11 @@
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
+    "527778b3-28bc-4a2b-86e3-999b06667fac",
     "d95b34e8-da01-429a-b93f-4e652d0661ac",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
     "slideshow",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
-    "527778b3-28bc-4a2b-86e3-999b06667fac",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "112c8514-76a6-40b3-a9bb-a0839403ebc2",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
