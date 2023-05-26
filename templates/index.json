@@ -12,6 +12,41 @@
         "divider": false
       }
     },
+    "a752847e-1fa2-4c15-87be-341fa74a0cc5": {
+      "type": "slideshow",
+      "blocks": {
+        "325b2aaf-3760-43fb-b285-d4de23601538": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>JOIN US FOR OUR COMMUNITY ROUND INVESTOR CALL!<\/p>",
+            "title_size": 60,
+            "subheading": "We are inviting you to join us on March 30th at 5pm PT for an opportunity for us to come together, share our vision, and explore how you can be a part of the list of amazing Truffle Shuffle investors!",
+            "link": "https:\/\/info.truffleshufflesf.com\/community-round-webinar",
+            "link_text": "Register Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_1500_x_200_px_1500_x_400_px.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_1500_x_200_px_1500_x_400_px.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "325b2aaf-3760-43fb-b285-d4de23601538"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
       "type": "slideshow",
       "blocks": {
@@ -33,29 +68,10 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Make an Impact<\/p>",
-            "title_size": 70,
-            "subheading": "Supports multiple text alignments and mobile-specific images.",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0",
-        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-1"
+        "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0"
       ],
       "settings": {
         "full_width": true,
@@ -68,6 +84,18 @@
     },
     "83c85538-9356-4a6e-8475-34e089ec8ace": {
       "type": "featured-collection",
+      "settings": {
+        "title": "June menu",
+        "home_featured_products": "june-experiences",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "6fb05b65-d8e7-48ee-af2a-83c3164a4fee": {
+      "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "June menu",
         "home_featured_products": "june-experiences",
@@ -184,6 +212,7 @@
     },
     "527778b3-28bc-4a2b-86e3-999b06667fac": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Far_Niente_6.4.23_Class_Flyer.png",
         "image_width": 700,
@@ -693,8 +722,10 @@
   },
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
+    "a752847e-1fa2-4c15-87be-341fa74a0cc5",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
+    "6fb05b65-d8e7-48ee-af2a-83c3164a4fee",
     "f2ceaa70-fedf-4ed0-8d49-723c792f7eb1",
     "19ad8f24-15f2-4c35-92a7-d8b289553232",
     "951d4be5-24fb-471b-9815-27420eb6e8bf",
