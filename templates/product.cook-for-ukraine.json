@@ -183,6 +183,16 @@
         "description": "Kyiv Volunteer is a multi-functional charitable organization that was founded as a reaction of the gastronomic community to the Russian aggression against Ukraine in February 2022. The fund started with an alliance of restaurants in Kyiv, which fed defenders, volunteers, and citizens of the capital, who remained in the city during the attempt to capture Kyiv. Since its establishment, the fund has implemented projects aimed at improving the quality of life of Ukrainians affected by the war. In particular: humanitarian aid in the de-occupied territories, and professional courses for IDPs. The foundation specializes in the patronage of internally displaced children - we provide humanitarian aid and comprehensive support for children within the framework of the Kids for Kids project, Kids Republic, and Summer Camp projects.\n\nThere will be auctions for some amazing prizes throughout the day!"
       }
     },
+    "e9fc542d-787a-44ba-b12d-6d2e983e34d3": {
+      "type": "button",
+      "settings": {
+        "description_1": "Download the recipe",
+        "btn_link": "",
+        "btn_text": "Download Now",
+        "file": true,
+        "invert": false
+      }
+    },
     "sub": {
       "type": "product-full-width",
       "disabled": true,
@@ -304,6 +314,7 @@
     "3be0d6b7-4ff4-4271-86e4-7e102533cec6",
     "a9f51ff3-a2aa-4ff9-98c8-3bea8ca40747",
     "f13d1afb-6d9a-47fe-ade1-a27d255c01c8",
+    "e9fc542d-787a-44ba-b12d-6d2e983e34d3",
     "sub",
     "judgeme_section_review_widget_eff4",
     "recommendations",

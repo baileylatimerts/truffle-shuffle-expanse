@@ -1,0 +1,67 @@
+<div
+  class="flex flex-col md:flex-row gap-16 py-24 px-8 lg:px-24 {% if section.settings.invert %}bg-black{% endif %}"
+  {% unless section.settings.invert %}
+  style="border-top: 1px solid black;"
+  {% endunless %}>
+  <div class="md:w-1/2">
+    {% if section.settings.description_1 != blank %}
+      <div class="flex items-center mb-12">
+
+        <h2 class="text-3xl font-bold  {% if section.settings.invert %}text-white{% endif %}">{{ section.settings.description_1 }}</h2>
+      </div>
+    {% endif %}
+  </div>
+  <div class="md:w-1/2 ">
+
+    {% if section.settings.btn_text != blank %}
+      <div class="flex items-center mb-12">
+
+        <a
+          href="{{ section.settings.btn_link }}"
+          class="btn btn--full btn--secondary"
+          {% if section.settings.file %}
+          download
+          {% endif %}>{{ section.settings.btn_text }}</a>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "2 Col - Text Button",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "description_1",
+        "label": "Description 1"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "file",
+        "label": "Is the link a file?"
+      }, {
+        "type": "checkbox",
+        "id": "invert",
+        "label": "Dark theme"
+      }
+    ],
+    "presets": [
+      {
+        "name": "2 Col - Text Button",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
