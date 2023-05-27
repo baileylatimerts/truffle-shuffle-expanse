@@ -1,0 +1,51 @@
+<div
+  class="flex flex-col md:flex-row gap-16 py-24 px-8 lg:px-24 {% if section.settings.invert %}bg-black{% endif %}"
+  {% unless section.settings.invert %}
+  style="border-top: 1px solid black;"
+  {% endunless %}>
+  <div class="md:w-1/2">
+    {% if section.settings.description_1 != blank %}
+      <div class="flex items-center mb-12">
+
+        <p class="{% if section.settings.invert %}text-white{% endif %}  leading-7  m-0 p-0">{{ section.settings.description_1 }}</p>
+      </div>
+    {% endif %}
+  </div>
+  <div class="md:w-1/2 ">
+
+    {% if section.settings.description_2 != blank %}
+      <div class="flex items-center mb-12">
+
+        <p class="{% if section.settings.invert %}text-white{% endif %}   leading-7 m-0 p-0">{{ section.settings.description_2 }}</p>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Double Text",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "description_1",
+        "label": "Description 1"
+      }, {
+        "type": "textarea",
+        "id": "description_2",
+        "label": "Description 2"
+      }, {
+        "type": "checkbox",
+        "id": "invert",
+        "label": "Dark theme"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Double Text",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}

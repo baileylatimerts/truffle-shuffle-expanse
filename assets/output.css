@@ -56,6 +56,38 @@
   inset: 0px
 }
 
+.left-0 {
+  left: 0px
+}
+
+.left-1\/2 {
+  left: 50%
+}
+
+.top-0 {
+  top: 0px
+}
+
+.top-1\/2 {
+  top: 50%
+}
+
+.z-10 {
+  z-index: 10
+}
+
+.z-20 {
+  z-index: 20
+}
+
+.z-30 {
+  z-index: 30
+}
+
+.m-0 {
+  margin: 0px
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto
@@ -67,6 +99,14 @@
 
 .mb-2 {
   margin-bottom: 0.5rem
+}
+
+.mb-4 {
+  margin-bottom: 1rem
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem
 }
 
 .mb-8 {
@@ -87,10 +127,6 @@
 
 .mt-4 {
   margin-top: 1rem
-}
-
-.mb-4 {
-  margin-bottom: 1rem
 }
 
 .block {
@@ -129,6 +165,10 @@
   height: 16rem
 }
 
+.h-auto {
+  height: auto
+}
+
 .h-full {
   height: 100%
 }
@@ -149,8 +189,22 @@
   flex-grow: 1
 }
 
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.cursor-pointer {
+  cursor: pointer
 }
 
 .grid-cols-1 {
@@ -179,6 +233,14 @@
 
 .gap-4 {
   gap: 1rem
+}
+
+.gap-8 {
+  gap: 2rem
+}
+
+.gap-16 {
+  gap: 4rem
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -232,12 +294,16 @@
      object-fit: cover
 }
 
+.p-4 {
+  padding: 1rem
+}
+
 .p-8 {
   padding: 2rem
 }
 
-.p-4 {
-  padding: 1rem
+.p-0 {
+  padding: 0px
 }
 
 .px-4 {
@@ -250,18 +316,31 @@
   padding-right: 2rem
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem
+}
+
 .pb-4 {
   padding-bottom: 1rem
+}
+
+.pl-12 {
+  padding-left: 3rem
+}
+
+.pr-24 {
+  padding-right: 6rem
 }
 
 .text-left {
@@ -286,19 +365,14 @@
   line-height: 1.75rem
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
 }
 
 .font-bold {
@@ -341,6 +415,10 @@
 
 .line-through {
   text-decoration-line: line-through
+}
+
+.opacity-0 {
+  opacity: 0
 }
 
 .outline {
@@ -403,6 +481,10 @@
   .md\:flex-row {
     flex-direction: row
   }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse
+  }
 }
 
 @media (min-width: 1024px) {
@@ -441,5 +523,9 @@
 
   .lg\:pr-20 {
     padding-right: 5rem
+  }
+
+  .lg\:text-left {
+    text-align: left
   }
 }

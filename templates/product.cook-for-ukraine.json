@@ -143,8 +143,49 @@
         "product_video_style": "unmuted"
       }
     },
+    "43e68f21-b147-4cde-a4a0-d9b59b214dc0": {
+      "type": "product-intro",
+      "settings": {
+        "heading": "Default Heading",
+        "text": "Default Text",
+        "button_url": "",
+        "button_text": "Click Me",
+        "video_url": "",
+        "inverted_order": false
+      }
+    },
+    "3be0d6b7-4ff4-4271-86e4-7e102533cec6": {
+      "type": "double-text",
+      "settings": {
+        "description_1": "Join our \"Cook for Ukraine\" Fundraiser to support Kyiv Volunteer! We are working with the talented Chef Anna Voloshyna, to cook up an all-day Ukrainian feast with the goal of raising $75,000 for Kyiv Volunteer. Kyiv Volunteer is a charitable organization that has aimed to improve the quality of life of Ukrainians affected by the war. All funds raised will go directly to support Kyiv Volunteer and their summer camp program for kids displaced due to war in Ukraine.",
+        "description_2": "During the cookathon, you will have the chance to cook with a Ukrainian French toast, fry up some delish deruny, stack up a classic Kyiv Cake, and participate in a fathers day steak cook off. All the while learning about Kyiv Volunteer and supporting their cause. Your ticket purchase will grant you access to the full day cookathon and a recipe guide for all these Ukrainian classics.",
+        "invert": false
+      }
+    },
+    "a9f51ff3-a2aa-4ff9-98c8-3bea8ca40747": {
+      "type": "feature-text-3",
+      "settings": {
+        "title": "Schedule",
+        "description_1": "10-11:00AM Ukrainian French Toast",
+        "description_2": "11:30-12:30PM Kyiv Cake Part 1 (Make the Cake & Frosting)",
+        "description_3": "1:00-1:45PM Deruny & Caviar",
+        "description_4": "2:00-3:00PM Finish Kyiv Cake (Assemble and Decorate)",
+        "description_5": "3:00-5:30PM Wagyu Steak Flight",
+        "description_6": "",
+        "description_7": "",
+        "description_8": ""
+      }
+    },
+    "f13d1afb-6d9a-47fe-ade1-a27d255c01c8": {
+      "type": "feature-text",
+      "settings": {
+        "title": "About Kyiv Volunteer",
+        "description": "Kyiv Volunteer is a multi-functional charitable organization that was founded as a reaction of the gastronomic community to the Russian aggression against Ukraine in February 2022. The fund started with an alliance of restaurants in Kyiv, which fed defenders, volunteers, and citizens of the capital, who remained in the city during the attempt to capture Kyiv. Since its establishment, the fund has implemented projects aimed at improving the quality of life of Ukrainians affected by the war. In particular: humanitarian aid in the de-occupied territories, and professional courses for IDPs. The foundation specializes in the patronage of internally displaced children - we provide humanitarian aid and comprehensive support for children within the framework of the Kids for Kids project, Kids Republic, and Summer Camp projects.\n\nThere will be auctions for some amazing prizes throughout the day!"
+      }
+    },
     "sub": {
       "type": "product-full-width",
+      "disabled": true,
       "blocks": {
         "description": {
           "type": "description",
@@ -245,12 +286,24 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "a7e3e62b-a51a-4a59-a1f7-b5118004fd79": {
+      "type": "feature-text",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description": ""
+      }
     }
   },
   "order": [
     "shogun-helper",
     "shogun-above",
     "main",
+    "43e68f21-b147-4cde-a4a0-d9b59b214dc0",
+    "3be0d6b7-4ff4-4271-86e4-7e102533cec6",
+    "a9f51ff3-a2aa-4ff9-98c8-3bea8ca40747",
+    "f13d1afb-6d9a-47fe-ade1-a27d255c01c8",
     "sub",
     "judgeme_section_review_widget_eff4",
     "recommendations",
@@ -258,6 +311,7 @@
     "more-products-collection",
     "recently-viewed",
     "collection-return",
-    "shogun-below"
+    "shogun-below",
+    "a7e3e62b-a51a-4a59-a1f7-b5118004fd79"
   ]
 }

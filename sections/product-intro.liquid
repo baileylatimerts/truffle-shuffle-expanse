@@ -1,0 +1,135 @@
+{% comment %}
+Product Intro Section
+{% endcomment %}
+
+<style>
+
+  @media screen and (min-width: 990px) {
+    .media-column {
+      border-left: 1px solid var(--color-contrast-higher);
+      border-right: none;
+    }
+
+    .invert-media {
+      border-right: 1px solid var(--color-contrast-higher) !important;
+      border-left: none !important;
+    }
+
+  }
+</style>
+
+{% if product.metafields.course.intro_text %}
+
+
+
+  <div class="container mx-auto border-btm border-top">
+    <div class="flex flex-col md:flex-row  page-width {% if section.settings.inverted_order %}md:flex-row-reverse{% endif %}">
+      <!-- Text Column -->
+      <div class="md:w-1/2 flex flex-col justify-center {% if section.settings.inverted_order %} pl-12 {% else %} pr-24{% endif %}">
+        <div>
+          <p class=" display-text dropcap text-center lg:text-left mb-6">{{ product.metafields.course.intro_overline_text }}</p>
+          <h2 class="display-text dropcap text-center lg:text-left mb-6">{{ product.metafields.course.intro_text }}</h2>
+          <p class=" display-text dropcap text-center lg:text-left mb-6 uppercase">{{ product.metafields.course.intro_desc_text }}</p>
+        </div>
+      </div>
+
+      <!-- Media Column -->
+      <div class="md:w-1/2 relative p-8 media-column {% if section.settings.inverted_order %} invert-media{% endif %}" style="padding: 1em">
+        <div style="border-radius:20px; overflow:hidden; max-height: 550px;">
+          {% if product.metafields.course.intro_video != blank %}
+            <div class="video-wrapper relative" style="padding-bottom: 56.25%; overflow: hidden;">
+              <video
+                class="video absolute w-full h-full top-0 left-0 object-cover z-10 opacity-0"
+                src="{{ product.metafields.course.intro_video }}"
+                controls></video>
+              <img class="video-thumbnail absolute w-full h-full top-0 left-0 object-cover z-20 cursor-pointer" src="{{ product.metafields.course.intro_video_cover | img_url: 'master' }}">
+              <div class="play-button cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style="top: 35%; left: 45%">
+                <svg
+                  width="103"
+                  height="119"
+                  viewBox="0 0 103 119"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M103 59.5L0.249994 118.823L0.25 0.177257L103 59.5Z" fill="#DFDFDF" />
+                </svg>
+              </div>
+            </div>
+          {% else %}
+            <img src="{{ product.metafields.course.intro_video_cover | img_url: 'master' }}" class="w-full h-auto">
+          {% endif %}
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var playButton = document.querySelector('.play-button');
+      var video = document.querySelector('.video');
+      var thumbnail = document.querySelector('.video-thumbnail');
+
+      playButton.addEventListener('click', function() {
+        video.style.opacity = '1';
+        video.play();
+        thumbnail.style.display = 'none';
+        playButton.style.display = 'none';
+      });
+    });
+  </script>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Product Intro",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Default Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Default Text"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Click Me"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL"
+      }, {
+        "type": "checkbox",
+        "id": "inverted_order",
+        "label": "Invert column order",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Intro",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
