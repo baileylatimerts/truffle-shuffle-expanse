@@ -1,3 +1,13 @@
+{% assign jc_authorize = true %}
+{% if request.path contains '/pages/your-upcoming-classes' or request.path contains '/pages/explore-truffle-shuffle-plus' or request.path contains '/pages/membership-offers' or request.path contains '/a/p/community' or request.path contains '/tools/recurring/login' %}
+  {% assign jc_disabled_access_page = false %}
+{% endif %}
+{% if customer %}
+  {% if customer.tags contains 'Active Subscriber' or customer.tags contains 'rc-member-lifetime-membership-active' %}
+    {% assign jc_disabled_access_page = true %}
+  {% endif %}
+{% endif %}
+
 <!doctype html>
 <html
   class="no-js"
@@ -180,7 +190,7 @@
 
 
   <body
-    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %} template--{{ template.suffix }} {{ request.path }}"
+    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %} {{ jc_authorize }}"
     data-transitions="{{ settings.animate_page_transitions }}"
     data-button_style="{{ settings.button_style }}"
     data-edges="{{ settings.roundness }}"
