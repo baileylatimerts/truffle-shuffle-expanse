@@ -180,7 +180,7 @@
 
 
   <body
-    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %} template--{{ template.suffix }}"
+    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %} template--{{ template.suffix }} {{ request.path }}"
     data-transitions="{{ settings.animate_page_transitions }}"
     data-button_style="{{ settings.button_style }}"
     data-edges="{{ settings.roundness }}"
