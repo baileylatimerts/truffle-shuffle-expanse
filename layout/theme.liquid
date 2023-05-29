@@ -7,7 +7,7 @@
     {% assign jc_authorize = true %}
   {% endif %}
 {% endif %}
-
+{% if jc_authorize %}
 <!doctype html>
 <html
   class="no-js"
@@ -190,7 +190,7 @@
 
 
   <body
-    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %} {{ jc_authorize }}"
+    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}"
     data-transitions="{{ settings.animate_page_transitions }}"
     data-button_style="{{ settings.button_style }}"
     data-edges="{{ settings.roundness }}"
@@ -257,3 +257,6 @@
     {% include 'store-credit-launcher' %}
   </body>
 </html>
+{% else %}
+  <meta http-equiv="refresh" content="0; url={{ shop.url }}">
+{% endif %}
