@@ -1,10 +1,10 @@
 {% assign jc_authorize = true %}
 {% if request.path contains '/pages/your-upcoming-classes' or request.path contains '/pages/explore-truffle-shuffle-plus' or request.path contains '/pages/membership-offers' or request.path contains '/a/p/community' or request.path contains '/tools/recurring/login' %}
-  {% assign jc_disabled_access_page = false %}
+  {% assign jc_authorize = false %}
 {% endif %}
 {% if customer %}
   {% if customer.tags contains 'Active Subscriber' or customer.tags contains 'rc-member-lifetime-membership-active' %}
-    {% assign jc_disabled_access_page = true %}
+    {% assign jc_authorize = true %}
   {% endif %}
 {% endif %}
 
