@@ -1,4 +1,4 @@
-{% if customer.tags contains 'Active Subscriber' %}
+{% if customer.tags contains 'Active Subscriber' or customer.tags contains 'rc-member-lifetime-membership-active' %}
   <div class="flex-row-outer-page">
     <div class="flex-col-outer-page-1">
       {% section 'plus-landing-menu-vertical' %}
