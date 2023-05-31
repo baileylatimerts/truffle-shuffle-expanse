@@ -14,9 +14,11 @@
     },
     "a752847e-1fa2-4c15-87be-341fa74a0cc5": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "325b2aaf-3760-43fb-b285-d4de23601538": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>JOIN US FOR OUR COMMUNITY ROUND INVESTOR CALL!<\/p>",
