@@ -35,10 +35,28 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "34a6ff0d-58e9-472d-8729-1e669c4e8b9c": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Overlaid Hero Slide<\/p>",
+            "title_size": 70,
+            "subheading": "And optional subtext",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
-        "325b2aaf-3760-43fb-b285-d4de23601538"
+        "325b2aaf-3760-43fb-b285-d4de23601538",
+        "34a6ff0d-58e9-472d-8729-1e669c4e8b9c"
       ],
       "settings": {
         "full_width": true,
@@ -301,20 +319,19 @@
     },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
         "full_width": true,
-        "title": "Mother's Day Special: Lobster Omelette with White Sturgeon Caviar",
+        "title": "Father's Day Special: Grilled Wagyu Beef Tasting",
         "title_size": 40,
-        "subheading": "Join us on May 14th to take mom’s official day over the top and make her feel extra special. Plus, learn the techniques behind how to make the perfect French rolled omelette!",
+        "subheading": "On June 18th, grill three amazing cuts of wagyu, make mouthwatering chimichurri sauce, and enjoy loaded fries. It's the ultimate Father's Day experience!",
         "link_text": "Shop Now",
         "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/kejeyJ22cig",
+        "video_url": "https:\/\/youtu.be\/IGMhalTj6r0",
         "overlay_opacity": 22,
         "height": 540,
         "height_mobile": 420
