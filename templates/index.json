@@ -87,6 +87,67 @@
         "height_mobile": 420
       }
     },
+    "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "0779769a-f799-4a10-aa98-46dfedf67ec1": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2",
+        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3",
+        "0779769a-f799-4a10-aa98-46dfedf67ec1"
+      ],
+      "settings": {
+        "featured_product": "black-truffles",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
       "type": "slideshow",
       "blocks": {
@@ -270,6 +331,7 @@
     },
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -335,69 +397,6 @@
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5
-      }
-    },
-    "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0": {
-          "type": "price",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "is_tab": false
-          }
-        },
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
-        },
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
-        },
-        "0779769a-f799-4a10-aa98-46dfedf67ec1": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0",
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-1",
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-2",
-        "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-3",
-        "0779769a-f799-4a10-aa98-46dfedf67ec1"
-      ],
-      "settings": {
-        "featured_product": "black-truffle-carpaccio-2-82oz",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": false,
-        "product_video_style": "muted"
       }
     },
     "112c8514-76a6-40b3-a9bb-a0839403ebc2": {
@@ -743,6 +742,7 @@
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "a752847e-1fa2-4c15-87be-341fa74a0cc5",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
+    "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "6fb05b65-d8e7-48ee-af2a-83c3164a4fee",
@@ -753,7 +753,6 @@
     "527778b3-28bc-4a2b-86e3-999b06667fac",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
     "slideshow",
-    "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "112c8514-76a6-40b3-a9bb-a0839403ebc2",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
     "2ee7733b-804d-4067-a7e2-d6f0a423c9f4",
