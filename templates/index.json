@@ -67,6 +67,26 @@
         "autoplay_speed": 7
       }
     },
+    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
+      "type": "hero-video",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "Father's Day Special: Grilled Wagyu Beef Tasting",
+        "title_size": 40,
+        "subheading": "On June 18th, grill three amazing cuts of wagyu, make mouthwatering chimichurri sauce, and enjoy loaded fries. It's the ultimate Father's Day experience!",
+        "link_text": "Shop Now",
+        "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-bottom horizontal-left",
+        "video_url": "https:\/\/youtu.be\/IGMhalTj6r0",
+        "overlay_opacity": 22,
+        "height": 610,
+        "height_mobile": 420
+      }
+    },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
       "type": "slideshow",
       "blocks": {
@@ -315,26 +335,6 @@
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5
-      }
-    },
-    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
-      "type": "hero-video",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "title": "Father's Day Special: Grilled Wagyu Beef Tasting",
-        "title_size": 40,
-        "subheading": "On June 18th, grill three amazing cuts of wagyu, make mouthwatering chimichurri sauce, and enjoy loaded fries. It's the ultimate Father's Day experience!",
-        "link_text": "Shop Now",
-        "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
-        "color_accent": "#ffffff",
-        "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/IGMhalTj6r0",
-        "overlay_opacity": 22,
-        "height": 540,
-        "height_mobile": 420
       }
     },
     "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
@@ -742,6 +742,7 @@
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "a752847e-1fa2-4c15-87be-341fa74a0cc5",
+    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "6fb05b65-d8e7-48ee-af2a-83c3164a4fee",
@@ -752,7 +753,6 @@
     "527778b3-28bc-4a2b-86e3-999b06667fac",
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946",
     "slideshow",
-    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "112c8514-76a6-40b3-a9bb-a0839403ebc2",
     "a11284d2-e900-4638-8389-f851b52c6cd1",
