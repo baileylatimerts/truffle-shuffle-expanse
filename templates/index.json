@@ -47,7 +47,7 @@
             "link_text": "Optional button",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -83,7 +83,7 @@
         "text_align": "vertical-bottom horizontal-left",
         "video_url": "https:\/\/youtu.be\/IGMhalTj6r0",
         "overlay_opacity": 22,
-        "height": 610,
+        "height": 710,
         "height_mobile": 420
       }
     },
@@ -150,9 +150,11 @@
     },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--15086526136343__7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a-1682640876ef3bbd8b-0": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>limited time offer<\/p>",
@@ -185,6 +187,7 @@
     },
     "83c85538-9356-4a6e-8475-34e089ec8ace": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "June menu",
         "home_featured_products": "june-experiences",
@@ -296,6 +299,7 @@
     },
     "d95b34e8-da01-429a-b93f-4e652d0661ac": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Bela_Posters_5_c71224d1-9461-4232-affb-80f6fb6ccaa5.png",
         "image_width": 670,
@@ -346,6 +350,7 @@
     },
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "888bda7b-ec30-4722-a56d-757df51f11ef": {
           "type": "hero",
@@ -369,6 +374,7 @@
         },
         "bd7da909-eaf9-4b58-a7e6-88eba209e60f": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Truffle Shuffle is <br\/>live on Startengine!<\/p>",
@@ -467,38 +473,7 @@
     },
     "8940e18b-033f-4ded-85f7-20008c761e49": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
-        "d3dca96e-442b-4c34-a169-8954d283bf25": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "",
-            "heading": "COOK PAN SEARED SCALLOPS WITH LEBANESE TABBOULEH SALAD!",
-            "textarea": "Our next edible adventure lands in Lebanon! Learn how to make this next level dish with Chef Tucker!",
-            "cta_text1": "Shop now",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/DSC07377.jpg",
-            "video_url": "",
-            "width": "100",
-            "height": 520,
-            "text_align": "vertical-bottom horizontal-left",
-            "focal_point": "center",
-            "color_accent": "#ffffff"
-          }
-        },
-        "0c061730-8d7d-45f7-a732-90bcd566dd22": {
-          "type": "simple",
-          "disabled": true,
-          "settings": {
-            "link": "",
-            "text": "",
-            "width": "50",
-            "height": 120
-          }
-        },
         "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b": {
           "type": "advanced",
           "disabled": true,
@@ -521,13 +496,12 @@
         },
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-0": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Experiences",
             "textarea": "Becoming a great chef starts today! Check our live and upcoming classes.",
-            "cta_text1": "Upcoming Schedule",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/public-events-calendar",
+            "cta_text1": "All Cooking Classes",
+            "cta_link1": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-07-11T154008.416.jpg",
@@ -539,13 +513,31 @@
             "color_accent": "#ffffff"
           }
         },
+        "f60c591f-0130-4508-8c93-109f496cd9cb": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "June menu",
+            "textarea": "We have an awesome dish lineup for the month of June! Come and join us for a culinary adventure!",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "Shop Now",
+            "cta_link2": "https:\/\/www.truffleshufflesf.com\/collections\/june-experiences",
+            "image": "shopify:\/\/shop_images\/DSC07923_a311c303-28fa-4c2a-85e3-258f42105398.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-1": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Small Batch Products",
-            "textarea": "Check out our selection of the finest small batch products loved by chefs everywhere",
+            "textarea": "Check out our selection of the finest small batch products loved by chefs everywhere.",
             "cta_text1": "",
             "cta_link1": "",
             "cta_text2": "Shop Now",
@@ -559,20 +551,57 @@
             "color_accent": "#ffffff"
           }
         },
-        "27e2c59a-46d5-4fc5-bb01-931f6c9aaa08": {
+        "e12d4898-9205-403d-bf3c-04eefe1f185f": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
-            "subheading": "looking for a way to bring people together virtually?",
-            "heading": "Host your own truffle shuffle!",
-            "textarea": "Book the #1 Virtual Cooking experience for your group",
-            "cta_text1": "Learn More",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/virtual-private-events",
+            "subheading": "",
+            "heading": "Truffle Shuffle is live on Startengine!",
+            "textarea": "Truffle Shuffle has launched a community round on StartEngine! Check out our campaign page and invest in Truffle Shuffle today! ✨",
+            "cta_text1": "Invest in Truffle Shuffle",
+            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/public-events-calendar",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Screenshot_4108.png",
+            "image": "shopify:\/\/shop_images\/Party-bg.png",
             "video_url": "",
-            "width": "100",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "d7e972a3-9f45-4851-b875-d93c792f92a5": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "COOK FOR UKRAINE FUNDRAISER",
+            "textarea": "We are working with the talented Chef Anna Voloshyna, to cook up an all-day Ukrainian feast with the goal of raising $75,000 for Kyiv Volunteer.",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "Join us",
+            "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/cook-for-ukraine-a-fundraiser-to-support-kyiv-volunteer?_pos=1&_sid=6b1c3b04c&_ss=r",
+            "image": "shopify:\/\/shop_images\/Screenshot2023-05-15at12.38.05PM.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "5d12f6a2-6158-4908-b83f-408e9bde54a2": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Become a member",
+            "textarea": "Enjoy discounts on products and get exclusive access to our Culinary Library!",
+            "cta_text1": "Learn more",
+            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
+            "cta_text2": "",
+            "cta_link2": "https:\/\/www.truffleshufflesf.com\/collections\/june-experiences",
+            "image": "shopify:\/\/shop_images\/kitchen-ready-for-cooking_67728598-d1ee-4ffc-b52e-a9499c82b7c9.jpg",
+            "video_url": "",
+            "width": "50",
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
@@ -581,17 +610,18 @@
         }
       },
       "block_order": [
-        "d3dca96e-442b-4c34-a169-8954d283bf25",
-        "0c061730-8d7d-45f7-a732-90bcd566dd22",
         "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b",
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-0",
+        "f60c591f-0130-4508-8c93-109f496cd9cb",
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-1",
-        "27e2c59a-46d5-4fc5-bb01-931f6c9aaa08"
+        "e12d4898-9205-403d-bf3c-04eefe1f185f",
+        "d7e972a3-9f45-4851-b875-d93c792f92a5",
+        "5d12f6a2-6158-4908-b83f-408e9bde54a2"
       ],
       "settings": {
-        "full_width": false,
-        "gutter_size": 15,
-        "space_above": false,
+        "full_width": true,
+        "gutter_size": 10,
+        "space_above": true,
         "space_below": false
       }
     },
