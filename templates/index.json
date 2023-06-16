@@ -89,6 +89,7 @@
     },
     "b3101375-6b82-40c9-b0c7-84c0d4220d54": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15086526136343__b3101375-6b82-40c9-b0c7-84c0d4220d54-168263971087e110e5-0": {
           "type": "price",
@@ -187,10 +188,9 @@
     },
     "83c85538-9356-4a6e-8475-34e089ec8ace": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "June menu",
-        "home_featured_products": "june-experiences",
+        "title": "July menu",
+        "home_featured_products": "july-experiences",
         "count": 5,
         "mobile_scrollable": true,
         "view_all": false,
