@@ -474,26 +474,6 @@
     "8940e18b-033f-4ded-85f7-20008c761e49": {
       "type": "promo-grid",
       "blocks": {
-        "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "",
-            "heading": "Become a member today!",
-            "textarea": "Enjoy discounts on products and get exclusive access to our Culinary Library!",
-            "cta_text1": "Learn more",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
-            "cta_text2": "Subscribe now",
-            "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
-            "image": "shopify:\/\/shop_images\/kitchen-ready-for-cooking_67728598-d1ee-4ffc-b52e-a9499c82b7c9.jpg",
-            "video_url": "",
-            "width": "100",
-            "height": 520,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "#ffffff"
-          }
-        },
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-0": {
           "type": "advanced",
           "settings": {
@@ -570,39 +550,20 @@
             "color_accent": "#ffffff"
           }
         },
-        "d7e972a3-9f45-4851-b875-d93c792f92a5": {
+        "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b": {
           "type": "advanced",
           "settings": {
             "subheading": "",
-            "heading": "COOK FOR UKRAINE FUNDRAISER",
-            "textarea": "We are working with the talented Chef Anna Voloshyna, to cook up an all-day Ukrainian feast with the goal of raising $75,000 for Kyiv Volunteer.",
-            "cta_text1": "",
-            "cta_link1": "",
-            "cta_text2": "Join Us",
-            "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/cook-for-ukraine-a-fundraiser-to-support-kyiv-volunteer?_pos=1&_sid=6b1c3b04c&_ss=r",
-            "image": "shopify:\/\/shop_images\/Screenshot2023-05-15at12.38.05PM.png",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "#ffffff"
-          }
-        },
-        "5d12f6a2-6158-4908-b83f-408e9bde54a2": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "",
-            "heading": "Become a member",
+            "heading": "Become a member today!",
             "textarea": "Enjoy discounts on products and get exclusive access to our Culinary Library!",
             "cta_text1": "Learn more",
             "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
-            "cta_text2": "",
-            "cta_link2": "https:\/\/www.truffleshufflesf.com\/collections\/june-experiences",
+            "cta_text2": "Subscribe now",
+            "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
             "image": "shopify:\/\/shop_images\/kitchen-ready-for-cooking_67728598-d1ee-4ffc-b52e-a9499c82b7c9.jpg",
             "video_url": "",
-            "width": "50",
-            "height": 500,
+            "width": "100",
+            "height": 520,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
@@ -610,13 +571,11 @@
         }
       },
       "block_order": [
-        "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b",
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-0",
         "f60c591f-0130-4508-8c93-109f496cd9cb",
         "template--15030292643863__8940e18b-033f-4ded-85f7-20008c761e49-1674418450612de65e-1",
         "e12d4898-9205-403d-bf3c-04eefe1f185f",
-        "d7e972a3-9f45-4851-b875-d93c792f92a5",
-        "5d12f6a2-6158-4908-b83f-408e9bde54a2"
+        "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b"
       ],
       "settings": {
         "full_width": true,
