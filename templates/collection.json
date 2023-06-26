@@ -2,10 +2,11 @@
   "sections": {
     "collection-header": {
       "type": "collection-header",
+      "disabled": true,
       "settings": {
         "enable": false,
-        "collection_image_enable": true,
-        "parallax": true,
+        "collection_image_enable": false,
+        "parallax": false,
         "parallax_direction": "top"
       }
     },
@@ -14,6 +15,7 @@
       "blocks": {
         "collection_description": {
           "type": "collection_description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -25,7 +27,7 @@
         "product_grid": {
           "type": "product_grid",
           "settings": {
-            "grid_style": "large"
+            "grid_style": "list"
           }
         }
       },
@@ -38,7 +40,7 @@
         "enable_sidebar": true,
         "collapse_filters": true,
         "enable_color_swatches": true,
-        "enable_sort": false
+        "enable_sort": true
       }
     },
     "recently-viewed": {
