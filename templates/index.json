@@ -1,131 +1,5 @@
 {
   "sections": {
-    "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Shop the products the sharks love",
-        "home_featured_products": "products-gifts",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "a752847e-1fa2-4c15-87be-341fa74a0cc5": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "325b2aaf-3760-43fb-b285-d4de23601538": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>JOIN US FOR OUR COMMUNITY ROUND INVESTOR CALL!<\/p>",
-            "title_size": 60,
-            "subheading": "We are inviting you to join us on May 30th at 5pm PT for an opportunity for us to come together, share our vision, and explore how you can be a part of the list of amazing Truffle Shuffle investors!",
-            "link": "https:\/\/info.truffleshufflesf.com\/community-round-webinar",
-            "link_text": "Register Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_1500_x_200_px_1500_x_400_px_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Untitled_1500_x_200_px_1500_x_400_px_1.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "34a6ff0d-58e9-472d-8729-1e669c4e8b9c": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Overlaid Hero Slide<\/p>",
-            "title_size": 70,
-            "subheading": "And optional subtext",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "325b2aaf-3760-43fb-b285-d4de23601538",
-        "34a6ff0d-58e9-472d-8729-1e669c4e8b9c"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "logo-list": {
-      "type": "logo-list",
-      "blocks": {
-        "logo-list-0": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/san-francisco-chronicle-logo.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-1": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Forbes-Black.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/the-oprah-magazine.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kelly_Clarkson.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-4": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/untitled-1_220.png",
-            "link": ""
-          }
-        },
-        "logo-list-5": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/eater-vector-logo.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo-list-0",
-        "logo-list-1",
-        "logo-list-2",
-        "logo-list-3",
-        "logo-list-4",
-        "logo-list-5"
-      ],
-      "settings": {
-        "title": "As seen  on 👇",
-        "divider": false
-      }
-    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "custom_css": [
@@ -206,6 +80,65 @@
         "mobile_layout": "partial",
         "enable_video_looping": false,
         "product_video_style": "muted"
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo-list-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/san-francisco-chronicle-logo.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Forbes-Black.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/the-oprah-magazine.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kelly_Clarkson.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/untitled-1_220.png",
+            "link": ""
+          }
+        },
+        "logo-list-5": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eater-vector-logo.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo-list-0",
+        "logo-list-1",
+        "logo-list-2",
+        "logo-list-3",
+        "logo-list-4",
+        "logo-list-5"
+      ],
+      "settings": {
+        "title": "As seen  on 👇",
+        "divider": false
       }
     },
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a": {
@@ -730,11 +663,9 @@
     }
   },
   "order": [
-    "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
-    "a752847e-1fa2-4c15-87be-341fa74a0cc5",
-    "logo-list",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
+    "logo-list",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
     "83c85538-9356-4a6e-8475-34e089ec8ace",
     "6fb05b65-d8e7-48ee-af2a-83c3164a4fee",
