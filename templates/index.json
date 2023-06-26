@@ -114,14 +114,31 @@
         "height_mobile": 300
       }
     },
-    "83c85538-9356-4a6e-8475-34e089ec8ace": {
-      "type": "featured-collection",
+    "2b27fefa-1fe7-4d5b-811a-e3a04972501c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15086526136343__2b27fefa-1fe7-4d5b-811a-e3a04972501c-16878146527a1806a0-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Tailored For Every Food Lover"
+          }
+        },
+        "template--15086526136343__2b27fefa-1fe7-4d5b-811a-e3a04972501c-16878146527a1806a0-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> Whether you’re looking to join an online class, book a private cooking experience, or find the perfect ingredient to elevate your dishes, Truffle Shuffle is your ultimate culinary destination.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__2b27fefa-1fe7-4d5b-811a-e3a04972501c-16878146527a1806a0-0",
+        "template--15086526136343__2b27fefa-1fe7-4d5b-811a-e3a04972501c-16878146527a1806a0-1"
+      ],
       "settings": {
-        "title": "July menu",
-        "home_featured_products": "july-experiences",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": false,
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
         "divider": false
       }
     },
@@ -132,8 +149,8 @@
           "type": "advanced",
           "settings": {
             "subheading": "",
-            "heading": "Experiences",
-            "textarea": "Becoming a great chef starts today! Check our live and upcoming classes.",
+            "heading": "Join a Class",
+            "textarea": "Learn from the experts in real-time. Engage, ask questions, and perfect your skills.",
             "cta_text1": "All Cooking Classes",
             "cta_link1": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
             "cta_text2": "",
@@ -150,12 +167,12 @@
         "f60c591f-0130-4508-8c93-109f496cd9cb": {
           "type": "advanced",
           "settings": {
-            "subheading": "June 28 at 2pm pt",
-            "heading": "Truffle Shuffle & Butcherbox",
-            "textarea": "We are teaming up with ButcherBox to bring you the ultimate BBQ experience!",
+            "subheading": "",
+            "heading": "Book Your Own Class",
+            "textarea": "Tailor a private culinary experience for friends, family, or corporate events.",
             "cta_text1": "",
             "cta_link1": "",
-            "cta_text2": "Join Us",
+            "cta_text2": "Learn More",
             "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/butcher-box-live-collaboration-shopping-list",
             "image": "shopify:\/\/shop_images\/062622-Tuck_s-Bday-BBQ-14_1.jpg",
             "video_url": "",
@@ -238,6 +255,69 @@
         "space_above": true,
         "space_below": false
       }
+    },
+    "969afbcb-303c-4b9a-85e0-2291cdf92846": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-0",
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-1",
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-2",
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-3",
+        "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-4"
+      ],
+      "settings": {
+        "title": "From our customers",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
     }
   },
   "order": [
@@ -245,7 +325,8 @@
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
-    "83c85538-9356-4a6e-8475-34e089ec8ace",
-    "8940e18b-033f-4ded-85f7-20008c761e49"
+    "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
+    "8940e18b-033f-4ded-85f7-20008c761e49",
+    "969afbcb-303c-4b9a-85e0-2291cdf92846"
   ]
 }
