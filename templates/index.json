@@ -67,6 +67,65 @@
         "autoplay_speed": 7
       }
     },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo-list-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/san-francisco-chronicle-logo.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Forbes-Black.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/the-oprah-magazine.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kelly_Clarkson.jpg",
+            "link": ""
+          }
+        },
+        "logo-list-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/untitled-1_220.png",
+            "link": ""
+          }
+        },
+        "logo-list-5": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eater-vector-logo.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo-list-0",
+        "logo-list-1",
+        "logo-list-2",
+        "logo-list-3",
+        "logo-list-4",
+        "logo-list-5"
+      ],
+      "settings": {
+        "title": "As seen  on 👇",
+        "divider": false
+      }
+    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "custom_css": [
@@ -552,6 +611,7 @@
         },
         "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Become a member today!",
@@ -596,6 +656,7 @@
     },
     "1677021793adcde42b": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "5522330e-436a-4839-a311-5f8b0fc2eab4": {
           "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
@@ -612,65 +673,6 @@
       "settings": {
         "full_width": false,
         "space_around": true
-      }
-    },
-    "logo-list": {
-      "type": "logo-list",
-      "blocks": {
-        "logo-list-0": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/san-francisco-chronicle-logo.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-1": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Forbes-Black.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/the-oprah-magazine.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kelly_Clarkson.jpg",
-            "link": ""
-          }
-        },
-        "logo-list-4": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/untitled-1_220.png",
-            "link": ""
-          }
-        },
-        "logo-list-5": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/eater-vector-logo.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo-list-0",
-        "logo-list-1",
-        "logo-list-2",
-        "logo-list-3",
-        "logo-list-4",
-        "logo-list-5"
-      ],
-      "settings": {
-        "title": "As seen  on 👇",
-        "divider": false
       }
     },
     "3c4d5871-6451-407a-8ef8-158d6f95e90b": {
@@ -730,6 +732,7 @@
   "order": [
     "6c7b149e-1b0c-4fa2-aa4a-494dc4b5c28f",
     "a752847e-1fa2-4c15-87be-341fa74a0cc5",
+    "logo-list",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "b3101375-6b82-40c9-b0c7-84c0d4220d54",
     "7e7e2aa4-f83d-4c2c-b31f-fdd014172d3a",
@@ -749,7 +752,6 @@
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "20abcaf4-a990-46f9-9489-f4049c17facf",
     "1677021793adcde42b",
-    "logo-list",
     "3c4d5871-6451-407a-8ef8-158d6f95e90b"
   ]
 }
