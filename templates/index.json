@@ -302,9 +302,9 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p><em>\"These are the best cooking classes I’ve ever taken! I prefer cooking at home with live help to going in somewhere and using a commercial kitchen. I’m learning how to use my own equipment with skills I can apply when I make anything.\"<\/em><\/p>",
+            "author": "Tiffany S",
+            "author_info": "Cleveland, OH"
           }
         }
       },
