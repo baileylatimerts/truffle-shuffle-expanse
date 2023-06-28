@@ -283,9 +283,9 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p><em>\"Fun, entertaining and very informative. My cooking skills have improved dramatically thanks to the wonderful chefs at Truffle Shuffle.\"<\/em><\/p>",
+            "author": "-Alexandra B",
+            "author_info": "Kentfield, CA"
           }
         },
         "template--15086526136343__969afbcb-303c-4b9a-85e0-2291cdf92846-1687815972f3f652bf-3": {
