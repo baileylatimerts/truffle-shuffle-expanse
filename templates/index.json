@@ -267,6 +267,35 @@
         "divider": false
       }
     },
+    "3d27346e-48b0-465b-ace8-0bc2bb63c4bb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15086526136343__3d27346e-48b0-465b-ace8-0bc2bb63c4bb-168810341594b23709-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "fb6c1f86-b201-4c3e-a3c6-524bc99f5d11": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "See Live Class Calendar"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__3d27346e-48b0-465b-ace8-0bc2bb63c4bb-168810341594b23709-0",
+        "fb6c1f86-b201-4c3e-a3c6-524bc99f5d11"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
     "c35b29bd-232d-474c-94d7-f2f774a7840c": {
       "type": "featured-collection",
       "settings": {
@@ -361,6 +390,7 @@
     "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
+    "3d27346e-48b0-465b-ace8-0bc2bb63c4bb",
     "c35b29bd-232d-474c-94d7-f2f774a7840c",
     "d34897e4-c172-4e1f-8e25-46701cbde538",
     "969afbcb-303c-4b9a-85e0-2291cdf92846"
