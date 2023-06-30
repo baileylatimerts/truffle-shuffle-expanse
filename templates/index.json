@@ -256,6 +256,17 @@
         "space_below": false
       }
     },
+    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Upcoming Live Classes",
+        "home_featured_products": "july-experiences",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "969afbcb-303c-4b9a-85e0-2291cdf92846": {
       "type": "testimonials",
       "blocks": {
@@ -327,6 +338,7 @@
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
     "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
     "8940e18b-033f-4ded-85f7-20008c761e49",
+    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "969afbcb-303c-4b9a-85e0-2291cdf92846"
   ]
 }
