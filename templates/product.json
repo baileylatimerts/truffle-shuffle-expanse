@@ -19,6 +19,11 @@
           "settings": {
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -26,43 +31,6 @@
             "picker_type": "dropdown",
             "product_dynamic_variants_enable": true,
             "color_swatches": false
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "sales_point": {
-          "type": "sales_point",
-          "disabled": true,
-          "settings": {
-            "icon": "globe",
-            "text": "Free worldwide shipping"
-          }
-        },
-        "sales_point2": {
-          "type": "sales_point",
-          "disabled": true,
-          "settings": {
-            "icon": "truck",
-            "text": "Free returns"
-          }
-        },
-        "sales_point3": {
-          "type": "sales_point",
-          "disabled": true,
-          "settings": {
-            "icon": "leaf",
-            "text": "Carbon neutral"
-          }
-        },
-        "sales_point4": {
-          "type": "sales_point",
-          "disabled": true,
-          "settings": {
-            "icon": "lock",
-            "text": "Secure payments"
           }
         },
         "da712f52-de32-4be8-a582-3525b3aad39d": {
@@ -86,58 +54,29 @@
         },
         "5691f574-69b9-402d-8ea9-b00c577a878f": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "❤️ For every kit we sell, we donate a meal to someone in need through the Alameda Community Food Bank"
-          }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "disabled": true,
-          "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
-          }
-        },
-        "83d7544a-f5ed-449a-97ca-b8431d104b75": {
-          "type": "trust_badge",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "7a3b0110-443d-432c-a565-5db14d2526f1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Text block"
           }
         }
       },
       "block_order": [
         "judgeme_preview_badge_product_page_6aa6deec",
-        "variant_picker",
         "price",
-        "sales_point",
-        "sales_point2",
-        "sales_point3",
-        "sales_point4",
+        "variant_picker",
         "da712f52-de32-4be8-a582-3525b3aad39d",
         "76016324-b9a7-4d7c-a384-cd8f4ea02cfc",
         "buy_buttons",
-        "5691f574-69b9-402d-8ea9-b00c577a878f",
-        "inventory_status",
-        "83d7544a-f5ed-449a-97ca-b8431d104b75",
-        "7a3b0110-443d-432c-a565-5db14d2526f1"
+        "5691f574-69b9-402d-8ea9-b00c577a878f"
       ],
       "settings": {
         "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "large",
+        "image_position": "right",
+        "image_container_size": "small",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_height": "flexible",
-        "thumbnail_arrows": false,
+        "thumbnail_arrows": true,
         "mobile_layout": "partial",
         "enable_video_looping": true,
         "product_video_style": "unmuted"
