@@ -83,11 +83,6 @@
             "is_tab": true
           }
         },
-        "359b3136-0b9a-43a3-a161-1631da55e369": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "tab": {
           "type": "tab",
           "disabled": true,
@@ -112,14 +107,19 @@
             "title": "Ask a question",
             "phone": true
           }
+        },
+        "359b3136-0b9a-43a3-a161-1631da55e369": {
+          "type": "share",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "description",
-        "359b3136-0b9a-43a3-a161-1631da55e369",
         "tab",
         "09571854-7c02-4abb-a3c9-9e4e488b1e13",
-        "contact"
+        "contact",
+        "359b3136-0b9a-43a3-a161-1631da55e369"
       ],
       "settings": {
         "max_width": true
