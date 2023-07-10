@@ -62,7 +62,7 @@
       ],
       "settings": {
         "sku_enable": false,
-        "image_position": "right",
+        "image_position": "left",
         "image_container_size": "small",
         "product_image_size": "square",
         "product_zoom_enable": true,
