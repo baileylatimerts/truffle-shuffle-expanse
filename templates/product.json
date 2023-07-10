@@ -19,11 +19,6 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -35,6 +30,11 @@
         },
         "da712f52-de32-4be8-a582-3525b3aad39d": {
           "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
@@ -54,9 +54,9 @@
       },
       "block_order": [
         "judgeme_preview_badge_product_page_6aa6deec",
-        "price",
         "variant_picker",
         "da712f52-de32-4be8-a582-3525b3aad39d",
+        "price",
         "buy_buttons",
         "5691f574-69b9-402d-8ea9-b00c577a878f"
       ],
