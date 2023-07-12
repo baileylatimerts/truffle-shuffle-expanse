@@ -97,6 +97,60 @@
         "divider": false
       }
     },
+    "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-0",
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-1",
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-2",
+        "template--15086526136343__6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e-1689126432970d016e-3"
+      ],
+      "settings": {
+        "featured_product": "black-truffles",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
     "f1832c54-7d5a-4436-bea7-c4a56061d53f": {
       "type": "hero-video",
       "settings": {
@@ -386,6 +440,7 @@
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
+    "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e",
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
     "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
     "8940e18b-033f-4ded-85f7-20008c761e49",
