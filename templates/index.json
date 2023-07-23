@@ -1,5 +1,57 @@
 {
   "sections": {
+    "003f9ca4-f847-4674-b27a-faaa242ceea2": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1"
+      ],
+      "settings": {
+        "featured_product": "french-mother-sauces-series",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "custom_css": [
@@ -437,6 +489,7 @@
     }
   },
   "order": [
+    "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
