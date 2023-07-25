@@ -2,6 +2,7 @@
   "sections": {
     "003f9ca4-f847-4674-b27a-faaa242ceea2": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1": {
           "type": "price",
@@ -70,6 +71,39 @@
         "overlay_opacity": 22,
         "height": 660,
         "height_mobile": 390
+      }
+    },
+    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Upcoming Live Classes",
+        "home_featured_products": "all-cooking-classes",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "c35b29bd-232d-474c-94d7-f2f774a7840c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured On-Demand Classes",
+        "home_featured_products": "on-demand-classes",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "d34897e4-c172-4e1f-8e25-46701cbde538": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Small Batch Collections",
+        "home_featured_products": "products-gifts",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "logo-list": {
@@ -362,17 +396,6 @@
         "space_below": false
       }
     },
-    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Upcoming Live Classes",
-        "home_featured_products": "july-experiences",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "3d27346e-48b0-465b-ace8-0bc2bb63c4bb": {
       "type": "rich-text",
       "blocks": {
@@ -399,28 +422,6 @@
         "align_text": "center",
         "narrow_column": true,
         "color_scheme": "1",
-        "divider": false
-      }
-    },
-    "c35b29bd-232d-474c-94d7-f2f774a7840c": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured On-Demand Classes",
-        "home_featured_products": "on-demand-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "d34897e4-c172-4e1f-8e25-46701cbde538": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our Small Batch Collections",
-        "home_featured_products": "products-gifts",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
         "divider": false
       }
     },
@@ -491,16 +492,16 @@
   "order": [
     "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
+    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
+    "c35b29bd-232d-474c-94d7-f2f774a7840c",
+    "d34897e4-c172-4e1f-8e25-46701cbde538",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
     "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e",
     "f1832c54-7d5a-4436-bea7-c4a56061d53f",
     "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
     "8940e18b-033f-4ded-85f7-20008c761e49",
-    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "3d27346e-48b0-465b-ace8-0bc2bb63c4bb",
-    "c35b29bd-232d-474c-94d7-f2f774a7840c",
-    "d34897e4-c172-4e1f-8e25-46701cbde538",
     "969afbcb-303c-4b9a-85e0-2291cdf92846"
   ]
 }
