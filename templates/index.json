@@ -117,6 +117,58 @@
         "divider": false
       }
     },
+    "f195e6d8-a115-4508-bd3a-105d8095f9d9": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Take your knife skills to the next level<\/p>",
+            "title_size": 70,
+            "subheading": "Live Course Starting in August",
+            "link": "https:\/\/www.truffleshufflesf.com\/products\/knife-skills-basics-protege-series?_pos=1&_psq=knife&_ss=e&_v=1.0",
+            "link_text": "Learn More",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/knife-with-a-zucchini-cut-in-half.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Make an Impact<\/p>",
+            "title_size": 70,
+            "subheading": "Supports multiple text alignments and mobile-specific images.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "logo-list": {
       "type": "logo-list",
       "blocks": {
@@ -436,6 +488,19 @@
         "divider": false
       }
     },
+    "8ce8ab39-27a9-498c-91b7-6591f04d33f6": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "From the recipe blog",
+        "blog": "news",
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
     "969afbcb-303c-4b9a-85e0-2291cdf92846": {
       "type": "testimonials",
       "blocks": {
@@ -498,19 +563,6 @@
         "round_images": true,
         "color_scheme": "none"
       }
-    },
-    "8ce8ab39-27a9-498c-91b7-6591f04d33f6": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "From the recipe blog",
-        "blog": "news",
-        "blog_show_tags": true,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "blog_image_size": "wide",
-        "divider": false
-      }
     }
   },
   "order": [
@@ -520,6 +572,7 @@
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "c35b29bd-232d-474c-94d7-f2f774a7840c",
     "d34897e4-c172-4e1f-8e25-46701cbde538",
+    "f195e6d8-a115-4508-bd3a-105d8095f9d9",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
     "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e",
@@ -527,7 +580,7 @@
     "2b27fefa-1fe7-4d5b-811a-e3a04972501c",
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "3d27346e-48b0-465b-ace8-0bc2bb63c4bb",
-    "969afbcb-303c-4b9a-85e0-2291cdf92846",
-    "8ce8ab39-27a9-498c-91b7-6591f04d33f6"
+    "8ce8ab39-27a9-498c-91b7-6591f04d33f6",
+    "969afbcb-303c-4b9a-85e0-2291cdf92846"
   ]
 }
