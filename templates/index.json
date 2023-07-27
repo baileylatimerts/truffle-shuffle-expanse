@@ -140,7 +140,6 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Learn how to make fresh pasta like an Italian grandma<\/p>",
@@ -152,6 +151,7 @@
             "link_text_2": "",
             "color_accent": "#fff",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/CuttingPastaSquare.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
