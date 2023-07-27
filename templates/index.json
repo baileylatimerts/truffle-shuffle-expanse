@@ -140,13 +140,14 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "<p>Make an Impact<\/p>",
+            "title": "<p>Learn how to make fresh pasta like an Italian grandma<\/p>",
             "title_size": 70,
-            "subheading": "Supports multiple text alignments and mobile-specific images.",
-            "link": "",
-            "link_text": "Optional button",
+            "subheading": "Live Course Starting in August",
+            "link": "https:\/\/www.truffleshufflesf.com\/products\/pasta-basics-protege-series?_pos=2&_sid=b4e7833c6&_ss=r",
+            "link_text": "Learn More",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#fff",
