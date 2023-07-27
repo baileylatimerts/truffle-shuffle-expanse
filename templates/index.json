@@ -76,8 +76,8 @@
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
       "type": "featured-collection",
       "settings": {
-        "title": "Upcoming Live Classes",
-        "home_featured_products": "all-cooking-classes",
+        "title": "Upcoming Live Classes in August",
+        "home_featured_products": "live-cooking-classes",
         "count": 5,
         "mobile_scrollable": true,
         "view_all": true,
