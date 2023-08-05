@@ -73,17 +73,6 @@
         "height_mobile": 390
       }
     },
-    "850d4a7c-35fd-49a6-97b0-68f16061deb1": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "CINCO DE TRUFFLE SHUFFLE WEEKEND SALE",
-        "home_featured_products": "cinco-de-truffle-shuffle-weekend-promo",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
       "type": "featured-collection",
       "settings": {
@@ -166,11 +155,30 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "be2c031c-78cc-44e5-bcc8-d545569e0868": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "🎉Cinco de Truffle Shuffle",
+            "title": "<p>Mystery Box<\/p>",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
+            "link_text": "Learn More",
+            "link_2": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Mystery_box_1.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2"
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2",
+        "be2c031c-78cc-44e5-bcc8-d545569e0868"
       ],
       "settings": {
         "full_width": true,
@@ -580,7 +588,6 @@
   "order": [
     "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
-    "850d4a7c-35fd-49a6-97b0-68f16061deb1",
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122",
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "c35b29bd-232d-474c-94d7-f2f774a7840c",
