@@ -122,6 +122,7 @@
       "blocks": {
         "be2c031c-78cc-44e5-bcc8-d545569e0868": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "🎉Cinco de Truffle Shuffle",
             "title": "<p>Mystery Box<\/p>",
