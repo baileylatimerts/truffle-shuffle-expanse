@@ -234,7 +234,6 @@
         "blocks": {
           "755bf9b5-3cf1-4a1f-ba4f-bf335472f7a7": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p>Australian Black Truffle Season is Here!!!!!<\/p>",
               "richtext_mobile": ""
