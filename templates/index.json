@@ -120,6 +120,24 @@
     "f195e6d8-a115-4508-bd3a-105d8095f9d9": {
       "type": "slideshow",
       "blocks": {
+        "be2c031c-78cc-44e5-bcc8-d545569e0868": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "🎉Cinco de Truffle Shuffle",
+            "title": "<p>Mystery Box<\/p>",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
+            "link_text": "Learn More",
+            "link_2": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Mystery_box_1.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
           "type": "hero",
           "settings": {
@@ -155,30 +173,12 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "be2c031c-78cc-44e5-bcc8-d545569e0868": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "🎉Cinco de Truffle Shuffle",
-            "title": "<p>Mystery Box<\/p>",
-            "title_size": 70,
-            "subheading": "",
-            "link": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
-            "link_text": "Learn More",
-            "link_2": "shopify:\/\/products\/copy-of-balinese-truffle-salt",
-            "link_text_2": "",
-            "color_accent": "#fff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Mystery_box_1.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
+        "be2c031c-78cc-44e5-bcc8-d545569e0868",
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2",
-        "be2c031c-78cc-44e5-bcc8-d545569e0868"
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2"
       ],
       "settings": {
         "full_width": true,
