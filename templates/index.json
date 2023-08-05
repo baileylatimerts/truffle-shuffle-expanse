@@ -73,6 +73,17 @@
         "height_mobile": 390
       }
     },
+    "850d4a7c-35fd-49a6-97b0-68f16061deb1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "CINCO DE TRUFFLE SHUFFLE WEEKEND SALE",
+        "home_featured_products": "cinco-de-truffle-shuffle-weekend-promo",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
       "type": "featured-collection",
       "settings": {
@@ -131,7 +142,7 @@
             "link_text": "Learn More",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/knife-with-a-zucchini-cut-in-half.jpg",
             "overlay_opacity": 0,
@@ -149,7 +160,7 @@
             "link_text": "Learn More",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/CuttingPastaSquare.jpg",
             "overlay_opacity": 0,
@@ -569,6 +580,7 @@
   "order": [
     "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
+    "850d4a7c-35fd-49a6-97b0-68f16061deb1",
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122",
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "c35b29bd-232d-474c-94d7-f2f774a7840c",
