@@ -177,6 +177,23 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "16913337412e09db8c": {
+      "type": "apps",
+      "blocks": {
+        "2921449c-194a-43f7-8191-0586433133d8": {
+          "type": "shopify:\/\/apps\/crowdfunder\/blocks\/crowdfunder\/3bdd0fe8-5fc7-4d01-b35b-48bca1437d27",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "2921449c-194a-43f7-8191-0586433133d8"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -190,6 +207,7 @@
     "more-products-collection",
     "recently-viewed",
     "collection-return",
-    "shogun-below"
+    "shogun-below",
+    "16913337412e09db8c"
   ]
 }
