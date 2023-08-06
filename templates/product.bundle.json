@@ -1,1 +1,239 @@
-{"sections":{"shogun-helper":{"type":"shogun-helper","settings":{}},"shogun-above":{"type":"shogun-above","settings":{}},"main":{"type":"main-product","blocks":{"variant_picker":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"price":{"type":"price","settings":{}},"sales_point":{"type":"sales_point","disabled":true,"settings":{"icon":"globe","text":"Free worldwide shipping"}},"sales_point2":{"type":"sales_point","disabled":true,"settings":{"icon":"truck","text":"Free returns"}},"sales_point3":{"type":"sales_point","disabled":true,"settings":{"icon":"leaf","text":"Carbon neutral"}},"sales_point4":{"type":"sales_point","disabled":true,"settings":{"icon":"lock","text":"Secure payments"}},"da712f52-de32-4be8-a582-3525b3aad39d":{"type":"quantity_selector","settings":{}},"76016324-b9a7-4d7c-a384-cd8f4ea02cfc":{"type":"shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e","settings":{"product":"{{product}}"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"surface_pickup_enable":false}},"inventory_status":{"type":"inventory_status","disabled":true,"settings":{"inventory_threshold":10,"inventory_transfers_enable":true}},"83d7544a-f5ed-449a-97ca-b8431d104b75":{"type":"trust_badge","disabled":true,"settings":{}}},"block_order":["variant_picker","price","sales_point","sales_point2","sales_point3","sales_point4","da712f52-de32-4be8-a582-3525b3aad39d","76016324-b9a7-4d7c-a384-cd8f4ea02cfc","buy_buttons","inventory_status","83d7544a-f5ed-449a-97ca-b8431d104b75"],"settings":{"sku_enable":false,"image_position":"left","image_container_size":"large","product_image_size":"square","product_zoom_enable":true,"thumbnail_position":"beside","thumbnail_height":"flexible","thumbnail_arrows":false,"mobile_layout":"partial","enable_video_looping":true,"product_video_style":"unmuted"}},"sub":{"type":"product-full-width","blocks":{"description":{"type":"description","settings":{"is_tab":false}},"tab":{"type":"tab","disabled":true,"settings":{"title":"How it works","content":"<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!<\/p>","page":""}},"09571854-7c02-4abb-a3c9-9e4e488b1e13":{"type":"tab","disabled":true,"settings":{"title":"Shipping information","content":"<p>We ship out all ingredient kits priority shipping to arrive as a<\/p>","page":""}},"contact":{"type":"contact","settings":{"title":"Ask a question","phone":true}},"359b3136-0b9a-43a3-a161-1631da55e369":{"type":"share","settings":{}}},"block_order":["description","tab","09571854-7c02-4abb-a3c9-9e4e488b1e13","contact","359b3136-0b9a-43a3-a161-1631da55e369"],"settings":{"max_width":true}},"recommendations":{"type":"product-recommendations","settings":{"product_recommendations_heading":"You may also like","related_count":5}},"more-products-vendor":{"type":"more-products-vendor","settings":{}},"more-products-collection":{"type":"more-products-collection","disabled":true,"settings":{}},"recently-viewed":{"type":"recently-viewed","settings":{}},"collection-return":{"type":"collection-return","settings":{"color_scheme":"2"}},"shogun-below":{"type":"shogun-below","disabled":true,"settings":{}}},"order":["shogun-helper","shogun-above","main","sub","recommendations","more-products-vendor","more-products-collection","recently-viewed","collection-return","shogun-below"]}
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "sales_point2": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "text": "Free returns"
+          }
+        },
+        "sales_point3": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "Carbon neutral"
+          }
+        },
+        "sales_point4": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "lock",
+            "text": "Secure payments"
+          }
+        },
+        "da712f52-de32-4be8-a582-3525b3aad39d": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "76016324-b9a7-4d7c-a384-cd8f4ea02cfc": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "83d7544a-f5ed-449a-97ca-b8431d104b75": {
+          "type": "trust_badge",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "sales_point",
+        "sales_point2",
+        "sales_point3",
+        "sales_point4",
+        "da712f52-de32-4be8-a582-3525b3aad39d",
+        "76016324-b9a7-4d7c-a384-cd8f4ea02cfc",
+        "buy_buttons",
+        "inventory_status",
+        "83d7544a-f5ed-449a-97ca-b8431d104b75"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "large",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "unmuted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "How it works",
+            "content": "<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!<\/p>",
+            "page": ""
+          }
+        },
+        "09571854-7c02-4abb-a3c9-9e4e488b1e13": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>We ship out all ingredient kits priority shipping to arrive as a<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": true
+          }
+        },
+        "359b3136-0b9a-43a3-a161-1631da55e369": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "09571854-7c02-4abb-a3c9-9e4e488b1e13",
+        "contact",
+        "359b3136-0b9a-43a3-a161-1631da55e369"
+      ],
+      "settings": {
+        "max_width": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "settings": {
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+        "color_scheme": "2"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "169133398623d97b2c": {
+      "type": "apps",
+      "blocks": {
+        "028e235f-92c2-4ffd-8292-0113e92c06b9": {
+          "type": "shopify:\/\/apps\/crowdfunder\/blocks\/crowdfunder\/3bdd0fe8-5fc7-4d01-b35b-48bca1437d27",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "028e235f-92c2-4ffd-8292-0113e92c06b9"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "main",
+    "sub",
+    "recommendations",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "collection-return",
+    "shogun-below",
+    "169133398623d97b2c"
+  ]
+}
