@@ -143,8 +143,8 @@
           "type": "hero",
           "settings": {
             "top_subheading": "CUSTOM & SIGNED",
-            "title": "<h1>\"THE COOKBOOK\" BY TRUFFLE SHUFFLE<\/h1>",
-            "title_size": 96,
+            "title": "<p>\"THE COOKBOOK\"<\/p><p>BY TRUFFLE SHUFFLE<\/p>",
+            "title_size": 59,
             "subheading": "LIMITED FIRST EDITION PRESALE",
             "link": "shopify:\/\/products\/📒the-cookbook-presale",
             "link_text": "Learn more",
