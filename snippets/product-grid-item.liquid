@@ -38,10 +38,7 @@
       <img class="ingredient-kit left" src="https://cdn.shopify.com/s/files/1/0259/6510/1090/files/badge-shoppinglist.svg?v=1674255685">
     {% endif %}
 
-    {% if product.metafields.product_info.experience_type %}
-      <div class="black-pill">{{ product.metafields.product_info.experience_type }}</div>
 
-    {% endif %}
 
     {%- unless no_actions -%}
       {%- if settings.quick_add_enable or settings.quick_shop_enable -%}
@@ -262,6 +259,10 @@
             {%- endfor -%}
           {%- endif -%}
 
+          {% if product.metafields.product_info.experience_type %}
+            <div class="black-pill">{{ product.metafields.product_info.experience_type }}</div>
+      
+          {% endif %}
           <div class="grid-product__title">{{ product.title }}</div>
 
 
