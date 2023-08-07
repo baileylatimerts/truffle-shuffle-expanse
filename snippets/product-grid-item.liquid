@@ -272,13 +272,13 @@
 
           <div class="dates-wrapper">
             {%- if product.metafields.product_info.start_date -%}
-              <div class="grid-product__vendor">{{ product.metafields.product_info.start_date | date: " %b %d, %Y" }}</div>
+              <div class="grid-product__vendor">{{ product.metafields.product_info.start_date | date: " %b %d" }}</div>
             {%- endif -%}
             {% if product.metafields.product_info.start_date and product.metafields.product_info.end_date %}
               <div class="grid-product__vendor">•</div>
             {% endif %}
             {%- if product.metafields.product_info.end_date -%}
-              <div class="grid-product__vendor">{{ product.metafields.product_info.end_date | date: "%a, %b %d, %Y" }}</div>
+              <div class="grid-product__vendor">{{ product.metafields.product_info.end_date | date: "%b %d" }}</div>
             {%- endif -%}
           </div>
 
