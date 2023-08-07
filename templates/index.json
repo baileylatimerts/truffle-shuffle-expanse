@@ -139,6 +139,25 @@
             "focal_point": "center center"
           }
         },
+        "6c416d54-aacc-4744-89d8-132c867d5369": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "CUSTOM & SIGNED",
+            "title": "<h1>\"THE COOKBOOK\" BY TRUFFLE SHUFFLE<\/h1>",
+            "title_size": 70,
+            "subheading": "LIMITED FIRST EDITION PRESALE",
+            "link": "shopify:\/\/products\/📒the-cookbook-presale",
+            "link_text": "Learn more",
+            "link_2": "shopify:\/\/products\/📒the-cookbook-presale",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Untitled_design_47.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_47.png",
+            "overlay_opacity": 0,
+            "focal_point": "80% 50%"
+          }
+        },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
           "type": "hero",
           "settings": {
@@ -178,6 +197,7 @@
       },
       "block_order": [
         "be2c031c-78cc-44e5-bcc8-d545569e0868",
+        "6c416d54-aacc-4744-89d8-132c867d5369",
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2"
       ],
