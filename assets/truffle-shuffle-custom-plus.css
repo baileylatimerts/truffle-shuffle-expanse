@@ -177,7 +177,7 @@ body#recharge-novum #recharge-te #te-modal{
   z-index: 1;
 }
 .dates-wrapper{
-  diplay:flex;
+  display: flex;
 }
 .hero-yt-frame-wrapper-plus iframe {
   position: absolute;
