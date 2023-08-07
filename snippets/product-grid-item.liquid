@@ -263,6 +263,20 @@
           {%- if settings.vendor_enable -%}
             <div class="grid-product__vendor">{{ product.vendor }}</div>
           {%- endif -%}
+
+          <div class="dates-wrapper">
+            {%- if product.metafields.product_info.start_date -%}
+              <div class="grid-product__vendor">{{ product.metafields.product_info.start_date | date: "%a, %b %d, %Y" }}</div>
+            {%- endif -%}
+            {% if product.metafields.product_info.start_date and product.metafields.product_info.end_date %}
+              <div class="grid-product__vendor">•</div>
+            {% endif %}
+            {%- if product.metafields.product_info.end_date -%}
+              <div class="grid-product__vendor">{{ product.metafields.product_info.end_date | date: "%a, %b %d, %Y" }}</div>
+            {%- endif -%}
+          </div>
+
+
         </div>
         <div class="grid-item__meta-secondary">
           <div class="grid-product__price">
