@@ -242,7 +242,6 @@
           },
           "755bf9b5-3cf1-4a1f-ba4f-bf335472f7a7": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\" title=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\"><strong>Click here to Invest!<\/strong><\/a><\/p>",
               "richtext_mobile": "<p><a href=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\" title=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\"><strong>Click here to Invest!<\/strong><\/a><\/p>"
@@ -264,7 +263,7 @@
         ],
         "settings": {
           "announcement_center": true,
-          "toolbar_social": false,
+          "toolbar_social": true,
           "show_locale_selector": false,
           "show_currency_selector": false,
           "show_currency_flags": true
@@ -408,15 +407,15 @@
           "plan_name_color": "#000"
         }
       },
-      "13070091535480640111": {
-        "type": "shopify:\/\/apps\/attrac-announcement-bar-banner\/blocks\/app-embed\/b783956d-47a9-4434-91ad-4ec960bd74b0",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "12657775114333427046": {
         "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "13070091535480640111": {
+        "type": "shopify:\/\/apps\/attrac-announcement-bar-banner\/blocks\/app-embed\/b783956d-47a9-4434-91ad-4ec960bd74b0",
+        "disabled": false,
         "settings": {
         }
       }
