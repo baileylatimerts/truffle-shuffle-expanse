@@ -232,8 +232,17 @@
       "toolbar": {
         "type": "toolbar",
         "blocks": {
+          "4f461417-ce04-4617-81b2-ec681e853d90": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "richtext": "<p><a href=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\" target=\"_blank\" title=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\">Grab your tickets for the ultimate Next Level Chef watch party on May 11th!<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\" target=\"_blank\" title=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\">Grab your tickets for the ultimate Next Level Chef watch party on May 11th!<\/a><\/p>"
+            }
+          },
           "755bf9b5-3cf1-4a1f-ba4f-bf335472f7a7": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\" title=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\"><strong>Click here to Invest!<\/strong><\/a><\/p>",
               "richtext_mobile": "<p><a href=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\" title=\"https:\/\/www.startengine.com\/offering\/truffleshuffle?utm_medium=email&_hsmi=269867182&_hsenc=p2ANqtz--IjzvJMnqTQrSePBihQ5ihrWxHe55RUW6IWuebZc7sgDgkirWtx9Hb7SYmpySCe1LaT1MbM-FayQKRF5zGq4Qi6x2HrDvxJXrpyFlArw0gfPJM9p0&utm_content=269867182&utm_source=hs_email\"><strong>Click here to Invest!<\/strong><\/a><\/p>"
@@ -246,20 +255,12 @@
               "richtext": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\">We've reached 100,000 shipments! To celebrate, we are offering 40% off on any product! Shop now!<\/a><\/p>",
               "richtext_mobile": "<p><a href=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\" target=\"_blank\" title=\"https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes\">We've reached 100,000 shipments! To celebrate, we are offering 40% off on any product! Shop now!<\/a><\/p>"
             }
-          },
-          "4f461417-ce04-4617-81b2-ec681e853d90": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "richtext": "<p><a href=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\" target=\"_blank\" title=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\">Grab your tickets for the ultimate Next Level Chef watch party on May 11th!<\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\" target=\"_blank\" title=\"https:\/\/truffleshufflemainliveeventscalendar.eventcalendarapp.com\/u\/32622\/232261\">Grab your tickets for the ultimate Next Level Chef watch party on May 11th!<\/a><\/p>"
-            }
           }
         },
         "block_order": [
+          "4f461417-ce04-4617-81b2-ec681e853d90",
           "755bf9b5-3cf1-4a1f-ba4f-bf335472f7a7",
-          "77d8f076-1cba-44d1-a5c5-bbac749369ad",
-          "4f461417-ce04-4617-81b2-ec681e853d90"
+          "77d8f076-1cba-44d1-a5c5-bbac749369ad"
         ],
         "settings": {
           "announcement_center": true,
