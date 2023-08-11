@@ -264,7 +264,7 @@
         ],
         "settings": {
           "announcement_center": true,
-          "toolbar_social": true,
+          "toolbar_social": false,
           "show_locale_selector": false,
           "show_currency_selector": false,
           "show_currency_flags": true
