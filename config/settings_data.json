@@ -407,9 +407,15 @@
           "plan_name_color": "#000"
         }
       },
-      "12657775114333427046": {
-        "type": "shopify:\/\/apps\/essential-countdown-timer-bar\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+      "13070091535480640111": {
+        "type": "shopify:\/\/apps\/attrac-announcement-bar-banner\/blocks\/app-embed\/b783956d-47a9-4434-91ad-4ec960bd74b0",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "12657775114333427046": {
+        "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+        "disabled": true,
         "settings": {
         }
       }
