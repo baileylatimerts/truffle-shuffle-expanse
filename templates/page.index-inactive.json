@@ -34,7 +34,6 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "888bda7b-ec30-4722-a56d-757df51f11ef": {
           "type": "hero",
@@ -120,6 +119,7 @@
         "8adcb75f-0832-4a35-9b98-2183b4042ced",
         "3c91c59a-50a8-45bc-afd5-0b5888cb3057"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": -10,
@@ -236,7 +236,6 @@
     },
     "282f0805-d804-4ae2-93d4-894083e3ad86": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "ad182cff-eb26-48e6-a6b0-c603f62ad624": {
           "type": "separator",
@@ -281,6 +280,7 @@
         "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-2",
         "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-3"
       ],
+      "disabled": true,
       "settings": {
         "featured_product": "beginner-fresh-pasta-class-with-chef-tucker",
         "divider": false,
@@ -425,7 +425,7 @@
       "type": "apps",
       "blocks": {
         "5522330e-436a-4839-a311-5f8b0fc2eab4": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
           "disabled": true,
           "settings": {
             "playlist_id": "rl_pl_540",
