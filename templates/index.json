@@ -1,122 +1,5 @@
 {
   "sections": {
-    "003f9ca4-f847-4674-b27a-faaa242ceea2": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1": {
-          "type": "description",
-          "settings": {
-            "is_tab": false
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "featured_product": "french-mother-sauces-series",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
-    },
-    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
-      "type": "hero-video",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "title": "Unleash the Master Chef Within You",
-        "title_size": 40,
-        "subheading": "Elevate Your Culinary Skills with Truffle Shuffle's Exquisite Online Cooking Classes & Luxury Ingredient Kits.",
-        "link_text": "Explore Classes",
-        "link": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
-        "color_accent": "#ffffff",
-        "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/9i9XtimQq1A",
-        "overlay_opacity": 22,
-        "height": 660,
-        "height_mobile": 390
-      }
-    },
-    "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Beginner Courses",
-        "home_featured_products": "protege-series",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Upcoming Live Classes in September",
-        "home_featured_products": "live-cooking-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "c35b29bd-232d-474c-94d7-f2f774a7840c": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured On-Demand Classes",
-        "home_featured_products": "on-demand-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "d34897e4-c172-4e1f-8e25-46701cbde538": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our Small Batch Collections",
-        "home_featured_products": "products-gifts",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "f195e6d8-a115-4508-bd3a-105d8095f9d9": {
       "type": "slideshow",
       "blocks": {
@@ -193,13 +76,32 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "127f00bb-f291-419a-9d2c-319ad7ea3464": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "Work Hard, Cook with Love",
+            "title": "<p>Labor of Love<\/p>",
+            "title_size": 70,
+            "subheading": "Buy One Give One",
+            "link": "https:\/\/www.truffleshufflesf.com\/collections\/labor-of-love",
+            "link_text": "Shop Collection",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-09-04_at_7.46.56_PM.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "be2c031c-78cc-44e5-bcc8-d545569e0868",
         "6c416d54-aacc-4744-89d8-132c867d5369",
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2"
+        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2",
+        "127f00bb-f291-419a-9d2c-319ad7ea3464"
       ],
       "settings": {
         "full_width": true,
@@ -208,6 +110,124 @@
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
+      }
+    },
+    "003f9ca4-f847-4674-b27a-faaa242ceea2": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1",
+        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured_product": "french-mother-sauces-series",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
+      "type": "hero-video",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "Unleash the Master Chef Within You",
+        "title_size": 40,
+        "subheading": "Elevate Your Culinary Skills with Truffle Shuffle's Exquisite Online Cooking Classes & Luxury Ingredient Kits.",
+        "link_text": "Explore Classes",
+        "link": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-bottom horizontal-left",
+        "video_url": "https:\/\/youtu.be\/9i9XtimQq1A",
+        "overlay_opacity": 22,
+        "height": 660,
+        "height_mobile": 390
+      }
+    },
+    "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Beginner Courses",
+        "home_featured_products": "protege-series",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Upcoming Live Classes in September",
+        "home_featured_products": "live-cooking-classes",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "c35b29bd-232d-474c-94d7-f2f774a7840c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured On-Demand Classes",
+        "home_featured_products": "on-demand-classes",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "d34897e4-c172-4e1f-8e25-46701cbde538": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Small Batch Collections",
+        "home_featured_products": "products-gifts",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "logo-list": {
@@ -607,13 +627,13 @@
     }
   },
   "order": [
+    "f195e6d8-a115-4508-bd3a-105d8095f9d9",
     "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122",
     "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
     "c35b29bd-232d-474c-94d7-f2f774a7840c",
     "d34897e4-c172-4e1f-8e25-46701cbde538",
-    "f195e6d8-a115-4508-bd3a-105d8095f9d9",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
     "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e",
