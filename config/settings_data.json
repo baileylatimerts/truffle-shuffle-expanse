@@ -371,18 +371,6 @@
           "debugging_popup_script": ""
         }
       },
-      "uppromote-affiliate-referral-customer-referral-79922-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-message-bar-79922-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "judgeme_core_cad9bd36": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
@@ -395,28 +383,9 @@
         "settings": {
         }
       },
-      "4937020141276920867": {
-        "type": "shopify:\/\/apps\/inflowkit-membership-courses\/blocks\/inflowkit\/3ded6358-a6d1-4e7e-99fa-2b2bd5dd9cec",
-        "disabled": false,
-        "settings": {
-          "fontsize": 14,
-          "hover_color": "#000000",
-          "food": "#000000",
-          "plan_select_bg": "#fff",
-          "cardbg": "#fff",
-          "discount_color": "#000",
-          "plan_name_color": "#000"
-        }
-      },
       "12657775114333427046": {
         "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
         "disabled": true,
-        "settings": {
-        }
-      },
-      "13070091535480640111": {
-        "type": "shopify:\/\/apps\/attrac-announcement-bar-banner\/blocks\/app-embed\/b783956d-47a9-4434-91ad-4ec960bd74b0",
-        "disabled": false,
         "settings": {
         }
       }
