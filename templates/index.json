@@ -24,6 +24,7 @@
         },
         "6c416d54-aacc-4744-89d8-132c867d5369": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "CUSTOM & SIGNED",
             "title": "<p>\"THE COOKBOOK\" <\/p><p>by Truffle Shuffle<\/p>",
@@ -43,6 +44,7 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Take your knife skills to the next level<\/p>",
@@ -61,6 +63,7 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Learn how to make fresh pasta like an Italian grandma<\/p>",
@@ -88,7 +91,7 @@
             "link_text": "Shop Collection",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/Screen_Shot_2023-09-04_at_7.46.56_PM.png",
             "overlay_opacity": 0,
