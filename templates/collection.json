@@ -3,9 +3,9 @@
     "collection-header": {
       "type": "collection-header",
       "settings": {
-        "enable": false,
+        "enable": true,
         "collection_image_enable": true,
-        "parallax": false,
+        "parallax": true,
         "parallax_direction": "top"
       }
     },
