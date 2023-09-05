@@ -168,50 +168,47 @@
       "footer-promotions": {
         "type": "footer-promotions",
         "blocks": {
-          "footer-promotions-2": {
-            "type": "promotion",
-            "disabled": true,
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Holiday-Gift-Shoot-4.jpg",
-              "title": "2022 Foodie Gift Guide",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
-              "button_link": "shopify:\/\/collections\/brunch",
-              "color_scheme": "3"
-            }
-          },
-          "footer-promotions-0": {
-            "type": "promotion",
-            "disabled": true,
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/TruffleShaver1_ce088988-dbdc-4f91-b1d3-48465d6e4a03.jpg",
-              "title": "Thanksgiving Truffle  Pre Sales",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
-              "button_link": "shopify:\/\/products\/black-friday-deal-black-winter-truffles",
-              "color_scheme": "1"
-            }
-          },
           "footer-promotions-1": {
             "type": "promotion",
-            "disabled": true,
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2021-11-22_at_11.06.33_AM.png",
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
-              "button_link": "",
+              "image": "shopify:\/\/shop_images\/bagels1.jpg",
+              "title": "Buy a bagel class Give a bagel class",
+              "text": "<p>🥯 \"Unlock the Secrets of the Schmear: Buy Chef Jeremy's Bagel Class and Bagel Bless a Friend for Free!\" 🥯<\/p>",
+              "button_label": "Give Bagels",
+              "button_link": "shopify:\/\/products\/sourdough-bagels-with-lox-and-cream-cheese",
+              "color_scheme": "none"
+            }
+          },
+          "991d17bc-e75f-4489-a357-61a48d07d812": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/bahnmi1.jpg",
+              "title": "Buy a bahn mi class give a bahn mi class",
+              "text": "<p>🥖 \"Baguette on Board: Buy Chef Tucker's Banh Mi Class and Share the Sandwich Serenade with a Friend—FREE!\" 🥖<\/p>",
+              "button_label": "Give Bahn Mi",
+              "button_link": "shopify:\/\/products\/vietnamese-bahn-mi-with-pork-and-fresh-pickled-vegetables-class",
+              "color_scheme": "none"
+            }
+          },
+          "9c82308f-b6d1-401e-b371-7edfef692f4f": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/mockup-of-a-book-standing-on-three-books-a17398.png",
+              "title": "Buy a Cookbook Give a Cookbook",
+              "text": "<p>📚 \"Unlock Culinary Genius: Buy Our New Cookbook and Gift One to Your 'Still Learning to Boil Water' Friend—FREE!\" 📚<\/p>",
+              "button_label": "Give a cookbook",
+              "button_link": "shopify:\/\/products\/📒the-cookbook-presale",
               "color_scheme": "none"
             }
           }
         },
         "block_order": [
-          "footer-promotions-2",
-          "footer-promotions-0",
-          "footer-promotions-1"
+          "footer-promotions-1",
+          "991d17bc-e75f-4489-a357-61a48d07d812",
+          "9c82308f-b6d1-401e-b371-7edfef692f4f"
         ],
         "settings": {
           "hide_homepage": false,
