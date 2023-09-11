@@ -83,17 +83,17 @@
         "127f00bb-f291-419a-9d2c-319ad7ea3464": {
           "type": "hero",
           "settings": {
-            "top_subheading": "Work Hard, Cook with Love",
-            "title": "<p>Labor of Love<\/p>",
+            "top_subheading": "Introducing Napapalooza",
+            "title": "<p>The greatest weekend in napa ever<\/p>",
             "title_size": 70,
-            "subheading": "Buy One Give One",
-            "link": "https:\/\/www.truffleshufflesf.com\/collections\/labor-of-love",
-            "link_text": "Shop Collection",
+            "subheading": "Dates in  Oct 2023 & Feb 2024",
+            "link": "shopify:\/\/products\/weekend-in-napa-with-truffle-shuffle-at-charles-krug",
+            "link_text": "Book Now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-09-04_at_7.46.56_PM.png",
+            "image": "shopify:\/\/shop_images\/Charles_Krug.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
