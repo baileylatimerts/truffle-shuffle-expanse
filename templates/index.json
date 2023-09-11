@@ -152,7 +152,6 @@
         "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1",
         "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1"
       ],
-      "disabled": true,
       "settings": {
         "featured_product": "weekend-in-napa-with-truffle-shuffle-at-charles-krug",
         "divider": false,
@@ -161,7 +160,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
