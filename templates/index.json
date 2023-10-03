@@ -126,7 +126,7 @@
         "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1": {
           "type": "description",
           "settings": {
-            "is_tab": false
+            "is_tab": true
           }
         },
         "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1": {
