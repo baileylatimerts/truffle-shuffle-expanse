@@ -170,6 +170,7 @@
         "blocks": {
           "footer-promotions-1": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify:\/\/shop_images\/bagels1.jpg",
@@ -182,6 +183,7 @@
           },
           "991d17bc-e75f-4489-a357-61a48d07d812": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify:\/\/shop_images\/bahnmi1.jpg",
@@ -194,6 +196,7 @@
           },
           "9c82308f-b6d1-401e-b371-7edfef692f4f": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify:\/\/shop_images\/mockup-of-a-book-standing-on-three-books-a17398.png",
