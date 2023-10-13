@@ -8,7 +8,7 @@
           "settings": {
             "top_subheading": "",
             "title": "<p>25% OFF SITEWIDE<\/p>",
-            "title_size": 56,
+            "title_size": 70,
             "subheading": "Use code: NAPA25",
             "link": "shopify:\/\/collections\/all-cooking-classes",
             "link_text": "SHOP NOW!",
@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_2.png",
-            "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_2.png",
+            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_3.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -82,6 +82,7 @@
         },
         "127f00bb-f291-419a-9d2c-319ad7ea3464": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "Introducing Napapalooza",
             "title": "<p>The greatest weekend in napa ever<\/p>",
