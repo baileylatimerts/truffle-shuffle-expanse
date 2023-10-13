@@ -60,7 +60,7 @@
     "enable_product_reviews": true,
     "collection_grid_shape": "square",
     "collection_grid_image": "collection",
-    "collection_grid_image_margin": 0,
+    "collection_grid_image_margin": 1,
     "cart_type": "page",
     "cart_additional_buttons": false,
     "cart_collection": "",
@@ -1134,5 +1134,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
   }
 }

@@ -191,6 +191,9 @@
     },
     "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
       "type": "featured-collection",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Beginner Courses",
         "home_featured_products": "protege-series",
