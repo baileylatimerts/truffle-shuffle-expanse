@@ -6,9 +6,9 @@
         "be2c031c-78cc-44e5-bcc8-d545569e0868": {
           "type": "hero",
           "settings": {
-            "top_subheading": "SITEWIDE",
-            "title": "<p><strong>25% OFF <\/strong><\/p>",
-            "title_size": 100,
+            "top_subheading": "LIMITED TIME OFFER",
+            "title": "<p><strong>Get 25% off everything on our site!<\/strong><\/p>",
+            "title_size": 70,
             "subheading": "Use code: NAPA25",
             "link": "shopify:\/\/collections\/all-cooking-classes",
             "link_text": "SHOP NOW!",
@@ -16,9 +16,9 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_6.png",
+            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_7.png",
             "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_3.png",
-            "overlay_opacity": 0,
+            "overlay_opacity": 16,
             "focal_point": "center center"
           }
         },
