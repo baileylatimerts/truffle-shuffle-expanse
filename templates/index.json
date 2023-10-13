@@ -5,19 +5,19 @@
       "blocks": {
         "be2c031c-78cc-44e5-bcc8-d545569e0868": {
           "type": "hero",
-          "disabled": true,
           "settings": {
-            "top_subheading": "🎉Cinco de Truffle Shuffle",
-            "title": "<p>Mystery Box<\/p>",
-            "title_size": 70,
-            "subheading": "",
-            "link": "shopify:\/\/products\/mysterybox-blowout",
-            "link_text": "Learn More",
-            "link_2": "shopify:\/\/products\/mysterybox-blowout",
+            "top_subheading": "",
+            "title": "<p>25% OFF SITEWIDE<\/p>",
+            "title_size": 56,
+            "subheading": "USE CODE: NAPA25",
+            "link": "shopify:\/\/collections\/all-cooking-classes",
+            "link_text": "SHOP NOW!",
+            "link_2": "shopify:\/\/collections\/all-cooking-classes",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Mystery_box_1.png",
+            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_2.png",
+            "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_2.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
