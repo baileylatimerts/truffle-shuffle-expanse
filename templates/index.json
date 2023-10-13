@@ -16,10 +16,10 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_7.png",
+            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_5.png",
             "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_3.png",
-            "overlay_opacity": 16,
-            "focal_point": "center center"
+            "overlay_opacity": 0,
+            "focal_point": "80% 50%"
           }
         },
         "6c416d54-aacc-4744-89d8-132c867d5369": {
