@@ -6,9 +6,9 @@
         "be2c031c-78cc-44e5-bcc8-d545569e0868": {
           "type": "hero",
           "settings": {
-            "top_subheading": "",
-            "title": "<p><strong>25% OFF SITEWIDE<\/strong><\/p>",
-            "title_size": 80,
+            "top_subheading": "SITEWIDE",
+            "title": "<p><strong>25% OFF <\/strong><\/p>",
+            "title_size": 100,
             "subheading": "Use code: NAPA25",
             "link": "shopify:\/\/collections\/all-cooking-classes",
             "link_text": "SHOP NOW!",
