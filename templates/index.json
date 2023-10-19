@@ -5,6 +5,7 @@
       "blocks": {
         "be2c031c-78cc-44e5-bcc8-d545569e0868": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "LIMITED TIME OFFER",
             "title": "<p><strong>Get 25% off everything on our site!<\/strong><\/p>",
@@ -24,7 +25,6 @@
         },
         "6c416d54-aacc-4744-89d8-132c867d5369": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "CUSTOM & SIGNED",
             "title": "<p>\"THE COOKBOOK\" <\/p><p>by Truffle Shuffle<\/p>",
@@ -44,7 +44,6 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Take your knife skills to the next level<\/p>",
@@ -63,7 +62,6 @@
         },
         "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "<p>Learn how to make fresh pasta like an Italian grandma<\/p>",
@@ -82,7 +80,6 @@
         },
         "127f00bb-f291-419a-9d2c-319ad7ea3464": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "Introducing Napapalooza",
             "title": "<p>The greatest weekend in napa ever<\/p>",
