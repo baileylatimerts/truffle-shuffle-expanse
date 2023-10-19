@@ -113,58 +113,6 @@
         "autoplay_speed": 7
       }
     },
-    "003f9ca4-f847-4674-b27a-faaa242ceea2": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1": {
-          "type": "description",
-          "settings": {
-            "is_tab": true
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
-        },
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-price-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-description-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-variant_picker-1",
-        "template--15086526136343__003f9ca4-f847-4674-b27a-faaa242ceea2-buy_buttons-1"
-      ],
-      "settings": {
-        "featured_product": "weekend-in-napa-with-truffle-shuffle-at-charles-krug",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "below",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
-    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "disabled": true,
@@ -184,53 +132,6 @@
         "overlay_opacity": 22,
         "height": 660,
         "height_mobile": 390
-      }
-    },
-    "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122": {
-      "type": "featured-collection",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Beginner Courses",
-        "home_featured_products": "protege-series",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Upcoming Live Classes",
-        "home_featured_products": "live-cooking-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "c35b29bd-232d-474c-94d7-f2f774a7840c": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured On-Demand Classes",
-        "home_featured_products": "on-demand-classes",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "d34897e4-c172-4e1f-8e25-46701cbde538": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our Small Batch Collections",
-        "home_featured_products": "products-gifts",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
       }
     },
     "logo-list": {
@@ -516,6 +417,7 @@
         "e12d4898-9205-403d-bf3c-04eefe1f185f",
         "4dc85162-3a8b-4875-a3cc-db1a7f4f7b9b"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 10,
@@ -554,6 +456,7 @@
     },
     "8ce8ab39-27a9-498c-91b7-6591f04d33f6": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the recipe blog",
         "blog": "news",
@@ -631,12 +534,7 @@
   },
   "order": [
     "f195e6d8-a115-4508-bd3a-105d8095f9d9",
-    "003f9ca4-f847-4674-b27a-faaa242ceea2",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
-    "f1a3ebe0-63b1-4e18-96d1-20ff2acb6122",
-    "b50f478c-1ea6-4db1-b78e-2ad5ad8f3bdc",
-    "c35b29bd-232d-474c-94d7-f2f774a7840c",
-    "d34897e4-c172-4e1f-8e25-46701cbde538",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
     "6bc96ccd-01d9-4a50-9ad3-57b0fa08aa8e",
