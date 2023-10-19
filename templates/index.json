@@ -1,116 +1,20 @@
 {
   "sections": {
-    "f195e6d8-a115-4508-bd3a-105d8095f9d9": {
-      "type": "slideshow",
-      "blocks": {
-        "be2c031c-78cc-44e5-bcc8-d545569e0868": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "LIMITED TIME OFFER",
-            "title": "<p><strong>Get 25% off everything on our site!<\/strong><\/p>",
-            "title_size": 72,
-            "subheading": "Use code: NAPA25",
-            "link": "shopify:\/\/collections\/all-cooking-classes",
-            "link_text": "SHOP NOW!",
-            "link_2": "shopify:\/\/collections\/all-cooking-classes",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_6.png",
-            "image_mobile": "shopify:\/\/shop_images\/TS_Public_Holiday_offerings_deck_2023_1920_x_700_px_3.png",
-            "overlay_opacity": 0,
-            "focal_point": "80% 50%"
-          }
-        },
-        "6c416d54-aacc-4744-89d8-132c867d5369": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "CUSTOM & SIGNED",
-            "title": "<p>\"THE COOKBOOK\" <\/p><p>by Truffle Shuffle<\/p>",
-            "title_size": 69,
-            "subheading": "LIMITED FIRST EDITION PRESALE",
-            "link": "shopify:\/\/products\/📒the-cookbook-presale",
-            "link_text": "Learn more",
-            "link_2": "shopify:\/\/products\/📒the-cookbook-presale",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/cookbook_website_feature_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_47.png",
-            "overlay_opacity": 0,
-            "focal_point": "80% 50%"
-          }
-        },
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Take your knife skills to the next level<\/p>",
-            "title_size": 70,
-            "subheading": "Live Course Starting in August",
-            "link": "https:\/\/www.truffleshufflesf.com\/products\/knife-skills-basics-protege-series?_pos=1&_psq=knife&_ss=e&_v=1.0",
-            "link_text": "Learn More",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/knife-with-a-zucchini-cut-in-half.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>Learn how to make fresh pasta like an Italian grandma<\/p>",
-            "title_size": 70,
-            "subheading": "Live Course Starting Every Month",
-            "link": "https:\/\/www.truffleshufflesf.com\/products\/pasta-basics-protege-series?_pos=2&_sid=b4e7833c6&_ss=r",
-            "link_text": "Learn More",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CuttingPastaSquare.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "127f00bb-f291-419a-9d2c-319ad7ea3464": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "Introducing Napapalooza",
-            "title": "<p>The greatest weekend in napa ever<\/p>",
-            "title_size": 70,
-            "subheading": "Dates in  Oct 2023 & Feb 2024",
-            "link": "shopify:\/\/products\/weekend-in-napa-with-truffle-shuffle-at-charles-krug",
-            "link_text": "Book Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Charles_Krug.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "be2c031c-78cc-44e5-bcc8-d545569e0868",
-        "6c416d54-aacc-4744-89d8-132c867d5369",
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-1",
-        "template--15086526136343__f195e6d8-a115-4508-bd3a-105d8095f9d9-hero-2",
-        "127f00bb-f291-419a-9d2c-319ad7ea3464"
-      ],
+    "e735c9a6-e42a-4b51-b97f-538697eb951a": {
+      "type": "hero-video",
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
+        "title": "Bring your\nbrand to life.",
+        "title_size": 70,
+        "subheading": "Seamless hero videos",
+        "link_text": "Optional button",
+        "link": "",
+        "color_accent": "#fff",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8d05cf7029fe41b8bccc57c59cd8c2cf.mp4",
+        "overlay_opacity": 0,
+        "height": 650,
+        "height_mobile": 300
       }
     },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
@@ -533,7 +437,7 @@
     }
   },
   "order": [
-    "f195e6d8-a115-4508-bd3a-105d8095f9d9",
+    "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
     "e09cf434-6b77-47fd-a489-c8dbe566285b",
