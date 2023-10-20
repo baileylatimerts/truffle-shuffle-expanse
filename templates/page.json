@@ -2,15 +2,18 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
     "6d2c0796-90ff-4f96-96ce-0a21c2d5bc44": {
       "type": "startengine-hero",
+      "disabled": true,
       "settings": {
         "column_1_title": "Join the waitlist to invest",
+        "description": "Cooking Classes + Top Chefs + Ingredients Delivered",
         "column_1_question": "Have questions?",
+        "button_link": "",
+        "button_text": "",
         "hubspot_meeting_link": "https:\/\/meetings.hubspot.com\/tyler-vorce",
         "column_2_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3d5180a859ba4130b8145491246f1046.mp4"
       }
@@ -101,6 +104,7 @@
     },
     "64c45c24-138a-423d-aa4d-8a17c3fe491c": {
       "type": "feature-text",
+      "disabled": true,
       "settings": {
         "title": "Now on StartEngine",
         "description": "Truffle Shuffle is the go-to monthly membership for the home chef. Our membership offers access to live and on-demand cooking classes taught by Michelin-star and next-level chefs with all ingredients included and access to our entire culinary content library with hundreds of chef-approved recipes and protege series courses. We have sold $13.3 million in total cooking classes and just launched our membership in January 2023"
@@ -112,13 +116,15 @@
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png"
+            "background_image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-28_at_7.08.57_AM.png",
+            "id": ""
           }
         },
         "template--15090591662103__ce2f4ff8-f1a6-4d63-9e09-a2c282ba5efb-1681521394b5786729-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg"
+            "background_image": "shopify:\/\/shop_images\/Jeremy_Bucatini_11.jpg",
+            "id": ""
           }
         }
       },
@@ -141,13 +147,15 @@
         "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-0": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg"
+            "background_image": "shopify:\/\/shop_images\/Beef_Wellington.jpg",
+            "id": ""
           }
         },
         "template--15090591662103__e1dfb103-9870-4a97-97bd-bf7a669f6d92-1681521394b5786729-1": {
           "type": "image",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg"
+            "background_image": "shopify:\/\/shop_images\/Chicken-Mole-Ingredients.jpg",
+            "id": ""
           }
         }
       },
@@ -160,6 +168,7 @@
     },
     "64b2dabd-9160-45dc-8900-a2b4f8f2294e": {
       "type": "invest-form",
+      "disabled": true,
       "settings": {
         "column_1_title": "Join the waitlist to invest",
         "column_1_question": "Have questions?",
