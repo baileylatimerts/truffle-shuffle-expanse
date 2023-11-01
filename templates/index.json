@@ -1,7 +1,42 @@
 {
   "sections": {
+    "85db010e-e22f-4b66-89b2-d72fb6ed5254": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15086526136343__85db010e-e22f-4b66-89b2-d72fb6ed5254-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Win this holiday season<\/p>",
+            "title_size": 70,
+            "subheading": "Make your mother-in-law jealous with our Next Level Baked Brie and Succulent Festive Lamb Meatballs",
+            "link": "shopify:\/\/products\/appetizer-masters-kit-protege-series",
+            "link_text": "Secure Your Spot Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Shopify_Banner_Gif_3.gif",
+            "overlay_opacity": 12,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__85db010e-e22f-4b66-89b2-d72fb6ed5254-hero-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "e735c9a6-e42a-4b51-b97f-538697eb951a": {
       "type": "hero-video",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "title": "We believe the world is a better place when people are at the dinner table together",
@@ -9,7 +44,7 @@
         "subheading": "So we have dedicated our life to teaching you how to cook",
         "link_text": "Click here to cook something tasty",
         "link": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
-        "color_accent": "#fff",
+        "color_accent": "#ffffff",
         "text_align": "vertical-center horizontal-center",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8d05cf7029fe41b8bccc57c59cd8c2cf.mp4",
         "overlay_opacity": 0,
@@ -434,9 +469,28 @@
         "round_images": true,
         "color_scheme": "none"
       }
+    },
+    "2fb73ea8-298b-48c0-8d79-48c54a4d6906": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "title": "Master the Art of Festive Starters!",
+        "title_size": 50,
+        "subheading": "Step-by-Step Guidance in Our Holiday Appetizers Class",
+        "link_text": "Join Now & Feast!",
+        "link": "shopify:\/\/products\/appetizer-masters-kit-protege-series",
+        "color_accent": "#d0b777",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "<iframe src=\"https:\/\/player.vimeo.com\/video\/880259701?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479\" width=\"1920\" height=\"1080\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" title=\"Shopify Banner Gif\"><\/iframe>",
+        "overlay_opacity": 2,
+        "height": 650,
+        "height_mobile": 300
+      }
     }
   },
   "order": [
+    "85db010e-e22f-4b66-89b2-d72fb6ed5254",
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
@@ -447,6 +501,7 @@
     "8940e18b-033f-4ded-85f7-20008c761e49",
     "3d27346e-48b0-465b-ace8-0bc2bb63c4bb",
     "8ce8ab39-27a9-498c-91b7-6591f04d33f6",
-    "969afbcb-303c-4b9a-85e0-2291cdf92846"
+    "969afbcb-303c-4b9a-85e0-2291cdf92846",
+    "2fb73ea8-298b-48c0-8d79-48c54a4d6906"
   ]
 }
