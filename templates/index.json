@@ -7,16 +7,16 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Win this holiday season<\/p>",
+            "title": "<p>It is Chef Jason's Birthday!<\/p>",
             "title_size": 70,
-            "subheading": "Make your mother-in-law jealous with our Next Level Baked Brie and Succulent Festive Lamb Meatballs",
-            "link": "shopify:\/\/products\/appetizer-masters-kit-protege-series",
-            "link_text": "Secure Your Spot Now",
+            "subheading": "He wants to give you a gift everyday this week! Use Code \"BirthdayChef32\" for a $32 credit on all purchases over $100 today",
+            "link": "shopify:\/\/collections\/all-cooking-classes",
+            "link_text": "Shop All",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/DSC05039_1.jpg",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Untitled_design_10.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
