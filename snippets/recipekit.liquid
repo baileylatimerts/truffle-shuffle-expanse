@@ -26,6 +26,59 @@
   {%- assign global_is_in_cart = false -%}
   {%- assign extra_domain = '' -%}
 
+  <style>
+    .flex-wrapper{
+      display: flex;
+    align-items: baseline;
+    }
+      .add-button{
+        background-color: #CC3429;
+        padding: 5px 15px;
+        min-width: 125px;
+        color: #fff;
+        border: #CC3429 1px solid;
+        height: auto;
+        transition: all 200ms ease;
+        text-align: center;
+      }
+      .add-button:hover{
+        background-color: transparent;
+        color: #CC3429;
+    
+      }
+      .popup {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #ccc;
+        background-color: white;
+        padding: 20px;
+        z-index: 1000;
+    }
+    
+    .popup-content {
+        text-align: center;
+    }
+    
+    .close-button {
+        float: right;
+        cursor: pointer;
+    }
+    #overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Black with a bit of transparency */
+        z-index: 1000; /* below the popup */
+    }
+    
+    </style>
+
   {% comment %}
     Liquid URL Transformations
   {% endcomment %}
@@ -712,7 +765,7 @@
               <div class="rk_header">
                 <div class="rk_grid">
                   <div class="rk_column rk_primary">
-                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> Test
+                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> 
                     {% if rk_mf.enable_rating == true or rk_mf.enable_rating == 'true' %}
                       <div class="rk_rating">
                         <div class="stars">
@@ -833,7 +886,7 @@
               <div class="rk_header"> 
                 <div class="rk_grid">
                   <div class="rk_column rk_primary">
-                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> TEst
+                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> 
                     {% if rk_mf.enable_rating == true or rk_mf.enable_rating == 'true' %}
                       <div class="rk_rating">
                         <div class="stars">
@@ -954,7 +1007,26 @@
               <div class="rk_header"> 
                 <div class="rk_grid">
                   <div class="rk_column rk_primary">
-                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> TeSt
+
+
+                    
+
+                    <div class="flex-wrapper">
+                      <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2>
+                      <a href="#" class="add-button">Add to Box</a>
+                  </div>
+                  
+                  <div id="overlay" style="display:none;"></div>
+                  
+                  <!-- Popup Box -->
+                  <div id="popup-box" class="popup" style="display:none;">
+                      <div class="popup-content">
+                          <span class="close-button">&times;</span>
+                          <p>This is an example of how it could work on the main site</p>
+                      </div>
+                  </div>
+
+
                     {% if rk_mf.enable_rating == true or rk_mf.enable_rating == 'true' %}
                       <div class="rk_rating">
                         <div class="stars">
@@ -1078,7 +1150,7 @@
                   {%- endif -%}
                 <div class="rk_grid">
                   <div class="rk_column rk_primary">
-                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> TesT
+                    <h2 class="rk_heading">{{- rk_mf.recipe_title -}}</h2> 
                     {%- if rk_mf.recipe_author != blank and rk_mf.recipe_author != '<p></p>' -%}
                     <div class="rk_subheading">{{ rk_mf.recipe_author }}</div>
                     {%- endif -%}
