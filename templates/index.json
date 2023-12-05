@@ -1,52 +1,17 @@
 {
   "sections": {
-    "85db010e-e22f-4b66-89b2-d72fb6ed5254": {
-      "type": "slideshow",
-      "blocks": {
-        "template--15086526136343__85db010e-e22f-4b66-89b2-d72fb6ed5254-hero-1": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>It is Chef Jason's Birthday!<\/p>",
-            "title_size": 70,
-            "subheading": "He wants to give you a gift everyday this week! Use Code \"BirthdayChef32\" for a $32 credit on all purchases over $100 today",
-            "link": "shopify:\/\/collections\/all-cooking-classes",
-            "link_text": "Shop All",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Untitled_design_10.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "template--15086526136343__85db010e-e22f-4b66-89b2-d72fb6ed5254-hero-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
     "e735c9a6-e42a-4b51-b97f-538697eb951a": {
       "type": "hero-video",
-      "disabled": true,
       "settings": {
         "full_width": true,
-        "title": "We believe the world is a better place when people are at the dinner table together",
+        "title": "Something Big is coming soon",
         "title_size": 83,
         "subheading": "So we have dedicated our life to teaching you how to cook",
         "link_text": "Click here to cook something tasty",
-        "link": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
+        "link": "https:\/\/youtu.be\/sU_UZ56j5cA?si=Ln8sk5pWXbBYZNoT",
         "color_accent": "#ffffff",
         "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8d05cf7029fe41b8bccc57c59cd8c2cf.mp4",
+        "video_url": "https:\/\/youtu.be\/sU_UZ56j5cA?si=Ln8sk5pWXbBYZNoT",
         "overlay_opacity": 0,
         "height": 650,
         "height_mobile": 300
@@ -490,7 +455,6 @@
     }
   },
   "order": [
-    "85db010e-e22f-4b66-89b2-d72fb6ed5254",
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
