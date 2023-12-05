@@ -89,7 +89,12 @@
         background-color: rgba(0,0,0,0.5); /* Black with a bit of transparency */
         z-index: 1000; /* below the popup */
     }
-    
+    @media (max-width: 479px) {
+    .flex-wrapper {
+        flex-direction: column;
+        align-items: stretch; /* This will make the items stretch to full width */
+    }
+}
     </style>
 
   {% comment %}
