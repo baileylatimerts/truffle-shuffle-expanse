@@ -18,6 +18,26 @@ align-items: baseline;
     color: #CC3429;
 
   }
+  .popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
 </style>
 
 {%- liquid
@@ -42,7 +62,16 @@ align-items: baseline;
   <div class="flex-wrapper">
     <h1 class="section-header__title">{{ article.title }}</h1>
     <a href="#" class="add-button">Add to Box</a>
-  </div>
+</div>
+
+<!-- Popup Box -->
+<div id="popup-box" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <p>This is an example of how it could work on the main site</p>
+    </div>
+</div>
+
 
   <div class="article__sub-meta">
     {%- if section.settings.blog_show_comments and article.comments_count > 0 -%}
@@ -216,6 +245,30 @@ align-items: baseline;
     "name": {{ shop.name | json }}
   }
 }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const addButton = document.querySelector('.add-button');
+    const popup = document.getElementById('popup-box');
+    const closeButton = document.querySelector('.close-button');
+
+    addButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    };
+});
+
 </script>
 
 {% schema %}
