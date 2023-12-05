@@ -97,11 +97,112 @@
         "title": "As seen  on 👇",
         "divider": false
       }
+    },
+    "0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-5": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-1",
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-2",
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-3",
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-4",
+        "template--15086526136343__0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3-testimonial-5"
+      ],
+      "settings": {
+        "title": "From Previous Classes",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
+    },
+    "71a27424-88ec-44a6-8aff-f55298f4157f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15086526136343__71a27424-88ec-44a6-8aff-f55298f4157f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Dear Mike,"
+          }
+        },
+        "template--15086526136343__71a27424-88ec-44a6-8aff-f55298f4157f-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>I have put together a folder with an initial proposal for you to review. The opportunity of coming to ButcherBox to be able to build BUTCHERBOX.TV is very exciting. This is a bet you will be very happy that you have taken. <\/p><p>Bon Appetit, <\/p><p>Jason and Tyler<\/p>"
+          }
+        },
+        "cf8d20c9-75b0-4ce9-b3fc-89156fe15db3": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Access Folder"
+          }
+        }
+      },
+      "block_order": [
+        "template--15086526136343__71a27424-88ec-44a6-8aff-f55298f4157f-heading-1",
+        "template--15086526136343__71a27424-88ec-44a6-8aff-f55298f4157f-text-1",
+        "cf8d20c9-75b0-4ce9-b3fc-89156fe15db3"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
     }
   },
   "order": [
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
-    "logo-list"
+    "logo-list",
+    "0dbdc31f-7f4a-4c7b-b42b-ad7fc5955cb3",
+    "71a27424-88ec-44a6-8aff-f55298f4157f"
   ]
 }
