@@ -19,22 +19,7 @@
 {%- endif -%}
 
 <header class="section-header">
-  <div class="flex-wrapper">
-    <h1 class="section-header__title">{{ article.title }}</h1>
-    <a href="#" class="add-button">Add to Box</a>
-</div>
-
-<div id="overlay" style="display:none;"></div>
-
-<!-- Popup Box -->
-<div id="popup-box" class="popup" style="display:none;">
-    <div class="popup-content">
-        <span class="close-button">&times;</span>
-        <p>This is an example of how it could work on the main site</p>
-    </div>
-</div>
-
-
+  <h1 class="section-header__title">{{ article.title }}</h1>
   <div class="article__sub-meta">
     {%- if section.settings.blog_show_comments and article.comments_count > 0 -%}
       <span>
