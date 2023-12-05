@@ -1677,3 +1677,38 @@
     End CSS overwriting
   {% endcomment %}
 {%- endif -%}
+
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const addButton = document.querySelector('.add-button');
+    const popup = document.getElementById('popup-box');
+    const closeButton = document.querySelector('.close-button');
+    const overlay = document.getElementById('overlay');
+
+    const togglePopup = () => {
+        const isDisplayed = popup.style.display === 'block';
+        popup.style.display = isDisplayed ? 'none' : 'block';
+        overlay.style.display = isDisplayed ? 'none' : 'block';
+    };
+
+    addButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        togglePopup();
+    });
+
+    closeButton.addEventListener('click', togglePopup);
+
+    overlay.addEventListener('click', togglePopup);
+
+    window.onclick = function(event) {
+        if (event.target === overlay) {
+            togglePopup();
+        }
+    };
+});
+
+
+</script>
+
+
