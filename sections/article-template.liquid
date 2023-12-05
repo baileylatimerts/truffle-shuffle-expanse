@@ -1,3 +1,11 @@
+<style>
+
+  .add-button{
+    background-color: red;
+    padding: 5px 15px;
+  }
+</style>
+
 {%- liquid
   assign number_of_comments = article.comments_count
   if comment.status == 'pending'
@@ -17,7 +25,10 @@
 {%- endif -%}
 
 <header class="section-header">
-  <h1 class="section-header__title">{{ article.title }}</h1>
+  <div class="flex-wrapper">
+    <h1 class="section-header__title">{{ article.title }}</h1>
+    <a href="#" class="add-button">Add to Box</a>
+  </div>
 
   <div class="article__sub-meta">
     {%- if section.settings.blog_show_comments and article.comments_count > 0 -%}
