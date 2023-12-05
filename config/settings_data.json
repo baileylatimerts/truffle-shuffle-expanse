@@ -136,7 +136,7 @@
             "type": "header",
             "disabled": true,
             "settings": {
-              "reminder_label": "Sign up to our newsletter!"
+              "reminder_label": "Join"
             }
           }
         },
@@ -244,8 +244,8 @@
           "755bf9b5-3cf1-4a1f-ba4f-bf335472f7a7": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>CHECK OUT A NEW EPISODE OF THE BUTCHERBOX SHOW!<\/p>",
-              "richtext_mobile": ""
+              "richtext": "<p>TEXT OUR FREEZER HOTLINE TO GET INSPIRED ON WHAT TO COOK NEXT! (404) 630-2019<\/p>",
+              "richtext_mobile": "<p>TEXT OUR FREEZER HOTLINE TO GET INSPIRED ON WHAT TO COOK NEXT! (404) 630-2019<\/p>"
             }
           },
           "77d8f076-1cba-44d1-a5c5-bbac749369ad": {
