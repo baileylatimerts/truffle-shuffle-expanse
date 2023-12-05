@@ -109,7 +109,8 @@
           "0b749bae-a720-438c-afab-cefb6cfd5e89": {
             "type": "logo",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/ts-logo-SharkTank-b_2_2.png",
+              "logo": "shopify:\/\/shop_images\/TV_1080_x_200_px.png",
+              "logo-inverted": "shopify:\/\/shop_images\/TV_1080_x_200_px.png",
               "desktop_logo_width": 200,
               "mobile_logo_width": 140
             }
@@ -120,8 +121,8 @@
         ],
         "settings": {
           "main_menu_link_list": "drop-downs-menu-1",
-          "main_menu_alignment": "below",
-          "mega_products": true,
+          "main_menu_alignment": "center",
+          "mega_products": false,
           "header_sticky": true,
           "header_footer_menu": true,
           "sticky_index": false,
