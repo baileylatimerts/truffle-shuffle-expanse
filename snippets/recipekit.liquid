@@ -1687,27 +1687,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const closeButton = document.querySelector('.close-button');
     const overlay = document.getElementById('overlay');
 
-    const togglePopup = () => {
-        const isDisplayed = popup.style.display === 'block';
-        popup.style.display = isDisplayed ? 'none' : 'block';
-        overlay.style.display = isDisplayed ? 'none' : 'block';
-    };
-
     addButton.addEventListener('click', function(e) {
         e.preventDefault();
-        togglePopup();
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
     });
 
-    closeButton.addEventListener('click', togglePopup);
+    closeButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    });
 
-    overlay.addEventListener('click', togglePopup);
-
-    window.onclick = function(event) {
-        if (event.target === overlay) {
-            togglePopup();
-        }
-    };
+    overlay.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    });
 });
+
 
 
 </script>
