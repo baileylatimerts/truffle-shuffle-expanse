@@ -362,52 +362,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "6573195592375385177": {
-        "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup\/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
-        "disabled": false,
-        "settings": {
-          "debugging_popup_script": ""
-        }
-      },
-      "6174324309569838175": {
-        "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "12657775114333427046": {
-        "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "17626490156485952974": {
-        "type": "shopify:\/\/apps\/fx-3d-seasonal-effects\/blocks\/app-embed\/5881d1f8-9311-46cf-bb7d-8ebd2e22859c",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": true,
-        "settings": {
-          "button_color": "#202a36",
-          "button_icon": "chat_bubble",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "button_text": "chat_with_us",
-          "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Modern": {
