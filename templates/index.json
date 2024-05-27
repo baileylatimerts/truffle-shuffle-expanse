@@ -137,12 +137,65 @@
         "focal_point": "center",
         "mobile_image_focal_point": "top"
       }
+    },
+    "featured_product_NU89tE": {
+      "type": "featured-product",
+      "blocks": {
+        "price_7EQx4E": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description_qNKqVK": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "variant_picker_JJWEyB": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons_CRAf9L": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "price_7EQx4E",
+        "description_qNKqVK",
+        "variant_picker_JJWEyB",
+        "buy_buttons_CRAf9L"
+      ],
+      "settings": {
+        "featured_product": "butcherbox-herbed-s-p",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
     }
   },
   "order": [
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
-    "countdown_eMXWpd"
+    "countdown_eMXWpd",
+    "featured_product_NU89tE"
   ]
 }
