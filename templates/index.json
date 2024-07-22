@@ -251,8 +251,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
+            "testimonial": "<p>I love the classes!!!<\/p>",
+            "author": "Little Chef",
             "author_info": "Los Angeles, CA"
           }
         },
@@ -260,48 +260,28 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>This is our favorite thing to do as a family<\/p>",
+            "author": "Family of Chefs",
+            "author_info": "Mars"
           }
         },
         "testimonial_g8jbUm": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
-          }
-        },
-        "testimonial_6WQMtY": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
-          }
-        },
-        "testimonial_FxWyMJ": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>The spices are so tasty!!!<\/p>",
+            "author": "Grill Dad",
+            "author_info": "Grill City, Texas"
           }
         }
       },
       "block_order": [
         "testimonial_r3ccNr",
         "testimonial_Jtnwjj",
-        "testimonial_g8jbUm",
-        "testimonial_6WQMtY",
-        "testimonial_FxWyMJ"
+        "testimonial_g8jbUm"
       ],
       "settings": {
-        "title": "From our customers",
+        "title": "Hear from home chefs",
         "align_text": "center",
         "round_images": true,
         "color_scheme": "none"
