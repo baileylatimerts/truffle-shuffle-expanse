@@ -306,6 +306,32 @@
         "round_images": true,
         "color_scheme": "none"
       }
+    },
+    "faq_MrhdfJ": {
+      "type": "faq",
+      "blocks": {
+        "question_D9k4nh": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "question_Pxgyxk": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_D9k4nh",
+        "question_Pxgyxk"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -316,6 +342,7 @@
     "logo-list",
     "promo_grid_crttmV",
     "blog_posts_zgPhHw",
-    "testimonials_AdDKwB"
+    "testimonials_AdDKwB",
+    "faq_MrhdfJ"
   ]
 }
