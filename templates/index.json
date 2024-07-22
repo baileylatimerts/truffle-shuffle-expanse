@@ -293,15 +293,15 @@
         "question_D9k4nh": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "How do the cooking classes work?",
+            "text": "<p>They are freaking awesome!<\/p>"
           }
         },
         "question_Pxgyxk": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "Can I do this with my company?",
+            "text": "<p>Did you bring your check book? if So yes!<\/p>"
           }
         }
       },
