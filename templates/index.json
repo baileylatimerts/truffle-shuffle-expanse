@@ -144,7 +144,8 @@
           "type": "simple",
           "settings": {
             "link": "",
-            "text": "",
+            "text": "Daily Recipes",
+            "image": "shopify:\/\/shop_images\/Wintersalmonpapillote.jpg",
             "width": "50",
             "height": 300
           }
@@ -153,7 +154,8 @@
           "type": "simple",
           "settings": {
             "link": "",
-            "text": "",
+            "text": "Business Gifts & Events",
+            "image": "shopify:\/\/shop_images\/bahnmi.jpg",
             "width": "50",
             "height": 300
           }
@@ -162,11 +164,11 @@
           "type": "advanced",
           "settings": {
             "subheading": "",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
+            "heading": "Join us this Sunday for a BBQ Cooking Class",
+            "textarea": "Learn how to make the perfect BBQ Sauce",
+            "cta_text1": "See Class",
             "cta_link1": "",
-            "cta_text2": "Shop All",
+            "cta_text2": "Explore All Classes",
             "cta_link2": "",
             "video_url": "",
             "width": "100",
