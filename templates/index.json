@@ -243,6 +243,69 @@
         "blog_image_size": "wide",
         "divider": false
       }
+    },
+    "testimonials_AdDKwB": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_r3ccNr": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_Jtnwjj": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_g8jbUm": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_6WQMtY": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_FxWyMJ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_r3ccNr",
+        "testimonial_Jtnwjj",
+        "testimonial_g8jbUm",
+        "testimonial_6WQMtY",
+        "testimonial_FxWyMJ"
+      ],
+      "settings": {
+        "title": "From our customers",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
     }
   },
   "order": [
@@ -252,6 +315,7 @@
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
     "promo_grid_crttmV",
-    "blog_posts_zgPhHw"
+    "blog_posts_zgPhHw",
+    "testimonials_AdDKwB"
   ]
 }
