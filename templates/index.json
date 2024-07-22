@@ -13,9 +13,9 @@
       "type": "hero-video",
       "settings": {
         "full_width": true,
-        "title": "Welcome to the BB Kitchen",
+        "title": "Welcome to\nBB Kitchen",
         "title_size": 64,
-        "subheading": "Our mission is to help make every bite taste better. Better Bites. Better Life.",
+        "subheading": "Our mission is to help make every bite taste better. Better Bites. Better Life. That's Lit 🔥",
         "link_text": "Learn more",
         "link": "https:\/\/butcherbox.tv\/products\/butcherbox-herbed-s-p",
         "color_accent": "#ffffff",
@@ -107,44 +107,68 @@
         "divider": false
       }
     },
-    "countdown_eMXWpd": {
-      "type": "countdown",
+    "promo_grid_crttmV": {
+      "type": "promo-grid",
       "blocks": {
-        "content_4zhiqK": {
-          "type": "content",
+        "advanced_iLdLhk": {
+          "type": "advanced",
           "settings": {
-            "heading": "Countdown to Flavor",
-            "heading_size": "h2",
-            "text": "<p>Our new line of spices are dropping soon!<\/p>",
-            "content_alignment": "left"
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
           }
         },
-        "timer_wNLrCi": {
-          "type": "timer",
+        "advanced_6e3949": {
+          "type": "advanced",
           "settings": {
-            "year": "2024",
-            "month": "07",
-            "day": "4",
-            "hour": "03",
-            "minute": "00",
-            "hide_timer": false,
-            "text": ""
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
           }
         }
       },
       "block_order": [
-        "content_4zhiqK",
-        "timer_wNLrCi"
+        "advanced_iLdLhk",
+        "advanced_6e3949"
       ],
       "settings": {
-        "layout": "banner",
         "full_width": false,
-        "color_scheme": "none",
-        "blur_image": false,
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "focal_point": "center",
-        "mobile_image_focal_point": "top"
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "blog_posts_zgPhHw": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "From the blog",
+        "blog": "news",
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "wide",
+        "divider": false
       }
     }
   },
@@ -152,6 +176,7 @@
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
-    "countdown_eMXWpd"
+    "promo_grid_crttmV",
+    "blog_posts_zgPhHw"
   ]
 }
