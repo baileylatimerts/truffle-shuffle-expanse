@@ -26,6 +26,42 @@
         "height_mobile": 300
       }
     },
+    "rich_text_3ye9At": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mhqDmg": {
+          "type": "heading",
+          "settings": {
+            "title": "Chef Jason Welcomes You"
+          }
+        },
+        "text_FDNWX4": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Click play on the video below so that Chef Jason can welcome you to the kitchen. Every week we will host virtual cooking classes, Post recipes daily and drop new tasty products to bring your kitchen to life! Plus we have the perfect solution for all of your business gift and event needs. Bon Appetit<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mhqDmg",
+        "text_FDNWX4"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
+    "featured_video_Tgk6yJ": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
       "disabled": true,
@@ -170,6 +206,7 @@
             "cta_link1": "",
             "cta_text2": "Explore All Classes",
             "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/bbq_01.jpg",
             "video_url": "",
             "width": "100",
             "height": 500,
@@ -210,6 +247,8 @@
   },
   "order": [
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
+    "rich_text_3ye9At",
+    "featured_video_Tgk6yJ",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
     "promo_grid_crttmV",
