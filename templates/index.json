@@ -149,10 +149,10 @@
         "banner_qEwH3z": {
           "type": "banner",
           "settings": {
-            "heading": "Banner promotion",
-            "text": "Add the details of your promotion in smaller text",
+            "heading": "Sign up to the wait list for our new spices",
+            "text": "",
             "link": "",
-            "label": "Shop now",
+            "label": "Sign Up Here",
             "color_scheme": "none"
           }
         },
@@ -212,7 +212,7 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         }
       },
