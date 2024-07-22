@@ -22,7 +22,7 @@
         "title": "Never to early to plan your holiday party",
         "title_size": 70,
         "subheading": "We have gifts and experiences for all of the team members!  Naughty and Nice.",
-        "link_text": "",
+        "link_text": "Watch Video",
         "link": "https:\/\/youtu.be\/D5f1JyMs5AM",
         "color_accent": "#fff",
         "text_align": "vertical-center horizontal-center",
@@ -31,10 +31,72 @@
         "height": 540,
         "height_mobile": 300
       }
+    },
+    "background_image_text_YzXFGn": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "How it works!",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/4_3.png",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "background_image_text_3JD4Je": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "It really works!",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/cpgbundle.png",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 550,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "background_image_text_VWUEzW": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "It is easy!",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/DSC08050_f7dfb15d-67ea-40f3-b314-105e3cd9a13e.jpg",
+        "focal_point": "top",
+        "layout": "left",
+        "height": 550,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "contact_form_K79XCa": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact our Concierge",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "color_scheme": "1"
+      }
     }
   },
   "order": [
     "main",
-    "hero_video_XrbwTd"
+    "hero_video_XrbwTd",
+    "background_image_text_YzXFGn",
+    "background_image_text_3JD4Je",
+    "background_image_text_VWUEzW",
+    "contact_form_K79XCa"
   ]
 }
