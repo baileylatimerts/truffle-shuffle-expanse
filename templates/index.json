@@ -110,25 +110,55 @@
     "promo_grid_crttmV": {
       "type": "promo-grid",
       "blocks": {
-        "advanced_iLdLhk": {
-          "type": "advanced",
+        "banner_qEwH3z": {
+          "type": "banner",
           "settings": {
-            "subheading": "",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "#fff"
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_scheme": "none"
           }
         },
-        "advanced_6e3949": {
+        "simple_biMBcW": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "Virtual Cooking Classes",
+            "image": "shopify:\/\/shop_images\/CustomApron.png",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "simple_izejQc": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "Spices, Rubs & Sauces",
+            "image": "shopify:\/\/shop_images\/Sweet_Smoky_BBQ_Rub_1.png",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "simple_FNcfxb": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "simple_TLHDGH": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "advanced_Ka6w8L": {
           "type": "advanced",
           "settings": {
             "subheading": "",
@@ -139,7 +169,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "50",
+            "width": "100",
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
@@ -148,8 +178,12 @@
         }
       },
       "block_order": [
-        "advanced_iLdLhk",
-        "advanced_6e3949"
+        "banner_qEwH3z",
+        "simple_biMBcW",
+        "simple_izejQc",
+        "simple_FNcfxb",
+        "simple_TLHDGH",
+        "advanced_Ka6w8L"
       ],
       "settings": {
         "full_width": false,
@@ -161,7 +195,7 @@
     "blog_posts_zgPhHw": {
       "type": "blog-posts",
       "settings": {
-        "title": "From the blog",
+        "title": "Daily Recipes",
         "blog": "news",
         "blog_show_tags": true,
         "blog_show_date": true,
