@@ -1,16 +1,25 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "e735c9a6-e42a-4b51-b97f-538697eb951a": {
       "type": "hero-video",
       "settings": {
         "full_width": true,
-        "title": "Father's Day Spice Drop",
-        "title_size": 83,
-        "subheading": "",
-        "link_text": "Shop Now",
+        "title": "Welcome to the BB Kitchen",
+        "title_size": 64,
+        "subheading": "Our mission is to help make every bite taste better. Better Bites. Better Life.",
+        "link_text": "Learn more",
         "link": "https:\/\/butcherbox.tv\/products\/butcherbox-herbed-s-p",
         "color_accent": "#ffffff",
-        "text_align": "vertical-center horizontal-center",
+        "text_align": "vertical-center horizontal-left",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/77776119cf68447fad0bd68272a84b80.mp4",
         "overlay_opacity": 0,
         "height": 650,
@@ -137,65 +146,12 @@
         "focal_point": "center",
         "mobile_image_focal_point": "top"
       }
-    },
-    "featured_product_NU89tE": {
-      "type": "featured-product",
-      "blocks": {
-        "price_7EQx4E": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "description_qNKqVK": {
-          "type": "description",
-          "settings": {
-            "is_tab": false
-          }
-        },
-        "variant_picker_JJWEyB": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
-        },
-        "buy_buttons_CRAf9L": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
-        }
-      },
-      "block_order": [
-        "price_7EQx4E",
-        "description_qNKqVK",
-        "variant_picker_JJWEyB",
-        "buy_buttons_CRAf9L"
-      ],
-      "settings": {
-        "featured_product": "butcherbox-herbed-s-p",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
     }
   },
   "order": [
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
     "logo-list",
-    "countdown_eMXWpd",
-    "featured_product_NU89tE"
+    "countdown_eMXWpd"
   ]
 }
