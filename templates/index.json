@@ -54,33 +54,12 @@
         "divider": false
       }
     },
-    "featured_video_Tgk6yJ": {
+    "featured_video_y3rpY4": {
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/youtu.be\/qlKWVR_0uT0",
         "divider": false
-      }
-    },
-    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
-      "type": "hero-video",
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "title": "Unleash the Master Chef Within You",
-        "title_size": 40,
-        "subheading": "Elevate Your Culinary Skills with Truffle Shuffle's Exquisite Online Cooking Classes & Luxury Ingredient Kits.",
-        "link_text": "Explore Classes",
-        "link": "https:\/\/www.truffleshufflesf.com\/collections\/all-cooking-classes",
-        "color_accent": "#ffffff",
-        "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/9i9XtimQq1A",
-        "overlay_opacity": 22,
-        "height": 660,
-        "height_mobile": 390
       }
     },
     "logo-list": {
@@ -317,8 +296,7 @@
   "order": [
     "e735c9a6-e42a-4b51-b97f-538697eb951a",
     "rich_text_3ye9At",
-    "featured_video_Tgk6yJ",
-    "bcb772bc-a2f5-4e36-8652-aee9dc027b8a",
+    "featured_video_y3rpY4",
     "logo-list",
     "promo_grid_crttmV",
     "blog_posts_zgPhHw",
