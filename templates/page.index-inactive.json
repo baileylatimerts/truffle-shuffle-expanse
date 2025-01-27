@@ -1,20 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "bcb772bc-a2f5-4e36-8652-aee9dc027b8a": {
       "type": "hero-video",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": true,
         "title": "Cook Puerto Rican Shrimp Mofongo with Salsa Criolla",
         "title_size": 40,
         "subheading": "Our next edible adventure lands in Puerto Rico! Learn how to make this traditional dish called Mofongo, which is a plantain based dish and one of the most popular across the region!",
         "link_text": "Shop Now",
-        "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
+        "link": "https://www.truffleshufflesf.com/products/all-access-membership-monthly-box-delivery",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/7R-HNAMh5Bc",
+        "video_url": "https://youtu.be/7R-HNAMh5Bc",
         "overlay_opacity": 22,
         "height": 610,
         "height_mobile": 500
@@ -40,17 +47,17 @@
           "disabled": true,
           "settings": {
             "top_subheading": "Check out our first course!",
-            "title": "<p>How to sharpen a knife<\/p>",
+            "title": "<p>How to sharpen a knife</p>",
             "title_size": 70,
             "subheading": "Learn the basics of knife sharpening!",
-            "link": "https:\/\/www.truffleshufflesf.com\/apps\/my\/course\/how_to_sharpen_a_knife",
+            "link": "https://www.truffleshufflesf.com/apps/my/course/how_to_sharpen_a_knife",
             "link_text": "Start Course",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Culinary_Library_Thumbnail_Template_7.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Culinary_Library_Thumbnail_Template_7.jpg",
+            "image": "shopify://shop_images/Culinary_Library_Thumbnail_Template_7.jpg",
+            "image_mobile": "shopify://shop_images/Culinary_Library_Thumbnail_Template_7.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -60,17 +67,17 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "<p>COOK CHEF TUCKER'S PAN SEARED SCALLOPS WITH LEBANESE TABBOULEH SALAD<\/p>",
+            "title": "<p>COOK CHEF TUCKER'S PAN SEARED SCALLOPS WITH LEBANESE TABBOULEH SALAD</p>",
             "title_size": 40,
             "subheading": "Our next edible adventure lands in Lebanon! Learn how to make this next level dish!",
-            "link": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
+            "link": "https://www.truffleshufflesf.com/products/all-access-membership-monthly-box-delivery",
             "link_text": "Shop now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
+            "image": "shopify://shop_images/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
+            "image_mobile": "shopify://shop_images/DSC07377_1406548c-1ec8-4f0f-9d10-cd81ff5d1bc7.jpg",
             "overlay_opacity": 0,
             "focal_point": "20% 100%"
           }
@@ -80,16 +87,16 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "<p>Cook with our Next Level Chef<\/p>",
+            "title": "<p>Cook with our Next Level Chef</p>",
             "title_size": 70,
             "subheading": "",
-            "link": "shopify:\/\/products\/filipino-pork-adobo",
+            "link": "shopify://products/filipino-pork-adobo",
             "link_text": "Cook with Chef Tucker!",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/fetapasta2.jpg",
+            "image": "shopify://shop_images/fetapasta2.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -99,7 +106,7 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "<p>Overlaid Hero Slide<\/p>",
+            "title": "<p>Overlaid Hero Slide</p>",
             "title_size": 70,
             "subheading": "And optional subtext",
             "link": "",
@@ -138,10 +145,10 @@
         "title_size": 67,
         "subheading": "40% off Fresh Truffles for the Holidays!",
         "link_text": "Shop Now",
-        "link": "https:\/\/www.truffleshufflesf.com\/collections",
+        "link": "https://www.truffleshufflesf.com/collections",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/vimeo.com\/767504339",
+        "video_url": "https://vimeo.com/767504339",
         "overlay_opacity": 0,
         "height": 650,
         "height_mobile": 300
@@ -151,14 +158,14 @@
       "type": "text-and-image",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-22_at_2.58.13_PM.png",
-        "image2": "shopify:\/\/shop_images\/Screen_Shot_2023-01-22_at_3.02.47_PM.png",
+        "image": "shopify://shop_images/Screen_Shot_2023-01-22_at_2.58.13_PM.png",
+        "image2": "shopify://shop_images/Screen_Shot_2023-01-22_at_3.02.47_PM.png",
         "image_width": 700,
         "subtitle": "OMG!",
         "title": "",
-        "text": "<p>Celebrate your love this year with the most delicious wagyu dinner. Use code \"OMG23\" to get this $275 Valentine's day experience for $129 as your first box as a member. <\/p>",
+        "text": "<p>Celebrate your love this year with the most delicious wagyu dinner. Use code \"OMG23\" to get this $275 Valentine's day experience for $129 as your first box as a member. </p>",
         "button_label": "Get Offer",
-        "button_link": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions",
+        "button_link": "https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions",
         "button_style": "primary",
         "align_text": "center",
         "layout": "right",
@@ -168,9 +175,7 @@
     },
     "48dfe769-c602-4b0c-bbaa-a4a1c415b946": {
       "type": "featured-collection",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Join an upcoming experience!",
         "home_featured_products": "may-experiences",
@@ -192,7 +197,7 @@
         "link": "",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/G3jUc_A7ghw",
+        "video_url": "https://youtu.be/G3jUc_A7ghw",
         "overlay_opacity": 0,
         "height": 650,
         "height_mobile": 300
@@ -210,7 +215,7 @@
         "link": "",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/youtu.be\/wc16zfBC-Zo",
+        "video_url": "https://youtu.be/wc16zfBC-Zo",
         "overlay_opacity": 0,
         "height": 580,
         "height_mobile": 300
@@ -225,10 +230,10 @@
         "title_size": 70,
         "subheading": "Help us beat our goal of donating 100,000 meals this year! We are doubling the donation for all orders this week!",
         "link_text": "Shop Now",
-        "link": "shopify:\/\/collections",
+        "link": "shopify://collections",
         "color_accent": "#ffffff",
         "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/vimeo.com\/775935247",
+        "video_url": "https://vimeo.com/775935247",
         "overlay_opacity": 0,
         "height": 650,
         "height_mobile": 300
@@ -240,14 +245,12 @@
         "ad182cff-eb26-48e6-a6b0-c603f62ad624": {
           "type": "separator",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-0": {
           "type": "price",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15005388111895__282f0805-d804-4ae2-93d4-894083e3ad86-16696664388b9e164e-1": {
           "type": "description",
@@ -307,10 +310,10 @@
             "heading": "COOK PAN SEARED SCALLOPS WITH LEBANESE TABBOULEH SALAD!",
             "textarea": "Our next edible adventure lands in Lebanon! Learn how to make this next level dish with Chef Tucker!",
             "cta_text1": "Shop now",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
+            "cta_link1": "https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions#",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/DSC07377.jpg",
+            "image": "shopify://shop_images/DSC07377.jpg",
             "video_url": "",
             "width": "100",
             "height": 520,
@@ -336,10 +339,10 @@
             "heading": "Become a member today!",
             "textarea": "Enjoy discounts on products and get exclusive access to our Culinary Library!",
             "cta_text1": "Learn more",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/truffle-shuffle-subscriptions#",
+            "cta_link1": "https://www.truffleshufflesf.com/pages/truffle-shuffle-subscriptions#",
             "cta_text2": "Subscribe now",
-            "cta_link2": "https:\/\/www.truffleshufflesf.com\/products\/all-access-membership-monthly-box-delivery",
-            "image": "shopify:\/\/shop_images\/kitchen-ready-for-cooking_67728598-d1ee-4ffc-b52e-a9499c82b7c9.jpg",
+            "cta_link2": "https://www.truffleshufflesf.com/products/all-access-membership-monthly-box-delivery",
+            "image": "shopify://shop_images/kitchen-ready-for-cooking_67728598-d1ee-4ffc-b52e-a9499c82b7c9.jpg",
             "video_url": "",
             "width": "100",
             "height": 520,
@@ -355,10 +358,10 @@
             "heading": "Experiences",
             "textarea": "Becoming a great chef starts today! Check our live and upcoming classes.",
             "cta_text1": "Upcoming Schedule",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/public-events-calendar",
+            "cta_link1": "https://www.truffleshufflesf.com/pages/public-events-calendar",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-07-11T154008.416.jpg",
+            "image": "shopify://shop_images/Untitled_design_-_2022-07-11T154008.416.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -376,8 +379,8 @@
             "cta_text1": "",
             "cta_link1": "",
             "cta_text2": "Shop Now",
-            "cta_link2": "https:\/\/www.truffleshufflesf.com\/collections\/products-gifts",
-            "image": "shopify:\/\/shop_images\/Truffle_NYE-2.jpg",
+            "cta_link2": "https://www.truffleshufflesf.com/collections/products-gifts",
+            "image": "shopify://shop_images/Truffle_NYE-2.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -393,10 +396,10 @@
             "heading": "Host your own truffle shuffle!",
             "textarea": "Book the #1 Virtual Cooking experience for your group",
             "cta_text1": "Learn More",
-            "cta_link1": "https:\/\/www.truffleshufflesf.com\/pages\/virtual-private-events",
+            "cta_link1": "https://www.truffleshufflesf.com/pages/virtual-private-events",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Screenshot_4108.png",
+            "image": "shopify://shop_images/Screenshot_4108.png",
             "video_url": "",
             "width": "100",
             "height": 500,
@@ -423,19 +426,6 @@
     },
     "1677021793adcde42b": {
       "type": "apps",
-      "blocks": {
-        "5522330e-436a-4839-a311-5f8b0fc2eab4": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup-playlist-slider\/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
-          "disabled": true,
-          "settings": {
-            "playlist_id": "rl_pl_540",
-            "debugging_script": ""
-          }
-        }
-      },
-      "block_order": [
-        "5522330e-436a-4839-a311-5f8b0fc2eab4"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -447,42 +437,42 @@
         "logo-list-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/san-francisco-chronicle-logo.jpg",
+            "image": "shopify://shop_images/san-francisco-chronicle-logo.jpg",
             "link": ""
           }
         },
         "logo-list-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Forbes-Black.jpg",
+            "image": "shopify://shop_images/Forbes-Black.jpg",
             "link": ""
           }
         },
         "logo-list-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/the-oprah-magazine.jpg",
+            "image": "shopify://shop_images/the-oprah-magazine.jpg",
             "link": ""
           }
         },
         "logo-list-3": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kelly_Clarkson.jpg",
+            "image": "shopify://shop_images/Kelly_Clarkson.jpg",
             "link": ""
           }
         },
         "logo-list-4": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/untitled-1_220.png",
+            "image": "shopify://shop_images/untitled-1_220.png",
             "link": ""
           }
         },
         "logo-list-5": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/eater-vector-logo.png",
+            "image": "shopify://shop_images/eater-vector-logo.png",
             "link": ""
           }
         }
@@ -505,7 +495,7 @@
       "settings": {
         "title": "Truffle Shuffle is going <br>live on Startengine",
         "description": "Truffle Shuffle is launching a crowdfunding campaign on StartEngine soon!  Sign up to our waitlist to be the first in line to invest when our campaign goes live.  We’ve got some great perks as well for early investors so join the waitlist today to receive a bonus on your investment when the campaign launches!",
-        "btn_link": "shopify:\/\/pages\/invest",
+        "btn_link": "shopify://pages/invest",
         "btn_text": "Join the Waitlist Today"
       }
     }
