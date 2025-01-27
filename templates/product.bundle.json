@@ -1,14 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shogun-helper": {
       "type": "shogun-helper",
-      "settings": {
-      }
+      "settings": {}
     },
     "shogun-above": {
       "type": "shogun-above",
-      "settings": {
-      }
+      "settings": {}
     },
     "main": {
       "type": "main-product",
@@ -24,8 +31,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "sales_point": {
           "type": "sales_point",
@@ -61,14 +67,7 @@
         },
         "da712f52-de32-4be8-a582-3525b3aad39d": {
           "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "76016324-b9a7-4d7c-a384-cd8f4ea02cfc": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -88,8 +87,7 @@
         "83d7544a-f5ed-449a-97ca-b8431d104b75": {
           "type": "trust_badge",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -100,7 +98,6 @@
         "sales_point3",
         "sales_point4",
         "da712f52-de32-4be8-a582-3525b3aad39d",
-        "76016324-b9a7-4d7c-a384-cd8f4ea02cfc",
         "buy_buttons",
         "inventory_status",
         "83d7544a-f5ed-449a-97ca-b8431d104b75"
@@ -133,7 +130,7 @@
           "disabled": true,
           "settings": {
             "title": "How it works",
-            "content": "<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!<\/p>",
+            "content": "<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!</p>",
             "page": ""
           }
         },
@@ -142,7 +139,7 @@
           "disabled": true,
           "settings": {
             "title": "Shipping information",
-            "content": "<p>We ship out all ingredient kits priority shipping to arrive as a<\/p>",
+            "content": "<p>We ship out all ingredient kits priority shipping to arrive as a</p>",
             "page": ""
           }
         },
@@ -155,8 +152,7 @@
         },
         "359b3136-0b9a-43a3-a161-1631da55e369": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -179,19 +175,16 @@
     },
     "more-products-vendor": {
       "type": "more-products-vendor",
-      "settings": {
-      }
+      "settings": {}
     },
     "more-products-collection": {
       "type": "more-products-collection",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {
-      }
+      "settings": {}
     },
     "collection-return": {
       "type": "collection-return",
@@ -202,21 +195,10 @@
     "shogun-below": {
       "type": "shogun-below",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "169133398623d97b2c": {
       "type": "apps",
-      "blocks": {
-        "028e235f-92c2-4ffd-8292-0113e92c06b9": {
-          "type": "shopify:\/\/apps\/crowdfunder\/blocks\/crowdfunder\/3bdd0fe8-5fc7-4d01-b35b-48bca1437d27",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "028e235f-92c2-4ffd-8292-0113e92c06b9"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true

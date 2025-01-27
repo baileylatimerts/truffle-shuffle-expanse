@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1671300638a3c923f1": {
@@ -25,8 +34,7 @@
         "tags": {
           "type": "tags",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "010be5e4-1608-4dac-9cb0-499e3814c0f2": {
           "type": "product",
@@ -50,8 +58,7 @@
         "2d708eda-2163-4dad-b0b3-91c9595ee903": {
           "type": "share",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -60,8 +67,7 @@
         "c933c190-73b6-40df-9e33-c03bdcbd0791",
         "2d708eda-2163-4dad-b0b3-91c9595ee903"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "ef87cb73-43a9-4f1a-a41c-af5305f04262": {
       "type": "promo-grid",
