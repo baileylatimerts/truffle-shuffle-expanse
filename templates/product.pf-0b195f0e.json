@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,8 +23,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "sales_point": {
           "type": "sales_point",
@@ -131,18 +139,15 @@
     },
     "more-products-vendor": {
       "type": "more-products-vendor",
-      "settings": {
-      }
+      "settings": {}
     },
     "more-products-collection": {
       "type": "more-products-collection",
-      "settings": {
-      }
+      "settings": {}
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {
-      }
+      "settings": {}
     },
     "collection-return": {
       "type": "collection-return",
@@ -152,8 +157,7 @@
     },
     "pf-0b195f0e": {
       "type": "pf-0b195f0e",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

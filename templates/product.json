@@ -1,24 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shogun-helper": {
       "type": "shogun-helper",
-      "settings": {
-      }
+      "settings": {}
     },
     "shogun-above": {
       "type": "shogun-above",
-      "settings": {
-      }
+      "settings": {}
     },
     "main": {
       "type": "main-product",
       "blocks": {
-        "judgeme_preview_badge_product_page_6aa6deec": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -30,13 +31,11 @@
         },
         "da712f52-de32-4be8-a582-3525b3aad39d": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -54,7 +53,6 @@
         }
       },
       "block_order": [
-        "judgeme_preview_badge_product_page_6aa6deec",
         "variant_picker",
         "da712f52-de32-4be8-a582-3525b3aad39d",
         "price",
@@ -89,7 +87,7 @@
           "disabled": true,
           "settings": {
             "title": "How it works",
-            "content": "<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!<\/p>",
+            "content": "<p>Live Cooking Classes with kit: When you join a live cooking class with Truffle Shuffle we will send out an ingredient kit that will arrive a few days before the class. You will join a live cooking class with a chef and learn how to cook one of the most amazing meals of your life!</p>",
             "page": ""
           }
         },
@@ -98,7 +96,7 @@
           "disabled": true,
           "settings": {
             "title": "Shipping information",
-            "content": "<p>We ship out all ingredient kits priority shipping to arrive as a<\/p>",
+            "content": "<p>We ship out all ingredient kits priority shipping to arrive as a</p>",
             "page": ""
           }
         },
@@ -111,8 +109,7 @@
         },
         "359b3136-0b9a-43a3-a161-1631da55e369": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -128,16 +125,6 @@
     },
     "judgeme_section_review_widget_eff4": {
       "type": "apps",
-      "blocks": {
-        "judgeme_review_widget_14a82b3b": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "judgeme_review_widget_14a82b3b"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -154,18 +141,15 @@
     "more-products-vendor": {
       "type": "more-products-vendor",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "more-products-collection": {
       "type": "more-products-collection",
-      "settings": {
-      }
+      "settings": {}
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {
-      }
+      "settings": {}
     },
     "collection-return": {
       "type": "collection-return",
@@ -176,21 +160,10 @@
     "shogun-below": {
       "type": "shogun-below",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "16913337412e09db8c": {
       "type": "apps",
-      "blocks": {
-        "2921449c-194a-43f7-8191-0586433133d8": {
-          "type": "shopify:\/\/apps\/crowdfunder\/blocks\/crowdfunder\/3bdd0fe8-5fc7-4d01-b35b-48bca1437d27",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "2921449c-194a-43f7-8191-0586433133d8"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
